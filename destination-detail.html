@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title id="dest-meta-title">Destination Guide — Wayfare</title>
+  <meta name="description" id="dest-meta-desc" content="Discover destinations curated by Wayfare.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <link rel="stylesheet" href="css/wayfare-core.css">
+  <link rel="stylesheet" href="css/wayfare-pages.css">
+  <style>
+    /* Full Page Destination Hero Section */
+    .wf-dest-hero-section {
+      padding-top: 0;
+      padding-bottom: 24px;
+      position: relative;
+    }
+
+    .wf-dest-hero-panel {
+      position: relative;
+      height: 100vh;
+      min-height: 720px;
+      width: 100%;
+      border-radius: 0 0 32px 32px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 64px 56px;
+      color: #FFFFFF;
+      background-color: var(--color-night);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .wf-dest-hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 1200ms var(--ease-entrance);
+    }
+
+    .wf-dest-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(20, 16, 12, 0.10) 0%, rgba(20, 16, 12, 0.28) 45%, rgba(20, 16, 12, 0.88) 100%);
+    }
+
+    .wf-dest-hero-top-bar {
+      position: absolute;
+      top: 96px;
+      left: 56px;
+      z-index: 3;
+    }
+
+    .wf-dest-back-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: #FFFFFF;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.40);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 8px 18px;
+      border-radius: 999px;
+      transition: all 300ms var(--ease-hover);
+    }
+
+    .wf-dest-back-pill:hover {
+      background: rgba(0, 0, 0, 0.65);
+      border-color: rgba(255, 255, 255, 0.45);
+      transform: translateX(-3px);
+      color: #FFFFFF;
+    }
+
+    .wf-dest-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+    }
+
+    .wf-dest-hero-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 12px;
+    }
+
+    .wf-dest-hero-title {
+      color: #FFFFFF;
+      font-size: clamp(56px, 8vw, 100px);
+      font-weight: 600;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .wf-dest-hero-tagline {
+      font-family: var(--font-sans);
+      font-size: clamp(18px, 2.2vw, 24px);
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 400;
+      max-width: 680px;
+    }
+
+    .wf-dest-details-wrap {
+      padding-top: 64px;
+      padding-bottom: 96px;
+    }
+
+    .wf-dest-lead-block {
+      max-width: 840px;
+      margin-bottom: 48px;
+    }
+
+    .wf-dest-lead-block .wf-lead {
+      font-size: 20px;
+      line-height: 1.65;
+      color: var(--color-ink);
+    }
+
+
+    .wf-dest-content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 64px;
+      margin-bottom: 80px;
+      align-items: flex-start;
+    }
+
+    .wf-dest-fact-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-line);
+      border-radius: 24px;
+      padding: 32px;
+      position: sticky;
+      top: 100px;
+    }
+
+    @media (max-width: 900px) {
+      .wf-dest-hero-panel {
+        height: 100vh;
+        min-height: 600px;
+        border-radius: 0 0 24px 24px;
+        padding: 40px 24px;
+      }
+      .wf-dest-hero-top-bar {
+        top: 76px;
+        left: 24px;
+      }
+      .wf-dest-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body class="wf-dest-detail-page">
+
+  <!-- Floating Navigation -->
+  <header class="wf-nav-floating-wrap" role="banner">
+    <div class="wf-nav-pill-bar">
+      <a href="index.html" class="wf-nav-brand" aria-label="Crazy Tours and Travels Home">
+        <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 30px; width: 30px; object-fit: cover; border-radius: 6px; display: block;">
+        <span class="wf-nav-brand-text">
+          <span class="wf-nav-wordmark">Crazy</span>
+          <span class="wf-nav-tagline">Tours & Travels</span>
+        </span>
+      </a>
+
+      <nav class="wf-nav-links-desktop" aria-label="Main Navigation">
+        <a href="packages.html" class="wf-nav-link">Packages</a>
+        <a href="destinations.html" class="wf-nav-link active">Destinations</a>
+        <a href="about.html" class="wf-nav-link">About</a>
+        <a href="contact.html" class="wf-nav-link">Contact</a>
+      </nav>
+
+      <div class="wf-nav-right-actions">
+        <a href="contact.html" class="wf-nav-cta-btn">
+          <span>Plan a trip</span>
+          <span class="wf-nav-cta-circle">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <button class="wf-nav-mobile-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="wf-mobile-drawer-overlay">
+    <div class="wf-mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="wf-mobile-drawer-top">
+        <a href="index.html" class="wf-nav-brand">
+          <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 30px; width: 30px; object-fit: cover; border-radius: 6px; display: block;">
+          <span class="wf-nav-brand-text">
+            <span class="wf-nav-wordmark">Crazy</span>
+            <span class="wf-nav-tagline">Tours & Travels</span>
+          </span>
+        </a>
+        <button class="wf-mobile-drawer-close" aria-label="Close menu" style="font-size: 20px; cursor: pointer;">✕</button>
+      </div>
+      <div class="wf-mobile-drawer-links">
+        <a href="packages.html" class="wf-mobile-drawer-link">Packages <span>→</span></a>
+        <a href="destinations.html" class="wf-mobile-drawer-link">Destinations <span>→</span></a>
+        <a href="about.html" class="wf-mobile-drawer-link">About <span>→</span></a>
+        <a href="contact.html" class="wf-mobile-drawer-link">Contact <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Full-Page Hero Section (matching Wayfare template screenshot) -->
+    <section class="wf-dest-hero-section">
+      <div class="wf-dest-hero-panel">
+        <img id="dest-photo-primary" class="wf-dest-hero-bg" src="" alt="Destination overview image" fetchpriority="high">
+        <div class="wf-dest-hero-overlay"></div>
+
+        <div class="wf-dest-hero-top-bar">
+          <a href="destinations.html" class="wf-dest-back-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>All destinations</span>
+          </a>
+        </div>
+
+        <div class="wf-dest-hero-content wf-reveal-up">
+          <div class="wf-dest-hero-eyebrow" id="dest-region-eyebrow">REGION</div>
+          <h1 class="wf-display-headline wf-dest-hero-title wf-reveal-words" id="dest-title">Destination</h1>
+          <p class="wf-dest-hero-tagline" id="dest-tagline">Tagline</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destination Overview Details -->
+    <div class="wf-container wf-dest-details-wrap">
+      <!-- Lead narrative -->
+      <div class="wf-dest-lead-block wf-reveal-up">
+        <p class="wf-lead" id="dest-intro">
+          Introductory text...
+        </p>
+      </div>
+
+      <!-- Content Grid: Guide details + Fact card -->
+      <div class="wf-dest-content-grid wf-reveal-up">
+        <div>
+          <h2 class="wf-section-heading" style="font-size: 32px; margin-bottom: 16px;">About Traveling in <span id="dest-heading-country">this Country</span></h2>
+          <div class="wf-body" id="dest-overview" style="font-size: 17px; line-height: 1.7; margin-bottom: 32px;">
+            <!-- Overview -->
+          </div>
+
+          <h3 class="wf-card-heading" style="font-size: 22px; margin-bottom: 16px;">Signature Encounters</h3>
+          <ul id="dest-highlights-list" style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 48px;">
+            <!-- Highlights -->
+          </ul>
+        </div>
+
+        <aside>
+          <div class="wf-dest-fact-card">
+            <h3 class="wf-card-heading" style="font-size: 20px; margin-bottom: 20px;">Trip Designer Notes</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px; font-size: 15px;">
+              <div>
+                <strong style="display: block; font-size: 13px; text-transform: uppercase; color: var(--color-muted);">Best Time to Visit</strong>
+                <span id="dest-fact-best-time" style="color: var(--color-ink); font-weight: 500;">—</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 13px; text-transform: uppercase; color: var(--color-muted);">Group Philosophy</strong>
+                <span style="color: var(--color-ink);">Max 12 travelers, locally based guides.</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 13px; text-transform: uppercase; color: var(--color-muted);">Custom Routes</strong>
+                <span style="color: var(--color-ink);">Every route can run privately on your dates.</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--color-line);">
+              <a href="contact.html" class="wf-btn wf-btn-primary" style="width: 100%; justify-content: center;">
+                <span class="wf-btn-text">Design a custom trip</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Relevant Trips Section -->
+      <section style="margin-top: 48px; margin-bottom: 96px;">
+        <div class="wf-section-header-row">
+          <div>
+            <span class="wf-eyebrow">Available departures</span>
+            <h2 class="wf-section-heading">Trips running in <span id="dest-trips-country">this Country</span></h2>
+          </div>
+        </div>
+
+        <div class="wf-trips-grid-4" id="dest-trips-grid">
+          <!-- Trips injected by JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Shared Photo CTA Section -->
+    <section class="wf-cta-photo-panel wf-reveal-up">
+      <img class="wf-cta-photo-bg" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80" alt="Scenic beach" loading="lazy">
+      <div class="wf-cta-photo-overlay"></div>
+
+      <div class="wf-cta-photo-content">
+        <h2 class="wf-cta-heading wf-cta-photo-title">Tell us where you want to go.</h2>
+        <p class="wf-cta-photo-desc">
+          Send us a rough idea, dates and a budget. A trip designer replies within one working day with a first route and a fixed price.
+        </p>
+        <div class="wf-cta-photo-buttons">
+          <a href="contact.html" class="wf-btn wf-btn-primary">
+            <span class="wf-btn-text">Plan a trip</span>
+            <span class="wf-btn-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+    <!-- ==========================================================================
+       WAYFARE MASTER FOOTER
+       ========================================================================== -->
+    <!-- ==========================================================================
+       WAYFARE MASTER FOOTER
+       ========================================================================== -->
+  <footer class="wf-footer-wrap" role="contentinfo">
+    <div class="wf-footer-container">
+      <!-- 4 Columns -->
+      <div class="wf-footer-columns">
+        <div>
+          <a href="index.html" class="wf-footer-brand-title">
+            <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 38px; width: 38px; object-fit: cover; border-radius: 8px; display: block;">
+            <span><span class="wf-footer-brand-crazy" style="color: var(--color-sun); font-weight: 700;">Crazy</span> <span class="wf-footer-tagline" style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.75);">Tours & Travels</span></span>
+          </a>
+          <p class="wf-footer-brand-summary">
+            Small-group tours and tailor-made trips, planned by people who have been there.
+          </p>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Destinations</div>
+          <div class="wf-footer-col-links">
+            <a href="destination-detail.html?slug=kashmir" class="wf-footer-link">Kashmir</a>
+            <a href="destination-detail.html?slug=kerala" class="wf-footer-link">Kerala</a>
+            <a href="destination-detail.html?slug=manali" class="wf-footer-link">Kullu-Manali</a>
+            <a href="destination-detail.html?slug=goa" class="wf-footer-link">Goa</a>
+            <a href="destination-detail.html?slug=ladakh" class="wf-footer-link">Ladakh</a>
+            <a href="destinations.html" class="wf-footer-link" style="opacity: 0.65; font-size: 13.5px; margin-top: 4px;">All destinations →</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Packages</div>
+          <div class="wf-footer-col-links">
+            <a href="trip-detail.html?slug=kerala-honeymoon-4d3n" class="wf-footer-link">Kerala Honeymoon Package</a>
+            <a href="trip-detail.html?slug=manali-bachelors-3d2n" class="wf-footer-link">Manali Bachelors Package</a>
+            <a href="trip-detail.html?slug=manali-family-3d2n" class="wf-footer-link">Manali Family Package</a>
+            <a href="trip-detail.html?slug=manali-honeymoon-3d2n" class="wf-footer-link">Manali Honeymoon Package</a>
+            <a href="trip-detail.html?slug=kashmir-winter-group-4d3n" class="wf-footer-link">Kashmir Valley Expedition</a>
+            <a href="trip-detail.html?slug=goa-bachelors-party-4d3n" class="wf-footer-link">Goa Beach & Party Bash</a>
+            <a href="packages.html" class="wf-footer-link" style="opacity: 0.65; font-size: 13.5px; margin-top: 4px;">All packages →</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Company</div>
+          <div class="wf-footer-col-links">
+            <a href="about.html" class="wf-footer-link">About us</a>
+            <a href="contact.html" class="wf-footer-link">Contact</a>
+            <a href="contact.html" class="wf-footer-link">Plan a trip</a>
+            <a href="privacy.html" class="wf-footer-link">Privacy</a>
+            <a href="terms.html" class="wf-footer-link">Terms</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Talk to us</div>
+          <div class="wf-footer-col-links">
+            <a href="mailto:crazytraveller11@gmail.com" class="wf-footer-link">crazytraveller11@gmail.com</a>
+            
+            <div class="wf-footer-numbers-list">
+              <div class="wf-footer-number-row">
+                <a href="tel:+918867229998" class="wf-footer-number-link" title="Call +91 88672 29998">+91 88672 29998</a>
+              </div>
+              <div class="wf-footer-number-row">
+                <a href="tel:+918867239998" class="wf-footer-number-link" title="Call +91 88672 39998">+91 88672 39998</a>
+              </div>
+            </div>
+
+            <!-- Social Icons (Instagram, YouTube, Facebook) -->
+            <div class="wf-footer-social-icons">
+              <a href="https://www.instagram.com/crazy_traveller_11?mdxt=MXZmOGpmaWZtenhhag==" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="Instagram" title="Follow us on Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://m.youtube.com/%40crazytraveller_11?fbclid=PAb21jcAU5zQlleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp4dKatBvQnkZYdDgoeYvB1CZ-fvRs1fW6ajAM-JJW38YzVQ94rLsT5MJYv9x_aem_MV-d2AY716zkHvJH6_nYLA" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="YouTube" title="Watch on YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+                </svg>
+              </a>
+              <a href="https://m.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fprofile.php%3Fid%3D100088752910901%26mibextid%3DLQQJ4d%26wtsid%3Drdr_0atRPMvXrz1MYiCNv&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeHSmrQb0J5GWHQ4KHmLwdQmfn70bNX1umowDPiSVt_GM1UPeKy7E-TCWL_cQ_aem_MV-d2AY716zkHvJH6_nYLA" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="Facebook" title="Follow us on Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="wf-footer-bottom-bar">
+        <div>© 2026 Crazy Tours and Travels. All rights reserved.</div>
+      </div>
+
+      <!-- Giant Subdued Wordmark -->
+      <div class="wf-footer-wordmark">
+        Crazy Tours
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/wayfare-data.js"></script>
+  <script src="js/wayfare.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug') || params.get('dest') || 'kerala';
+      const dest = getWayfareDestination(slug);
+
+      if (!dest) return;
+
+      document.title = `${dest.name} — Destination Overview | Crazy Tours and Travels`;
+      document.getElementById('dest-meta-desc').setAttribute('content', dest.intro);
+      document.getElementById('dest-region-eyebrow').textContent = dest.region;
+      document.getElementById('dest-title').textContent = dest.name;
+      document.getElementById('dest-tagline').textContent = dest.tagline;
+      document.getElementById('dest-intro').textContent = dest.intro;
+      document.getElementById('dest-heading-country').textContent = dest.name;
+      document.getElementById('dest-trips-country').textContent = dest.name;
+
+      const priPhoto = document.getElementById('dest-photo-primary');
+      if (priPhoto) priPhoto.src = dest.primaryPhoto;
+      const secPhoto = document.getElementById('dest-photo-secondary');
+      if (secPhoto) secPhoto.src = dest.secondaryPhoto;
+
+      document.getElementById('dest-overview').innerHTML = `<p>${dest.overview}</p>`;
+      document.getElementById('dest-fact-best-time').textContent = dest.bestTime;
+
+      // Highlights
+      const hlContainer = document.getElementById('dest-highlights-list');
+      hlContainer.innerHTML = dest.highlights.map(h => `
+        <li style="display: flex; gap: 10px; font-size: 15px; color: var(--color-ink);">
+          <span style="color: var(--color-sun-ink); font-weight: bold;">●</span>
+          <span>${h}</span>
+        </li>
+      `).join('');
+
+      // Relevant Trips
+      const relTrips = getTripsByDestination(dest.id);
+      const tripsContainer = document.getElementById('dest-trips-grid');
+      if (relTrips.length === 0) {
+        tripsContainer.innerHTML = '<p class="wf-body">No standard departures scheduled currently. Contact us for a tailor-made private route.</p>';
+      } else {
+        tripsContainer.innerHTML = relTrips.map((trip, i) => `
+          <a href="trip-detail.html?slug=${encodeURIComponent(trip.slug)}" class="wf-trip-card wf-reveal-up" style="transition-delay: ${i * 70}ms;">
+            <img class="wf-trip-card-bg" src="${trip.photos[0]}" alt="${trip.name}" loading="lazy">
+            <div class="wf-trip-card-overlay"></div>
+            
+            <div class="wf-trip-card-top">
+              <span class="wf-chip">${trip.duration}</span>
+              <span class="wf-chip">${trip.pace}</span>
+            </div>
+
+            <div class="wf-trip-card-bottom">
+              <h3 class="wf-card-heading wf-trip-card-title">${trip.name}</h3>
+              <div class="wf-trip-card-meta">
+                <span class="wf-trip-card-price">${trip.priceFormatted}</span>
+                <span class="wf-trip-card-btn">
+                  <span>View trip</span>
+                  <span>→</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        `).join('');
+      }
+
+      if (window.initMotionReveals) {
+        window.initMotionReveals();
+      }
+    });
+  </script>
+</body>
+</html>

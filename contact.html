@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Plan a Trip & Contact — Crazy Tours and Travels</title>
+  <meta name="description" content="Share a rough idea, your dates and a budget. A trip designer who has been there replies within one working day with a first route and a fixed price.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png"><polygon points='12 2 2 22 12 18 22 22 12 2'/></svg>">
+
+  <link rel="stylesheet" href="css/wayfare-core.css">
+  <link rel="stylesheet" href="css/wayfare-pages.css">
+  <style>
+    .wf-contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 72px;
+      align-items: flex-start;
+      padding-top: 160px;
+      padding-bottom: 120px;
+    }
+    .wf-contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .wf-contact-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .wf-contact-info-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--color-shell);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-ink);
+    }
+    .wf-enquiry-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-line);
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    }
+    @media (max-width: 900px) {
+      .wf-contact-layout {
+        grid-template-columns: 1fr;
+        padding-top: 120px;
+        gap: 48px;
+      }
+      .wf-enquiry-card {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+<body class="wf-contact-page">
+
+  <!-- Floating Navigation -->
+  <header class="wf-nav-floating-wrap" role="banner">
+    <div class="wf-nav-pill-bar">
+      <a href="index.html" class="wf-nav-brand" aria-label="Crazy Tours and Travels Home">
+        <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 30px; width: 30px; object-fit: cover; border-radius: 6px; display: block;">
+        <span class="wf-nav-brand-text">
+          <span class="wf-nav-wordmark">Crazy</span>
+          <span class="wf-nav-tagline">Tours & Travels</span>
+        </span>
+      </a>
+
+      <nav class="wf-nav-links-desktop" aria-label="Main Navigation">
+        <a href="packages.html" class="wf-nav-link">Packages</a>
+        <a href="destinations.html" class="wf-nav-link">Destinations</a>
+        <a href="about.html" class="wf-nav-link">About</a>
+        <a href="contact.html" class="wf-nav-link active">Contact</a>
+      </nav>
+
+      <div class="wf-nav-right-actions">
+        <a href="contact.html" class="wf-nav-cta-btn">
+          <span>Plan a trip</span>
+          <span class="wf-nav-cta-circle">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <button class="wf-nav-mobile-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="wf-mobile-drawer-overlay">
+    <div class="wf-mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="wf-mobile-drawer-top">
+        <a href="index.html" class="wf-nav-brand">
+          <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 30px; width: 30px; object-fit: cover; border-radius: 6px; display: block;">
+          <span class="wf-nav-brand-text">
+            <span class="wf-nav-wordmark">Crazy</span>
+            <span class="wf-nav-tagline">Tours & Travels</span>
+          </span>
+        </a>
+        <button class="wf-mobile-drawer-close" aria-label="Close menu" style="font-size: 20px; cursor: pointer;">✕</button>
+      </div>
+      <div class="wf-mobile-drawer-links">
+        <a href="packages.html" class="wf-mobile-drawer-link">Packages <span>→</span></a>
+        <a href="destinations.html" class="wf-mobile-drawer-link">Destinations <span>→</span></a>
+        <a href="about.html" class="wf-mobile-drawer-link">About <span>→</span></a>
+        <a href="contact.html" class="wf-mobile-drawer-link">Contact <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="wf-container wf-contact-layout">
+      <!-- Left Column: Supporting Contact Information -->
+      <div class="wf-reveal-up">
+        <span class="wf-eyebrow" style="margin-bottom: 16px;">Plan a trip</span>
+        <h1 class="wf-display-headline wf-reveal-words" style="font-size: 64px; line-height: 1.05; margin-bottom: 24px;">
+          Tell us where you want to go
+        </h1>
+        <p class="wf-lead" style="max-width: 520px; line-height: 1.6;">
+          Share a rough idea, your dates and a budget. A trip designer who has been there replies within one working day with a first route and a fixed price.
+        </p>
+
+        <div class="wf-contact-info-list">
+          <div class="wf-contact-info-item">
+            <div class="wf-contact-info-icon">✉️</div>
+            <div>
+              <div class="wf-eyebrow" style="font-size: 11px; margin-bottom: 4px;">Email</div>
+              <a href="mailto:crazytraveller11@gmail.com" style="font-size: 16px; font-weight: 500; color: var(--color-ink);">crazytraveller11@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="wf-contact-info-item">
+            <div class="wf-contact-info-icon">📞</div>
+            <div>
+              <div class="wf-eyebrow" style="font-size: 11px; margin-bottom: 4px;">Phone & WhatsApp</div>
+              <div style="display: flex; flex-direction: column; gap: 4px;">
+                <a href="tel:+918867229998" style="font-size: 16px; font-weight: 500; color: var(--color-ink); text-decoration: none;">+91 88672 29998</a>
+                <a href="tel:+918867239998" style="font-size: 16px; font-weight: 500; color: var(--color-ink); text-decoration: none;">+91 88672 39998</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-contact-info-item">
+            <div class="wf-contact-info-icon">🕒</div>
+            <div>
+              <div class="wf-eyebrow" style="font-size: 11px; margin-bottom: 4px;">Hours</div>
+              <div style="font-size: 16px; color: var(--color-ink);">Monday to Sunday, 24/7 Telugu & English Desk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Start Your Enquiry Card -->
+      <div class="wf-enquiry-card wf-reveal-up" style="transition-delay: 150ms;">
+        <h2 class="wf-card-heading" style="font-size: 28px; margin-bottom: 28px;">Start your enquiry</h2>
+
+        <form id="contact-enquiry-form">
+          <div class="wf-form-group">
+            <label class="wf-form-label" for="contact-name">Your name</label>
+            <input type="text" id="contact-name" class="wf-form-input" placeholder="Jane Smith" required>
+          </div>
+
+          <div class="wf-form-group">
+            <label class="wf-form-label" for="contact-email">Email</label>
+            <input type="email" id="contact-email" class="wf-form-input" placeholder="jane@email.com" required>
+          </div>
+
+          <div class="wf-form-group">
+            <label class="wf-form-label" for="contact-dest">Select Package / Destination</label>
+            <select id="contact-dest" class="wf-form-select">
+              <option value="custom">Custom Trip / Not Sure Yet</option>
+              <optgroup label="Kerala Packages">
+                <option value="kerala-honeymoon-4d3n">Kerala Honeymoon Package (4D/3N)</option>
+                <option value="kerala-honeymoon-5d4n">Kerala Deluxe Honeymoon Package (5D/4N)</option>
+                <option value="kerala-jatayu-honeymoon-6d5n">Kerala Couple & Jatayu Package (6D/5N)</option>
+                <option value="kerala-varkala-honeymoon-6d5n">Kerala & Varkala Cliff Honeymoon (6D/5N)</option>
+                <option value="kerala-bachelor-4d3n">Kerala Bachelor Group Tour (4D/3N)</option>
+              </optgroup>
+              <optgroup label="Kullu-Manali & Kasol Packages">
+                <option value="manali-family-3d2n">Kullu-Manali Family Special (3D/2N)</option>
+                <option value="manali-honeymoon-3d2n">Kullu-Manali Honeymoon Package (3D/2N)</option>
+                <option value="kasol-manali-camping-4d3n">Kasol & Manali Riverside Camping (4D/3N)</option>
+                <option value="manali-family-snow-5d4n">Manali Family Snow & Solang Valley (5D/4N)</option>
+                <option value="manali-adventure-escape-5d4n">Manali Adventure & Rohtang Pass (5D/4N)</option>
+                <option value="manali-bachelors-3d2n">Manali Bachelors Group Package (3D/2N)</option>
+              </optgroup>
+              <optgroup label="Kashmir Packages">
+                <option value="kashmir-romantic-couple-4d3n">Kashmir Romantic Couple & Honeymoon (4D/3N)</option>
+                <option value="kashmir-winter-group-4d3n">Kashmir Valley Group Expedition (4D/3N)</option>
+                <option value="kashmir-sonmarg-couple-5d4n">Kashmir Grand Sonmarg Expedition (5D/4N)</option>
+                <option value="kashmir-paradise">Kashmir Paradise: Srinagar, Gulmarg & Pahalgam (6D/5N)</option>
+              </optgroup>
+              <optgroup label="Goa Packages">
+                <option value="goa-romantic-honeymoon-4d3n">Goa Luxury Romantic Honeymoon (4D/3N)</option>
+                <option value="goa-bachelors-party-4d3n">Goa Bachelors Beach & Nightlife Bash (4D/3N)</option>
+                <option value="goa-grand-family-heritage-5d4n">Goa Grand Heritage & Waterfalls (5D/4N)</option>
+                <option value="goa-south-goa-serenity-4d3n">South Goa Serenity & Beach Resort (4D/3N)</option>
+              </optgroup>
+              <optgroup label="Ladakh Packages">
+                <option value="ladakh-high-pass-odyssey-7d6n">Ladakh High Pass Odyssey: Nubra & Pangong (7D/6N)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="wf-form-group">
+            <label class="wf-form-label" for="contact-when">When, and how many of you?</label>
+            <input type="text" id="contact-when" class="wf-form-input" placeholder="Two of us, late September">
+          </div>
+
+          <div class="wf-form-group">
+            <label class="wf-form-label" for="contact-notes">Tell us about the trip</label>
+            <textarea id="contact-notes" class="wf-form-textarea" rows="4" placeholder="What you love, what you would skip, a rough budget."></textarea>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <button type="submit" id="contact-submit-btn" class="wf-btn wf-btn-primary wf-btn-submit">
+              <span class="wf-btn-text">Send enquiry</span>
+              <span class="wf-btn-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div id="contact-feedback" style="display: none; margin-top: 16px; font-size: 15px; font-family: var(--font-form-feedback);"></div>
+
+          <div class="wf-small" style="margin-top: 20px; text-align: center; color: var(--color-muted);">
+            No payment and no obligation. We never share your details.
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+    <!-- ==========================================================================
+       WAYFARE MASTER FOOTER
+       ========================================================================== -->
+    <!-- ==========================================================================
+       WAYFARE MASTER FOOTER
+       ========================================================================== -->
+  <footer class="wf-footer-wrap" role="contentinfo">
+    <div class="wf-footer-container">
+      <!-- 4 Columns -->
+      <div class="wf-footer-columns">
+        <div>
+          <a href="index.html" class="wf-footer-brand-title">
+            <img src="assets/images/logo-icon.png" alt="Crazy Tours Logo" style="height: 38px; width: 38px; object-fit: cover; border-radius: 8px; display: block;">
+            <span><span class="wf-footer-brand-crazy" style="color: var(--color-sun); font-weight: 700;">Crazy</span> <span class="wf-footer-tagline" style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.75);">Tours & Travels</span></span>
+          </a>
+          <p class="wf-footer-brand-summary">
+            Small-group tours and tailor-made trips, planned by people who have been there.
+          </p>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Destinations</div>
+          <div class="wf-footer-col-links">
+            <a href="destination-detail.html?slug=kashmir" class="wf-footer-link">Kashmir</a>
+            <a href="destination-detail.html?slug=kerala" class="wf-footer-link">Kerala</a>
+            <a href="destination-detail.html?slug=manali" class="wf-footer-link">Kullu-Manali</a>
+            <a href="destination-detail.html?slug=goa" class="wf-footer-link">Goa</a>
+            <a href="destination-detail.html?slug=ladakh" class="wf-footer-link">Ladakh</a>
+            <a href="destinations.html" class="wf-footer-link" style="opacity: 0.65; font-size: 13.5px; margin-top: 4px;">All destinations →</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Packages</div>
+          <div class="wf-footer-col-links">
+            <a href="trip-detail.html?slug=kerala-honeymoon-4d3n" class="wf-footer-link">Kerala Honeymoon Package</a>
+            <a href="trip-detail.html?slug=manali-bachelors-3d2n" class="wf-footer-link">Manali Bachelors Package</a>
+            <a href="trip-detail.html?slug=manali-family-3d2n" class="wf-footer-link">Manali Family Package</a>
+            <a href="trip-detail.html?slug=manali-honeymoon-3d2n" class="wf-footer-link">Manali Honeymoon Package</a>
+            <a href="trip-detail.html?slug=kashmir-winter-group-4d3n" class="wf-footer-link">Kashmir Valley Expedition</a>
+            <a href="trip-detail.html?slug=goa-bachelors-party-4d3n" class="wf-footer-link">Goa Beach & Party Bash</a>
+            <a href="packages.html" class="wf-footer-link" style="opacity: 0.65; font-size: 13.5px; margin-top: 4px;">All packages →</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Company</div>
+          <div class="wf-footer-col-links">
+            <a href="about.html" class="wf-footer-link">About us</a>
+            <a href="contact.html" class="wf-footer-link">Contact</a>
+            <a href="contact.html" class="wf-footer-link">Plan a trip</a>
+            <a href="privacy.html" class="wf-footer-link">Privacy</a>
+            <a href="terms.html" class="wf-footer-link">Terms</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="wf-footer-col-title">Talk to us</div>
+          <div class="wf-footer-col-links">
+            <a href="mailto:crazytraveller11@gmail.com" class="wf-footer-link">crazytraveller11@gmail.com</a>
+            
+            <div class="wf-footer-numbers-list">
+              <div class="wf-footer-number-row">
+                <a href="tel:+918867229998" class="wf-footer-number-link" title="Call +91 88672 29998">+91 88672 29998</a>
+              </div>
+              <div class="wf-footer-number-row">
+                <a href="tel:+918867239998" class="wf-footer-number-link" title="Call +91 88672 39998">+91 88672 39998</a>
+              </div>
+            </div>
+
+            <!-- Social Icons (Instagram, YouTube, Facebook) -->
+            <div class="wf-footer-social-icons">
+              <a href="https://www.instagram.com/crazy_traveller_11?mdxt=MXZmOGpmaWZtenhhag==" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="Instagram" title="Follow us on Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://m.youtube.com/%40crazytraveller_11?fbclid=PAb21jcAU5zQlleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp4dKatBvQnkZYdDgoeYvB1CZ-fvRs1fW6ajAM-JJW38YzVQ94rLsT5MJYv9x_aem_MV-d2AY716zkHvJH6_nYLA" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="YouTube" title="Watch on YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+                </svg>
+              </a>
+              <a href="https://m.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fprofile.php%3Fid%3D100088752910901%26mibextid%3DLQQJ4d%26wtsid%3Drdr_0atRPMvXrz1MYiCNv&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeHSmrQb0J5GWHQ4KHmLwdQmfn70bNX1umowDPiSVt_GM1UPeKy7E-TCWL_cQ_aem_MV-d2AY716zkHvJH6_nYLA" target="_blank" rel="noopener" class="wf-footer-social-icon" aria-label="Facebook" title="Follow us on Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="wf-footer-bottom-bar">
+        <div>© 2026 Crazy Tours and Travels. All rights reserved.</div>
+      </div>
+
+      <!-- Giant Subdued Wordmark -->
+      <div class="wf-footer-wordmark">
+        Crazy Tours
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/wayfare-data.js"></script>
+  <script src="js/wayfare.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Pre-select trip if query param ?trip= exists
+      const params = new URLSearchParams(window.location.search);
+      const tripSlug = params.get('trip');
+      if (tripSlug) {
+        const destSelect = document.getElementById('contact-dest');
+        const notes = document.getElementById('contact-notes');
+        const trip = getWayfareTrip(tripSlug);
+        if (trip && destSelect) {
+          destSelect.value = trip.destination;
+          notes.value = `Enquiring about: ${trip.name} (${trip.duration}).`;
+        }
+      }
+
+      // Contact Form Validation & Genuine Feedback States
+      const form = document.getElementById('contact-enquiry-form');
+      const submitBtn = document.getElementById('contact-submit-btn');
+      const feedback = document.getElementById('contact-feedback');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+
+        if (!name || !email || !email.includes('@')) {
+          feedback.textContent = 'Please provide your name and a valid email address.';
+          feedback.style.color = '#D32F2F';
+          feedback.style.display = 'block';
+          return;
+        }
+
+        // Build structured WhatsApp template
+        const destSelect = document.getElementById('contact-dest');
+        const dest = destSelect ? destSelect.options[destSelect.selectedIndex].text : 'Not specified';
+        const when = document.getElementById('contact-when')?.value.trim() || 'Flexible dates';
+        const notes = document.getElementById('contact-notes')?.value.trim() || 'Looking for recommendations';
+
+        const template = 
+`Hello Crazy Tours! 👋
+
+I'm interested in booking a tour package. Please find my details below.
+
+📍 Package Details
+
+Destination: ${dest}
+Preferred Dates & Group: ${when}
+
+👤 My Details
+
+Name: ${name}
+Email: ${email}
+
+💬 Additional Requirements:
+${notes}
+
+Could you please share the complete itinerary, available dates, and final package price?
+
+Thank you! 😊
+Crazy Tours – Travel Beyond Borders 🌍`;
+
+        // Submitting State
+        submitBtn.classList.add('is-pending');
+        submitBtn.disabled = true;
+        feedback.textContent = 'Opening Crazy Tours WhatsApp...';
+        feedback.style.color = '#128C7E';
+        feedback.style.display = 'block';
+
+        const waUrl = `https://wa.me/918867229998?text=${encodeURIComponent(template)}`;
+        window.open(waUrl, '_blank');
+
+        setTimeout(() => {
+          submitBtn.classList.remove('is-pending');
+          submitBtn.classList.add('is-success');
+          submitBtn.querySelector('.wf-btn-text').textContent = 'Enquiry Sent to WhatsApp!';
+
+          feedback.innerHTML = '<strong>✓ Thank you, ' + name + '!</strong> Details sent to Crazy Tours WhatsApp (+91 88672 29998). Our trip designer will reply promptly with a personalized quote.';
+          feedback.style.color = '#2E7D32';
+
+          form.reset();
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>

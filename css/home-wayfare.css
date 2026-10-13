@@ -1,0 +1,1572 @@
+/* ==========================================================================
+   CRAZY TOURS AND TRAVELS — WAYFARE EDITORIAL HOMEPAGE SYSTEM
+   Inspired by Framer Tour Operator / Editorial Luxury Design System
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL TOKENS & RESET FOR HOMEPAGE
+   -------------------------------------------------------------------------- */
+.home-page {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home-section {
+  padding: clamp(90px, 11vw, 150px) 0;
+  position: relative;
+}
+
+.home-section-tight {
+  padding: clamp(60px, 8vw, 100px) 0;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(20px, 4vw, 48px);
+  padding-right: clamp(20px, 4vw, 48px);
+}
+
+.home-container-wide {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 3vw, 36px);
+  padding-right: clamp(16px, 3vw, 36px);
+}
+
+/* Typography Utilities */
+.editorial-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.editorial-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.editorial-tag::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.editorial-tag-light {
+  color: rgba(245, 239, 228, 0.8);
+}
+.editorial-tag-light::before {
+  background-color: #FFA07A;
+}
+
+/* --------------------------------------------------------------------------
+   2. FLOATING ROUNDED HEADER (WAYFARE PILL NAVIGATION)
+   -------------------------------------------------------------------------- */
+.wf-header-floating {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), top 0.3s ease;
+}
+
+.wf-header-pill {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(20px, 3.5vw, 44px);
+  height: 62px;
+  padding: 0 10px 0 24px;
+  border-radius: 999px;
+  background: rgba(252, 249, 243, 0.88);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(33, 30, 26, 0.08);
+  box-shadow: 0 12px 40px rgba(33, 29, 22, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] .wf-header-pill {
+  background: rgba(26, 23, 18, 0.85);
+  border-color: rgba(245, 239, 228, 0.12);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.wf-header-pill.scrolled {
+  height: 56px;
+  box-shadow: 0 16px 48px rgba(33, 29, 22, 0.12);
+}
+
+.wf-nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.2vw, 32px);
+}
+
+.wf-nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0.8;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.wf-nav-links a:hover,
+.wf-nav-links a.active {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.wf-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wf-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wf-pill-btn:hover {
+  background: var(--accent);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(234, 46, 0, 0.28);
+}
+
+[data-theme="dark"] .wf-pill-btn {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+[data-theme="dark"] .wf-pill-btn:hover {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+.wf-header-actions .mobile-nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--text-primary);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.wf-header-actions .mobile-nav-toggle:hover {
+  background: rgba(33, 30, 26, 0.06);
+  color: var(--accent);
+}
+
+[data-theme="dark"] .wf-header-actions .mobile-nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .wf-header-actions .mobile-nav-toggle {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .wf-header-pill {
+    padding: 0 10px 0 16px;
+    gap: 12px;
+  }
+  .wf-header-actions .wf-pill-btn {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. CINEMATIC HERO SECTION
+   -------------------------------------------------------------------------- */
+.wf-hero-wrap {
+  width: 100%;
+  padding: 14px 16px 0;
+}
+
+.wf-hero-card {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: clamp(620px, 88vh, 880px);
+  border-radius: clamp(24px, 3.5vw, 36px);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(48px, 8vw, 100px) clamp(24px, 5vw, 72px);
+  box-shadow: 0 24px 70px rgba(33, 29, 22, 0.15);
+}
+
+.wf-hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.04);
+  opacity: 0;
+  transition: transform 1.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.4s ease;
+  z-index: 1;
+}
+
+.wf-hero-media.loaded {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.wf-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 17, 13, 0.25) 0%,
+    rgba(21, 17, 13, 0.35) 40%,
+    rgba(21, 17, 13, 0.88) 100%
+  );
+  z-index: 2;
+}
+
+.wf-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 880px;
+  color: #F5EFE4;
+}
+
+.wf-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #F5EFE4;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+}
+
+.wf-hero-badge.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 7vw, 6.2rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s;
+}
+
+.wf-hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: #FFA07A;
+}
+
+.wf-hero-title.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-hero-desc {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.6;
+  color: rgba(245, 239, 228, 0.88);
+  max-width: 620px;
+  margin-bottom: 36px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.5s;
+}
+
+.wf-hero-desc.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.65s;
+}
+
+.wf-hero-actions.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: #FFFFFF;
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 30px rgba(234, 46, 0, 0.35);
+}
+
+.wf-btn-hero-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(234, 46, 0, 0.45);
+}
+
+.wf-btn-hero-glass {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.wf-btn-hero-glass:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.wf-hero-scroll {
+  position: absolute;
+  bottom: 32px;
+  right: clamp(24px, 5vw, 72px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(245, 239, 228, 0.7);
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 1s ease 0.8s;
+}
+
+.wf-hero-scroll.in-view {
+  opacity: 1;
+}
+
+.wf-hero-scroll:hover {
+  color: #FFFFFF;
+}
+
+.wf-scroll-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.6); opacity: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   4. PHILOSOPHY SECTION ("OUR PROMISE")
+   -------------------------------------------------------------------------- */
+.wf-promise-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(40px, 6vw, 84px);
+  align-items: start;
+}
+
+.wf-promise-statement {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.wf-promise-statement span.reveal-word {
+  opacity: 0.2;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wf-promise-statement.in-view span.reveal-word {
+  opacity: 1;
+}
+
+.wf-promise-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.wf-promise-copy p.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.wf-editorial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 8px;
+  transition: transform 0.2s ease, gap 0.2s ease;
+}
+
+.wf-editorial-link:hover {
+  gap: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   5. STATISTICS CARD
+   -------------------------------------------------------------------------- */
+.wf-stats-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 28px;
+  padding: clamp(36px, 5vw, 60px) clamp(24px, 4vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  box-shadow: 0 10px 40px rgba(33, 29, 22, 0.05);
+  margin-top: clamp(60px, 8vw, 100px);
+}
+
+.wf-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wf-stat-num {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.wf-stat-num span {
+  color: var(--accent);
+}
+
+.wf-stat-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   6. DESTINATIONS SECTION
+   -------------------------------------------------------------------------- */
+.wf-section-head-split {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: clamp(36px, 5vw, 60px);
+}
+
+.wf-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.wf-dest-card {
+  position: relative;
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 24px;
+  box-shadow: 0 12px 36px rgba(33, 29, 22, 0.1);
+  background: var(--bg-card);
+}
+
+.wf-dest-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.wf-dest-card:hover .wf-dest-img {
+  transform: scale(1.05);
+}
+
+.wf-dest-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 17, 13, 0) 0%,
+    rgba(21, 17, 13, 0.3) 45%,
+    rgba(21, 17, 13, 0.9) 100%
+  );
+  z-index: 2;
+  transition: opacity 0.4s ease;
+}
+
+.wf-dest-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wf-dest-card:hover .wf-dest-content {
+  transform: translateY(-4px);
+}
+
+.wf-dest-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.wf-dest-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.wf-dest-desc {
+  font-size: 0.85rem;
+  color: rgba(245, 239, 228, 0.85);
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.wf-dest-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #FFA07A;
+}
+
+.wf-dest-action svg {
+  transition: transform 0.3s ease;
+}
+
+.wf-dest-card:hover .wf-dest-action svg {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   7. KERALA & TOUR PACKAGE CARDS (3-COLUMN EDITORIAL GRID)
+   -------------------------------------------------------------------------- */
+.wf-package-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wf-pkg-card,
+.wf-package-card {
+  background: var(--bg-card, #FAF7F0);
+  border: 1px solid var(--border-subtle, rgba(36, 34, 31, 0.08));
+  border-radius: 26px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.25s ease;
+  box-shadow: 0 8px 24px rgba(33, 29, 22, 0.04);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+[data-theme="dark"] .wf-pkg-card,
+[data-theme="dark"] .wf-package-card {
+  background: #24201B;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.wf-pkg-card:hover,
+.wf-package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(33, 29, 22, 0.09);
+  border-color: rgba(234, 46, 0, 0.25);
+}
+
+.wf-pkg-media-wrap,
+.wf-package-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9.5;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #EAE2D3;
+}
+
+.wf-pkg-img,
+.wf-package-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wf-pkg-card:hover .wf-pkg-img,
+.wf-package-card:hover .wf-package-media img {
+  transform: scale(1.05);
+}
+
+.wf-pkg-badges,
+.wf-package-badges {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.wf-pill-glass,
+.wf-badge-duration {
+  background: rgba(20, 18, 16, 0.65);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.wf-pill-category,
+.wf-badge-category {
+  background: #FAF7F0;
+  color: var(--accent, #EA2E00);
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .wf-pill-category,
+[data-theme="dark"] .wf-badge-category {
+  background: #2C2824;
+  color: #FF5A36;
+}
+
+.wf-pkg-body,
+.wf-package-content {
+  padding: 18px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wf-pkg-location,
+.wf-package-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-secondary, #77736B);
+  margin-bottom: 8px;
+}
+
+.wf-package-sep {
+  opacity: 0.4;
+}
+
+.wf-pkg-title,
+.wf-package-title {
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.wf-pkg-route,
+.wf-package-route {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent, #EA2E00);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.wf-pkg-desc,
+.wf-package-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary, #77736B);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.wf-pkg-inclusions,
+.wf-package-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.wf-inc-tag,
+.wf-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 9999px;
+  background: #EFE8DB;
+  border: 1px solid rgba(36, 34, 31, 0.05);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary, #332F2A);
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .wf-inc-tag,
+[data-theme="dark"] .wf-chip {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #E2DDD5;
+}
+
+/* Price Section */
+.wf-package-pricing,
+.wf-pkg-footer-price {
+  border-top: 1px solid var(--border-subtle, rgba(36, 34, 31, 0.08));
+  padding-top: 14px;
+  margin-bottom: 14px;
+  margin-top: auto;
+}
+
+[data-theme="dark"] .wf-package-pricing,
+[data-theme="dark"] .wf-pkg-footer-price {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.wf-package-tariff-label,
+.wf-price-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--text-muted, #8F8B83);
+  margin-bottom: 3px;
+}
+
+.wf-package-price-val,
+.wf-price-val {
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--accent, #EA2E00);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Single Full-Width Primary CTA Button (NO WhatsApp, NO Enquire Now) */
+.wf-package-cta,
+.wf-btn-pkg-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px 24px;
+  border-radius: 9999px;
+  background: var(--accent, #EA2E00);
+  color: #FFFFFF !important;
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(234, 46, 0, 0.22);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+.wf-package-cta:hover,
+.wf-btn-pkg-full:hover {
+  background: #D32700;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(234, 46, 0, 0.3);
+}
+
+.wf-package-cta .wf-package-cta-arrow,
+.wf-btn-pkg-full .wf-package-cta-arrow {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wf-package-cta:hover .wf-package-cta-arrow,
+.wf-btn-pkg-full:hover .wf-package-cta-arrow {
+  transform: translateX(6px);
+}
+
+/* --------------------------------------------------------------------------
+   8. TRAVEL STYLES ("WAYS TO TRAVEL") — DARK INTERACTIVE SECTION
+   -------------------------------------------------------------------------- */
+.wf-travel-styles-card {
+  background: #1F1B15;
+  border-radius: 32px;
+  padding: clamp(40px, 6vw, 76px);
+  color: #F5EFE4;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(36px, 5vw, 72px);
+  align-items: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.wf-styles-left-media {
+  position: relative;
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #16130F;
+}
+
+.wf-styles-left-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease;
+}
+
+.wf-styles-left-media img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wf-styles-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(31, 27, 21, 0) 50%, rgba(31, 27, 21, 0.85) 100%);
+  z-index: 2;
+}
+
+.wf-styles-media-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 3;
+}
+
+.wf-styles-caption-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.wf-styles-caption-sub {
+  font-size: 0.88rem;
+  color: rgba(245, 239, 228, 0.8);
+}
+
+.wf-styles-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.wf-styles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.wf-style-nav-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.wf-style-nav-item:hover,
+.wf-style-nav-item.active {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.wf-style-nav-item.active {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(234, 46, 0, 0.4);
+}
+
+.wf-style-num {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--accent);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wf-style-item-content h4 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.wf-style-nav-item.active .wf-style-item-content h4 {
+  color: #FFA07A;
+}
+
+.wf-style-item-content p {
+  font-size: 0.88rem;
+  color: rgba(245, 239, 228, 0.7);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   9. CRAZY TOURS STANDARD (3x2 FEATURE GRID)
+   -------------------------------------------------------------------------- */
+.wf-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wf-feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 36px 30px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.wf-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(33, 29, 22, 0.06);
+}
+
+.wf-feature-num {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.wf-feature-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.wf-feature-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   10. HOW IT WORKS (3 EDITORIAL STEPS)
+   -------------------------------------------------------------------------- */
+.wf-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.wf-step-card {
+  position: relative;
+  padding: 32px 0;
+  border-top: 1.5px solid var(--border-medium);
+  display: flex;
+  flex-direction: column;
+}
+
+.wf-step-num {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.wf-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.wf-step-desc {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   11. TESTIMONIALS (REAL MEMORIES)
+   -------------------------------------------------------------------------- */
+.wf-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wf-quote-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 26px;
+  padding: 38px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 32px rgba(33, 29, 22, 0.04);
+}
+
+.wf-quote-mark {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: -10px;
+}
+
+.wf-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin-bottom: 28px;
+}
+
+.wf-quote-author-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wf-quote-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wf-quote-author-name {
+  font-weight: 700;
+  font-size: 0.94rem;
+  color: var(--text-primary);
+}
+
+.wf-quote-author-dest {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   12. WHAT'S INCLUDED (6 PILLARS)
+   -------------------------------------------------------------------------- */
+.wf-included-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wf-included-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 22px;
+  padding: 28px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.wf-included-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-light);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wf-included-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.wf-included-content p {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   13. JOURNAL / STORIES FROM THE ROAD
+   -------------------------------------------------------------------------- */
+.wf-journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wf-journal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 26px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.wf-journal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(33, 29, 22, 0.08);
+}
+
+.wf-journal-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.wf-journal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wf-journal-card:hover .wf-journal-img {
+  transform: scale(1.05);
+}
+
+.wf-journal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wf-journal-category {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.wf-journal-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.wf-journal-excerpt {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.wf-journal-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.wf-journal-card:hover .wf-journal-link {
+  gap: 10px;
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   14. FAQ ACCORDION
+   -------------------------------------------------------------------------- */
+.wf-faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wf-faq-item {
+  border-bottom: 1px solid var(--border-medium);
+  transition: background 0.2s ease;
+}
+
+.wf-faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 26px 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.wf-faq-question:hover {
+  color: var(--accent);
+}
+
+.wf-faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease;
+}
+
+.wf-faq-item.active .wf-faq-icon {
+  transform: rotate(45deg);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+}
+
+.wf-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.wf-faq-item.active .wf-faq-answer {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.wf-faq-answer-inner {
+  padding-bottom: 26px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   15. FINAL CINEMATIC CTA
+   -------------------------------------------------------------------------- */
+.wf-final-cta-wrap {
+  width: 100%;
+  padding: 0 clamp(16px, 3vw, 36px) clamp(40px, 6vw, 80px);
+}
+
+.wf-final-cta-card {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 540px;
+  border-radius: clamp(24px, 3.5vw, 36px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 60px);
+  box-shadow: 0 24px 60px rgba(33, 29, 22, 0.12);
+}
+
+.wf-final-cta-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.wf-final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(21, 17, 13, 0.65) 0%, rgba(21, 17, 13, 0.88) 100%);
+  z-index: 2;
+}
+
+.wf-final-cta-content {
+  position: relative;
+  z-index: 3;
+  max-width: 760px;
+  color: #F5EFE4;
+}
+
+.wf-final-cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wf-final-cta-desc {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: rgba(245, 239, 228, 0.85);
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+/* --------------------------------------------------------------------------
+
+
+/* --------------------------------------------------------------------------
+   17. RESPONSIVE BREAKPOINTS (EDITORIAL REFLOW)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .wf-destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wf-package-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wf-stats-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+  .wf-travel-styles-card {
+    grid-template-columns: 1fr;
+  }
+  .wf-styles-left-media {
+    height: 380px;
+  }
+  .wf-features-grid,
+  .wf-steps-grid,
+  .wf-testimonials-grid,
+  .wf-included-grid,
+  .wf-journal-grid {
+  }
+}
+
+@media (max-width: 820px) {
+  .wf-nav-links {
+    display: none; /* Mobile menu active */
+  }
+  .wf-header-pill {
+    padding: 0 8px 0 16px;
+    height: 56px;
+  }
+  .wf-promise-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .wf-package-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .wf-destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .wf-features-grid,
+  .wf-steps-grid,
+  .wf-testimonials-grid,
+  .wf-included-grid,
+  .wf-journal-grid {
+    grid-template-columns: 1fr;
+  }
+  .wf-stats-card {
+  }
+  .wf-hero-card {
+    min-height: 560px;
+    padding: 36px 20px;
+  }
+  .wf-hero-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .wf-stats-card {
+    grid-template-columns: 1fr;
+  }
+  .wf-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .wf-btn-hero-primary,
+  .wf-btn-hero-glass {
+    justify-content: center;
+    width: 100%;
+  }
+}
