@@ -17,8 +17,8 @@ const kashmirPackages = sandbox.getKashmirPackages();
 const goaPackages = sandbox.getGoaPackages();
 const manaliPackages = sandbox.getManaliPackages();
 
-// 2. Load existing wayfare-data.js to retain existing classic trips (Rajasthan, Ladakh, Andaman, Himachal Circuit)
-let wfCode = fs.readFileSync('js/wayfare-data.js', 'utf8');
+// 2. Load existing crazy-travels-data.js to retain existing classic trips (Rajasthan, Ladakh, Andaman, Himachal Circuit)
+let wfCode = fs.readFileSync('js/crazy-travels-data.js', 'utf8');
 let wfSandbox = {};
 vm.createContext(wfSandbox);
 vm.runInContext(wfCode.replace('const WAYFARE_DATA', 'var WAYFARE_DATA'), wfSandbox);

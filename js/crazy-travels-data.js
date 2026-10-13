@@ -2,7 +2,7 @@
  * CRAZY TOURS AND TRAVELS — MASTER DATA MODEL
  */
 
-const WAYFARE_DATA = {
+const CRAZY_TRAVELS_DATA = {
   "brand": {
     "name": "Crazy Tours and Travels",
     "shortName": "Crazy Tours",
@@ -2727,45 +2727,65 @@ const WAYFARE_DATA = {
   ]
 };
 
+const WAYFARE_DATA = CRAZY_TRAVELS_DATA;
+
 // ----------------------------------------------------------------------------
 // HELPER LOOKUP FUNCTIONS
 // ----------------------------------------------------------------------------
-function getWayfareTrip(slugOrId) {
-  if (!slugOrId) return WAYFARE_DATA.trips[0];
-  const found = WAYFARE_DATA.trips.find(t => t.slug === slugOrId || t.id === slugOrId);
-  return found || WAYFARE_DATA.trips[0];
+function getCrazyTravelsTrip(slugOrId) {
+  if (!slugOrId) return CRAZY_TRAVELS_DATA.trips[0];
+  const found = CRAZY_TRAVELS_DATA.trips.find(t => t.slug === slugOrId || t.id === slugOrId);
+  return found || CRAZY_TRAVELS_DATA.trips[0];
 }
+const getWayfareTrip = getCrazyTravelsTrip;
 
-function getWayfareDestination(slugOrId) {
-  if (!slugOrId) return WAYFARE_DATA.destinations[0];
-  const found = WAYFARE_DATA.destinations.find(d => d.slug === slugOrId || d.id === slugOrId);
-  return found || WAYFARE_DATA.destinations[0];
+function getCrazyTravelsDestination(slugOrId) {
+  if (!slugOrId) return CRAZY_TRAVELS_DATA.destinations[0];
+  const found = CRAZY_TRAVELS_DATA.destinations.find(d => d.slug === slugOrId || d.id === slugOrId);
+  return found || CRAZY_TRAVELS_DATA.destinations[0];
 }
+const getWayfareDestination = getCrazyTravelsDestination;
 
-function getWayfareArticle(slugOrId) {
-  if (!slugOrId) return WAYFARE_DATA.articles[0];
-  const found = WAYFARE_DATA.articles.find(a => a.slug === slugOrId || a.id === slugOrId);
-  return found || WAYFARE_DATA.articles[0];
+function getCrazyTravelsArticle(slugOrId) {
+  if (!slugOrId) return CRAZY_TRAVELS_DATA.articles[0];
+  const found = CRAZY_TRAVELS_DATA.articles.find(a => a.slug === slugOrId || a.id === slugOrId);
+  return found || CRAZY_TRAVELS_DATA.articles[0];
 }
+const getWayfareArticle = getCrazyTravelsArticle;
 
 function getTripsByDestination(destSlug) {
-  return WAYFARE_DATA.trips.filter(t => t.destination.toLowerCase() === destSlug.toLowerCase());
+  return CRAZY_TRAVELS_DATA.trips.filter(t => t.destination.toLowerCase() === destSlug.toLowerCase());
 }
 
 function getTripsByStyle(styleSlug) {
-  return WAYFARE_DATA.trips.filter(t => t.travelStyle.toLowerCase() === styleSlug.toLowerCase());
+  return CRAZY_TRAVELS_DATA.trips.filter(t => t.travelStyle.toLowerCase() === styleSlug.toLowerCase());
 }
 
 // Global attachment
 if (typeof window !== 'undefined') {
-  window.WAYFARE_DATA = WAYFARE_DATA;
-  window.getWayfareTrip = getWayfareTrip;
-  window.getWayfareDestination = getWayfareDestination;
-  window.getWayfareArticle = getWayfareArticle;
+  window.CRAZY_TRAVELS_DATA = CRAZY_TRAVELS_DATA;
+  window.WAYFARE_DATA = CRAZY_TRAVELS_DATA;
+  window.getCrazyTravelsTrip = getCrazyTravelsTrip;
+  window.getWayfareTrip = getCrazyTravelsTrip;
+  window.getCrazyTravelsDestination = getCrazyTravelsDestination;
+  window.getWayfareDestination = getCrazyTravelsDestination;
+  window.getCrazyTravelsArticle = getCrazyTravelsArticle;
+  window.getWayfareArticle = getCrazyTravelsArticle;
   window.getTripsByDestination = getTripsByDestination;
   window.getTripsByStyle = getTripsByStyle;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { WAYFARE_DATA, getWayfareTrip, getWayfareDestination, getWayfareArticle, getTripsByDestination, getTripsByStyle };
+  module.exports = {
+    CRAZY_TRAVELS_DATA,
+    WAYFARE_DATA,
+    getCrazyTravelsTrip,
+    getWayfareTrip,
+    getCrazyTravelsDestination,
+    getWayfareDestination,
+    getCrazyTravelsArticle,
+    getWayfareArticle,
+    getTripsByDestination,
+    getTripsByStyle
+  };
 }

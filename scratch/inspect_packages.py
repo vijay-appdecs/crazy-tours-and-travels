@@ -25,9 +25,9 @@ else:
     # let's find destinations
     print("tours.js length:", len(content))
 
-# Also inspect wayfare-data.js trips
-with open('js/wayfare-data.js', 'r', encoding='utf-8') as f:
+# Also inspect crazy-travels-data.js trips
+with open('js/crazy-travels-data.js', 'r', encoding='utf-8') as f:
     wf_content = f.read()
 
 trip_ids = re.findall(r'id:\s*["\']([^"\']+)["\']', wf_content)
-print(f"wayfare-data.js has {len(trip_ids)} ids in total")
+print(f"crazy-travels-data.js has {len(trip_ids)} ids in total")

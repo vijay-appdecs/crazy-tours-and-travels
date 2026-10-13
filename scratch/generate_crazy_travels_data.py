@@ -953,7 +953,7 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 '''
 
-with open('js/wayfare-data.js', 'w', encoding='utf-8') as f:
+with open('js/crazy-travels-data.js', 'w', encoding='utf-8') as f:
     f.write(data_js_content.strip())
 
-print("Successfully written js/wayfare-data.js!")
+print("Successfully written js/crazy-travels-data.js!")

@@ -1,5 +1,5 @@
 /**
- * WAYFARE TRAVEL AGENCY — CORE JAVASCRIPT ENGINE
+ * CRAZY TRAVELS — CORE JAVASCRIPT ENGINE
  * Handles navigation, mobile drawer, theme switching, newsletter validation,
  * inquiry modal, scroll reveal motion, FAQ accordions, and interactive tabs.
  */
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 1. THEME TOGGLE (Light / Dark Mode with Persistence)
 // ----------------------------------------------------------------------------
 function initTheme() {
-  const savedTheme = localStorage.getItem('wayfare_theme') || 'light';
+  const savedTheme = localStorage.getItem('crazy_travels_theme') || localStorage.getItem('wayfare_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeButtons(savedTheme);
 
@@ -29,6 +29,7 @@ function initTheme() {
       const current = document.documentElement.getAttribute('data-theme') || 'light';
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('crazy_travels_theme', next);
       localStorage.setItem('wayfare_theme', next);
       updateThemeButtons(next);
     });
@@ -440,7 +441,7 @@ function initInquiryModal() {
       if (text) text.textContent = 'Enquiry Sent!';
 
       if (statusMsg) {
-        statusMsg.textContent = '✓ Thank you! A Wayfare trip designer will reply within one working day.';
+        statusMsg.textContent = '✓ Thank you! A Crazy Travels trip designer will reply within one working day.';
         statusMsg.style.color = '#2E7D32';
       }
 

@@ -17,8 +17,8 @@ const kashmirPackages = sandbox.getKashmirPackages();
 const goaPackages = sandbox.getGoaPackages();
 const manaliPackages = sandbox.getManaliPackages();
 
-// 2. Load existing wayfare-data.js
-let wfCode = fs.readFileSync('js/wayfare-data.js', 'utf8');
+// 2. Load existing crazy-travels-data.js
+let wfCode = fs.readFileSync('js/crazy-travels-data.js', 'utf8');
 let wfSandbox = {};
 vm.createContext(wfSandbox);
 vm.runInContext(wfCode.replace('const WAYFARE_DATA', 'var WAYFARE_DATA'), wfSandbox);
@@ -325,5 +325,5 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 `;
 
-fs.writeFileSync('js/wayfare-data.js', fullJsContent, 'utf8');
-console.log('Successfully wrote js/wayfare-data.js with', allTrips.length, 'trips!');
+fs.writeFileSync('js/crazy-travels-data.js', fullJsContent, 'utf8');
+console.log('Successfully wrote js/crazy-travels-data.js with', allTrips.length, 'trips!');

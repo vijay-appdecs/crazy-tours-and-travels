@@ -1,5 +1,5 @@
 const fs = require('fs');
-let code = fs.readFileSync('js/wayfare-data.js', 'utf8');
+let code = fs.readFileSync('js/crazy-travels-data.js', 'utf8');
 code = code.replace('const WAYFARE_DATA', 'var WAYFARE_DATA');
 const vm = require('vm');
 const sandbox = {};

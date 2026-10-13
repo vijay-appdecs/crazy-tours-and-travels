@@ -1,5 +1,5 @@
 /* ==========================================================================
-   WAYFARE PAGES & SECTION STYLES
+   CRAZY TRAVELS PAGES & SECTION STYLES
    Exact layout rhythm, spacing, cards, statement typography, interactive
    travel styles, and photo windows matching Framer Wayfare reference.
    ========================================================================== */
@@ -486,29 +486,40 @@
   color: var(--color-ink);
 }
 
-.wf-trips-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
+.wf-trips-grid-3,
 .wf-trips-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
+.wf-trips-grid-3 .wf-trip-card,
 .wf-trips-grid-4 .wf-trip-card {
   height: 450px;
   padding: 20px;
 }
 
+.wf-trips-grid-3 .wf-trip-card-top,
+.wf-trips-grid-4 .wf-trip-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.wf-trips-grid-3 .wf-chip,
+.wf-trips-grid-4 .wf-chip {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.wf-trips-grid-3 .wf-trip-card-title,
 .wf-trips-grid-4 .wf-trip-card-title {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.25;
 }
 
 @media (max-width: 1200px) {
+  .wf-trips-grid-3,
   .wf-trips-grid-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -516,6 +527,7 @@
 }
 
 @media (max-width: 640px) {
+  .wf-trips-grid-3,
   .wf-trips-grid-4 {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -1132,7 +1144,8 @@
   .wf-destinations-grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .wf-trips-grid-3 {
+  .wf-trips-grid-3,
+  .wf-trips-grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
   .wf-styles-layout {
@@ -1164,7 +1177,8 @@
   .wf-destinations-grid-4 {
     grid-template-columns: 1fr;
   }
-  .wf-trips-grid-3 {
+  .wf-trips-grid-3,
+  .wf-trips-grid-4 {
     grid-template-columns: 1fr;
   }
   .wf-reviews-grid-4 {
