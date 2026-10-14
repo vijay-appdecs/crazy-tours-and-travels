@@ -78,6 +78,8 @@ html {
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -206,10 +208,10 @@ button, input, select, textarea {
 
 .wf-nav-wordmark {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
   color: var(--color-sun) !important;
 }
 
@@ -628,8 +630,8 @@ button, input, select, textarea {
   width: 100%;
   max-width: var(--site-max-width, 1440px);
   margin: 0 auto;
-  height: 68px;
-  padding: 0 36px;
+  height: 76px;
+  padding: 0 40px;
   background-color: transparent !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
@@ -642,16 +644,22 @@ button, input, select, textarea {
 .wf-nav-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   text-decoration: none;
 }
 
 .wf-nav-brand img {
-  height: 30px !important;
-  width: 30px !important;
+  height: 48px !important;
+  width: 48px !important;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 10px;
   display: block;
+  flex-shrink: 0;
+  transition: transform 250ms ease;
+}
+
+.wf-nav-brand:hover img {
+  transform: scale(1.04);
 }
 
 .wf-nav-brand-text {
@@ -663,19 +671,22 @@ button, input, select, textarea {
 
 .wf-nav-wordmark {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 22px;
   color: var(--color-sun) !important;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
 }
 
 .wf-nav-tagline {
   font-family: var(--font-sans);
-  font-size: 8.5px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--color-sun);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
+  line-height: 1.15;
+  margin-top: 2px;
 }
 
 .wf-nav-icon-kite {
@@ -1520,8 +1531,26 @@ noscript .wf-reveal-words span {
 
 @media (max-width: 860px) {
   .wf-nav-pill-bar {
-    height: 60px;
-    padding: 0 20px;
+    height: 64px;
+    padding: 0 16px;
+  }
+
+  .wf-nav-brand {
+    gap: 9px;
+  }
+
+  .wf-nav-brand img {
+    height: 38px !important;
+    width: 38px !important;
+    border-radius: 8px;
+  }
+
+  .wf-nav-wordmark {
+    font-size: 18px !important;
+  }
+
+  .wf-nav-tagline {
+    font-size: 9.5px !important;
   }
 
   .wf-nav-links-desktop {
@@ -1531,6 +1560,18 @@ noscript .wf-reveal-words span {
   .wf-nav-mobile-toggle {
     display: flex;
   }
+}
+
+.wf-mobile-drawer .wf-nav-brand img {
+  height: 38px !important;
+  width: 38px !important;
+  border-radius: 8px;
+}
+.wf-mobile-drawer .wf-nav-wordmark {
+  font-size: 18px !important;
+}
+.wf-mobile-drawer .wf-nav-tagline {
+  font-size: 9.5px !important;
 }
 
 @media (max-width: 1199px) {

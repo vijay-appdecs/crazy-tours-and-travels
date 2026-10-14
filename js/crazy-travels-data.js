@@ -146,103 +146,9 @@ const CRAZY_TRAVELS_DATA = {
         "Mandovi river sunset cruise with Goan folk music and DJ deck",
         "Heritage walking tour through the colorful Latin Quarter of Fontainhas"
       ]
-    },
-    {
-      "id": "japan",
-      "slug": "japan",
-      "name": "Japan",
-      "region": "East Asia",
-      "tagline": "Temples, trains and mountain post towns",
-      "bestTime": "March to May (Cherry Blossoms), Oct to Nov (Autumn Foliage)",
-      "intro": "Temples, trains and mountain post towns. Walk beneath vermilion torii gates at dawn, cross high alpine cedar passes on the historic Nakasendo trail, ride the Tokaido Shinkansen past Mount Fuji, and sleep on fragrant tatami mats in heritage wooden ryokans with our local bilingual leaders.",
-      "primaryPhoto": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1920&q=85",
-      "secondaryPhoto": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1600&q=80",
-      "overview": "From Kyoto's quiet moss gardens and centuries-old wooden shrines to the neon hum of Tokyo and hot spring hamlets of Hakone, Japan weaves ancient discipline with ultra-modern grace. We take care of Japan Rail passes, private English and Telugu guides, and secluded ryokan reservations.",
-      "highlights": [
-        "Sunrise over Kyoto's Kiyomizudera and preserved Gion geisha districts",
-        "Bullet train journey past snow-capped Mount Fuji with Ekiben bento lunch",
-        "Hiking the preserved cobblestone post-towns of Magome and Tsumago"
-      ]
     }
   ],
   "trips": [
-    {
-      "id": "japan-autumn-classic-8d",
-      "slug": "japan-autumn-classic-8d",
-      "name": "Japan: Ancient Temples & Alpine Trails",
-      "destination": "japan",
-      "destinationName": "Japan",
-      "travelStyle": "culture",
-      "styleName": "Heritage & Living Culture",
-      "days": 8,
-      "duration": "8D/7N",
-      "price": 185000,
-      "priceFormatted": "from ₹1,85,000",
-      "groupSize": "Small Group (Max 12)",
-      "pace": "Moderate & Cultural",
-      "season": "Spring & Autumn",
-      "nextDeparture": "March & October 2027",
-      "place": "Tokyo → Hakone → Kyoto → Nara → Osaka",
-      "featured": true,
-      "summary": "An 8-day cinematic journey from Tokyo's neon alleys to Kyoto's serene temple gardens, Hakone hot springs, and ancient cedar mountain trails.",
-      "overview": "Curated for travelers seeking deep cultural resonance. Includes 7-day JR rail pass, authentic onsen ryokan stays with multi-course Kaiseki dinners, and private local guide access.",
-      "photos": [
-        "https://images.pexels.com/photos/35181432/pexels-photo-35181432.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
-        "https://images.pexels.com/photos/18234078/pexels-photo-18234078.jpeg?auto=compress&cs=tinysrgb&w=1200"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Tokyo: Neon Lights & Shinjuku Walk",
-          "description": "Land at Tokyo Haneda/Narita. Private airport greeting and transfer to hotel in Shinjuku. Evening welcome dinner with local ramen and skyline views.",
-          "thumbnail": "https://images.pexels.com/photos/35568183/pexels-photo-35568183.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 2,
-          "title": "Tokyo Heritage: Asakusa Sensoji & Meiji Shrine",
-          "description": "Explore ancient Sensoji temple, walk through the tranquil forests of Meiji Jingu shrine, and witness the bustling Shibuya crossing.",
-          "thumbnail": "https://images.pexels.com/photos/20255540/pexels-photo-20255540.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 3,
-          "title": "Hakone Hot Springs & Mount Fuji Vistas",
-          "description": "Scenic train to Hakone. Cruise Lake Ashi with views of Mount Fuji and check into an authentic hot spring ryokan with traditional onsen baths.",
-          "thumbnail": "https://images.pexels.com/photos/8896605/pexels-photo-8896605.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 4,
-          "title": "Shinkansen Bullet Train to Kyoto & Gion Sunset",
-          "description": "Board the high-speed Shinkansen to Kyoto. Tour the lantern-lit wooden tea houses of Gion and sample seasonal Kyoto matcha sweets.",
-          "thumbnail": "https://images.pexels.com/photos/27241387/pexels-photo-27241387.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 5,
-          "title": "Arashiyama Bamboo Forest & Golden Pavilion",
-          "description": "Serenity in Arashiyama bamboo groves, followed by the gold-leaf reflection of Kinkaku-ji temple and Ryoanji rock garden.",
-          "thumbnail": "https://images.pexels.com/photos/35181469/pexels-photo-35181469.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 6,
-          "title": "Fushimi Inari Torii Path & Nara Deer Park",
-          "description": "Hike the 10,000 red torii gates of Fushimi Inari before heading to Nara to see the Great Buddha of Todai-ji and bow to sacred deer.",
-          "thumbnail": "https://images.pexels.com/photos/26946364/pexels-photo-26946364.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 7,
-          "title": "Osaka Food Haven: Dotonbori Street Eats",
-          "description": "Travel to vibrant Osaka, experience street food culture in Dotonbori, and tour the historic ramparts of Osaka Castle.",
-          "thumbnail": "https://images.pexels.com/photos/30700527/pexels-photo-30700527.jpeg?auto=compress&cs=tinysrgb&w=800"
-        },
-        {
-          "day": 8,
-          "title": "Farewell Japan & Kansai Airport Departure",
-          "description": "Final morning souvenir shopping and matcha tasting before transfer to Kansai International Airport for your flight home.",
-          "thumbnail": "https://images.pexels.com/photos/31193736/pexels-photo-31193736.jpeg?auto=compress&cs=tinysrgb&w=800"
-        }
-      ],
-      "coverImage": "https://images.pexels.com/photos/35181432/pexels-photo-35181432.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    },
     {
       "id": "kerala-honeymoon-5d4n",
       "slug": "kerala-honeymoon-5d4n",
@@ -421,6 +327,7 @@ const CRAZY_TRAVELS_DATA = {
       "destinationName": "Kerala",
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
+      "styles": ["beach-islands"],
       "days": 5,
       "duration": "5D/4N",
       "price": 24500,
@@ -564,6 +471,7 @@ const CRAZY_TRAVELS_DATA = {
       "destinationName": "Kerala",
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
+      "styles": ["beach-islands"],
       "days": 6,
       "duration": "6D/5N",
       "price": 29400,
@@ -766,6 +674,7 @@ const CRAZY_TRAVELS_DATA = {
       "destinationName": "Kerala",
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
+      "styles": ["beach-islands"],
       "days": 5,
       "duration": "5D/4N",
       "price": 12000,
@@ -834,6 +743,7 @@ const CRAZY_TRAVELS_DATA = {
       "destinationName": "Kerala",
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
+      "styles": ["beach-islands"],
       "days": 6,
       "duration": "6D/5N",
       "price": 14400,
@@ -1317,8 +1227,8 @@ const CRAZY_TRAVELS_DATA = {
       "name": "Goa Bachelors Beach, Watersports & Nightlife Bash",
       "destination": "goa",
       "destinationName": "Goa",
-      "travelStyle": "group",
-      "styleName": "Bachelors & Group",
+      "travelStyle": "beach-islands",
+      "styleName": "Beach & Coastal",
       "days": 4,
       "duration": "4D/3N",
       "price": 7999,
@@ -1380,8 +1290,8 @@ const CRAZY_TRAVELS_DATA = {
       "name": "Goa Luxury Romantic Honeymoon & Sunset Escapade",
       "destination": "goa",
       "destinationName": "Goa",
-      "travelStyle": "honeymoon",
-      "styleName": "Honeymoon & Romance",
+      "travelStyle": "beach-islands",
+      "styleName": "Beach & Coastal",
       "days": 4,
       "duration": "4D/3N",
       "price": 21999,
@@ -1444,8 +1354,8 @@ const CRAZY_TRAVELS_DATA = {
       "name": "Goa Grand Heritage, Waterfalls & Coastal Family Holiday",
       "destination": "goa",
       "destinationName": "Goa",
-      "travelStyle": "group",
-      "styleName": "Bachelors & Group",
+      "travelStyle": "beach-islands",
+      "styleName": "Beach & Coastal",
       "days": 5,
       "duration": "5D/4N",
       "price": 11499,
@@ -1515,8 +1425,8 @@ const CRAZY_TRAVELS_DATA = {
       "name": "South Goa Serenity & Beach Resort Retreat",
       "destination": "goa",
       "destinationName": "Goa",
-      "travelStyle": "honeymoon",
-      "styleName": "Honeymoon & Romance",
+      "travelStyle": "beach-islands",
+      "styleName": "Beach & Coastal",
       "days": 4,
       "duration": "4D/3N",
       "price": 13999,
@@ -1578,8 +1488,8 @@ const CRAZY_TRAVELS_DATA = {
       "name": "Goa Getaway: Beaches, Heritage & Sunset Cruise",
       "destination": "goa",
       "destinationName": "Goa",
-      "travelStyle": "honeymoon",
-      "styleName": "Honeymoon & Romance",
+      "travelStyle": "beach-islands",
+      "styleName": "Beach & Coastal",
       "days": 4,
       "duration": "4D/3N",
       "price": 16999,
@@ -3037,7 +2947,19 @@ function getTripsByDestination(destSlug) {
 
 function getTripsByTravelStyle(styleSlug) {
   if (!styleSlug || styleSlug === 'all') return CRAZY_TRAVELS_DATA.trips;
-  return CRAZY_TRAVELS_DATA.trips.filter(t => t.travelStyle.toLowerCase() === styleSlug.toLowerCase());
+  const s = styleSlug.toLowerCase();
+  return CRAZY_TRAVELS_DATA.trips.filter(t => {
+    if (t.travelStyle && t.travelStyle.toLowerCase() === s) return true;
+    if (Array.isArray(t.styles) && t.styles.some(st => st.toLowerCase() === s)) return true;
+    if (s === 'beach-islands' && (
+      t.destination === 'goa' || 
+      (t.name + ' ' + (t.place || '')).toLowerCase().includes('varkala') ||
+      (t.name + ' ' + (t.place || '')).toLowerCase().includes('beach') ||
+      (t.name + ' ' + (t.place || '')).toLowerCase().includes('kovalam') ||
+      (t.name + ' ' + (t.place || '')).toLowerCase().includes('trivandrum')
+    )) return true;
+    return false;
+  });
 }
 
 // Global browser exports
