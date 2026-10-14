@@ -27,7 +27,7 @@
   justify-content: space-between;
   padding: 8px 14px 8px 20px;
   border-radius: var(--radius-full);
-  background: rgba(240, 231, 214, 0.90);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(26, 17, 11, 0.12);

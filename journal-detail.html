@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title id="art-meta-title">Article — Wayfare Journal</title>
-  <meta name="description" id="art-meta-desc" content="Notes from the road by Wayfare.">
+  <title id="art-meta-title">Article — Crazy Tours Journal</title>
+  <meta name="description" id="art-meta-desc" content="Notes from the road by Crazy Tours.">
   <meta http-equiv="refresh" content="0; url=index.html">
   <script>window.location.replace('index.html');</script>
   <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -15,8 +15,8 @@
     .wf-article-wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      padding-top: 140px;
-      padding-bottom: 96px;
+      padding-top: 84px;
+      padding-bottom: 80px;
       padding-left: 24px;
       padding-right: 24px;
     }
@@ -161,7 +161,7 @@
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 32px; font-size: 15px; color: var(--color-muted);">
         <span>By <strong id="art-author" style="color: var(--color-ink);">Author</strong></span>
         <span>•</span>
-        <span>Wayfare Journal</span>
+        <span>Crazy Tours Journal</span>
       </div>
 
       <!-- Cover Image -->
@@ -301,7 +301,7 @@
 
       if (!art) return;
 
-      document.title = `${art.title} — Wayfare Journal`;
+      document.title = `${art.title} — Crazy Tours Journal`;
       document.getElementById('art-meta-desc').setAttribute('content', art.excerpt);
       document.getElementById('art-category').textContent = art.category;
       document.getElementById('art-read-time').textContent = art.readTime;

@@ -14,8 +14,8 @@
        CRAZY TOURS PACKAGE DETAIL EDITORIAL SYSTEM
        ========================================================================== */
     .wf-pkg-page-wrap {
-      padding-top: 104px;
-      padding-bottom: 96px;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
 
     /* 1. Breadcrumbs */
@@ -77,68 +77,146 @@
       line-height: 1.6;
       color: var(--color-body);
       max-width: 820px;
-      margin-bottom: 28px;
+      margin-bottom: 0;
     }
 
-    /* 3. Hero Image Gallery Collage */
+    /* Top Header Row with Share & Brochure Actions */
+    .wf-trip-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .wf-trip-header-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .wf-trip-top-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      padding-bottom: 6px;
+    }
+
+    .wf-top-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .wf-btn-share {
+      background: #FFFFFF;
+      color: var(--color-ink);
+      border: 1.5px solid var(--color-line);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .wf-btn-share:hover {
+      border-color: var(--color-sun);
+      color: var(--color-sun);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(234, 46, 0, 0.12);
+    }
+
+    .wf-btn-brochure {
+      background: var(--color-sun);
+      color: #FFFFFF;
+      border: 1.5px solid var(--color-sun);
+      box-shadow: 0 4px 14px rgba(234, 46, 0, 0.25);
+    }
+
+    .wf-btn-brochure:hover {
+      background: #CF2900;
+      border-color: #CF2900;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(234, 46, 0, 0.35);
+    }
+
+    /* 3. Hero Image Gallery Collage — 1 Big Left Image + 2 Stacked Small Right Images */
+    /* 3. Hero Image Gallery Collage — 1 Big Left Image + 2 Stacked Small Right Images */
     .wf-trip-hero-collage {
       display: grid;
-      grid-template-columns: 1.6fr 1fr;
+      grid-template-columns: 1.85fr 1fr;
       gap: 16px;
       height: 480px;
-      border-radius: 24px;
+      max-height: 480px;
+      border-radius: 20px;
       overflow: hidden;
-      margin-bottom: 32px;
+      margin-bottom: 40px;
       position: relative;
     }
 
-    .wf-collage-left {
+    /* Left Side: 1 Big Lead Image */
+    .wf-collage-lead {
       position: relative;
       width: 100%;
       height: 100%;
+      min-height: 0;
       overflow: hidden;
-      border-radius: 20px;
+      border-radius: 18px;
       background-color: var(--color-shell);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
     }
 
-    .wf-collage-left img {
+    .wf-collage-lead img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
       transition: transform 700ms var(--ease-entrance);
     }
 
-    .wf-collage-left:hover img {
-      transform: scale(1.025);
+    .wf-collage-lead:hover img {
+      transform: scale(1.035);
     }
 
-    .wf-collage-right {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
+    /* Right Side: Stack of 2 Small Images (Top Small & Down Side Small) */
+    .wf-collage-stack {
+      display: flex;
+      flex-direction: column;
       gap: 16px;
       height: 100%;
+      min-height: 0;
     }
 
-    .wf-collage-right-item {
+    .wf-collage-thumb {
+      flex: 1 1 0;
+      height: calc(50% - 8px);
+      min-height: 0;
       position: relative;
       width: 100%;
-      height: 100%;
       overflow: hidden;
-      border-radius: 20px;
+      border-radius: 18px;
       background-color: var(--color-shell);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
     }
 
-    .wf-collage-right-item img {
+    .wf-collage-thumb img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
       transition: transform 700ms var(--ease-entrance);
     }
 
-    .wf-collage-right-item:hover img {
-      transform: scale(1.03);
+    .wf-collage-thumb:hover img {
+      transform: scale(1.035);
     }
 
     .wf-view-gallery-btn {
@@ -149,10 +227,10 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(26, 22, 18, 0.72);
+      background: rgba(26, 22, 18, 0.76);
       -webkit-backdrop-filter: blur(14px);
       backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       color: #FFFFFF;
       font-family: var(--font-sans);
       font-size: 13.5px;
@@ -161,12 +239,12 @@
       border-radius: 999px;
       cursor: pointer;
       transition: all 300ms var(--ease-hover);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     }
 
     .wf-view-gallery-btn:hover {
-      background: rgba(26, 22, 18, 0.9);
-      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(26, 22, 18, 0.92);
+      border-color: rgba(255, 255, 255, 0.45);
       transform: translateY(-2px);
     }
 
@@ -182,61 +260,456 @@
       margin-left: 2px;
     }
 
-    /* 4. Package Information Strip */
-    .wf-trip-info-strip {
-      background-color: var(--color-surface);
-      border: 1px solid var(--color-line);
-      border-radius: 20px;
-      padding: 20px 28px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 48px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    @media (max-width: 920px) {
+      .wf-trip-header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .wf-trip-hero-collage {
+        grid-template-columns: 1.4fr 1fr;
+        height: 380px;
+      }
     }
 
-    .wf-info-item {
+    @media (max-width: 680px) {
+      .wf-trip-hero-collage {
+        grid-template-columns: 1fr;
+        height: 320px;
+      }
+      .wf-collage-stack {
+        display: none;
+      }
+    }
+
+    /* Share Modal Styles */
+    .wf-share-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(14, 12, 10, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 250ms ease;
+    }
+
+    .wf-share-modal-overlay.is-open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .wf-share-modal-card {
+      background: #FFFFFF;
+      border-radius: 24px;
+      width: 100%;
+      max-width: 480px;
+      padding: 30px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+      position: relative;
+      transform: scale(0.96);
+      transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .wf-share-modal-overlay.is-open .wf-share-modal-card {
+      transform: scale(1);
+    }
+
+    .wf-share-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .wf-share-modal-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-ink);
+    }
+
+    .wf-share-close-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--color-line);
+      background: #FFFFFF;
+      color: var(--color-ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 200ms ease;
+    }
+
+    .wf-share-close-btn:hover {
+      background: var(--color-shell);
+      color: var(--color-sun);
+    }
+
+    .wf-share-preview {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px;
+      border-radius: 14px;
+      background: var(--color-shell);
+      margin-bottom: 22px;
+    }
+
+    .wf-share-thumb {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .wf-share-pkg-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-ink);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .wf-share-pkg-meta {
+      font-size: 13px;
+      color: var(--color-muted);
+    }
+
+    .wf-share-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .wf-share-option-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1.5px solid var(--color-line);
+      background: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-ink);
+      cursor: pointer;
+      transition: all 200ms ease;
+      text-decoration: none;
+    }
+
+    .wf-share-option-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .wf-share-wa {
+      border-color: #25D366;
+      background: rgba(37, 211, 102, 0.06);
+      color: #128C7E;
+    }
+    .wf-share-wa:hover {
+      background: #25D366;
+      color: #FFFFFF;
+    }
+
+    .wf-share-fb {
+      border-color: #1877F2;
+      background: rgba(24, 119, 242, 0.06);
+      color: #1877F2;
+    }
+    .wf-share-fb:hover {
+      background: #1877F2;
+      color: #FFFFFF;
+    }
+
+    .wf-share-x {
+      border-color: #000000;
+      background: rgba(0, 0, 0, 0.04);
+      color: #000000;
+    }
+    .wf-share-x:hover {
+      background: #000000;
+      color: #FFFFFF;
+    }
+
+    .wf-share-mail {
+      border-color: #EA2E00;
+      background: rgba(234, 46, 0, 0.06);
+      color: #EA2E00;
+    }
+    .wf-share-mail:hover {
+      background: #EA2E00;
+      color: #FFFFFF;
+    }
+
+    .wf-share-copy-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-shell);
+      border: 1px solid var(--color-line);
+      border-radius: 12px;
+      padding: 6px 6px 6px 14px;
+    }
+
+    .wf-share-url-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 13.5px;
+      color: var(--color-ink);
+      outline: none;
+    }
+
+    .wf-share-copy-btn {
+      padding: 9px 18px;
+      background: var(--color-ink);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 200ms ease;
+      white-space: nowrap;
+    }
+
+    .wf-share-copy-btn:hover {
+      background: var(--color-sun);
+    }
+
+    .wf-share-copy-btn.copied {
+      background: #25D366;
+    }
+
+    /* Brochure Modal Styles */
+    .wf-brochure-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 10, 12, 0.90);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 250ms ease;
+    }
+
+    .wf-brochure-modal-overlay.is-open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .wf-brochure-card {
+      background: #181A20;
+      border-radius: 22px;
+      width: 100%;
+      max-width: 940px;
+      max-height: 94vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .wf-brochure-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: #14161B;
+      color: #FFFFFF;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .wf-brochure-header-left {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .wf-info-icon {
-      font-size: 20px;
-      line-height: 1;
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: rgba(234, 46, 0, 0.08);
+    .wf-brochure-title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .wf-brochure-page-badge {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .wf-brochure-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .wf-brochure-btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.06);
+      color: #FFFFFF;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+
+    .wf-brochure-btn-action:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .wf-brochure-btn-wa {
+      background: #25D366;
+      border-color: #25D366;
+      color: #FFFFFF;
+    }
+
+    .wf-brochure-btn-wa:hover {
+      background: #1EBE5D;
+      border-color: #1EBE5D;
+    }
+
+    .wf-brochure-close {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #FFFFFF;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-sun);
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 200ms ease;
+    }
+
+    .wf-brochure-close:hover {
+      background: #EA2E00;
+      border-color: #EA2E00;
+    }
+
+    .wf-brochure-view-area {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0D0E11;
+      min-height: 480px;
+      padding: 16px;
+    }
+
+    .wf-brochure-main-img {
+      max-width: 100%;
+      max-height: 68vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      transition: opacity 200ms ease;
+    }
+
+    .wf-brochure-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(26, 26, 32, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: all 200ms ease;
+    }
+
+    .wf-brochure-nav-btn:hover {
+      background: var(--color-sun);
+      border-color: var(--color-sun);
+    }
+
+    .wf-brochure-prev {
+      left: 20px;
+    }
+
+    .wf-brochure-next {
+      right: 20px;
+    }
+
+    .wf-brochure-thumbs-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      background: #14161B;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .wf-brochure-thumb-item {
+      width: 52px;
+      height: 68px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all 200ms ease;
       flex-shrink: 0;
     }
 
-    .wf-info-val {
-      font-family: var(--font-display);
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--color-ink);
-      line-height: 1.25;
-      margin-bottom: 2px;
+    .wf-brochure-thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .wf-info-lbl {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--color-muted);
-    }
-
-    .wf-info-divider {
-      width: 1px;
-      height: 38px;
-      background-color: var(--color-line);
-      margin: 0 auto;
+    .wf-brochure-thumb-item.is-active,
+    .wf-brochure-thumb-item:hover {
+      opacity: 1;
+      border-color: var(--color-sun);
+      transform: scale(1.05);
     }
 
     /* 5. Main Two-Column Layout */
@@ -296,181 +769,458 @@
       flex-shrink: 0;
     }
 
-    /* 6. Itinerary Day-by-Day (Exact Blueprint) */
-    .wf-itinerary-header {
-      margin-bottom: 28px;
-    }
-
-    .wf-itinerary-header h2 {
-      margin-bottom: 6px;
-    }
-
-    .wf-itinerary-timeline {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      margin-bottom: 56px;
-    }
-
-    .wf-itinerary-row {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      padding-bottom: 28px;
-    }
-
-    .wf-itinerary-row:last-child {
-      padding-bottom: 0;
-    }
-
-    /* Connecting vertical line */
-    .wf-itin-line-wrap {
-      display: flex;
-      flex-direction: column;
+    /* 6. Trip Information Strip (Above Itinerary) */
+    .wf-trip-spec-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #FFFFFF;
+      border: 1px solid var(--color-line);
+      border-radius: 20px;
+      padding: 18px 24px;
+      margin-bottom: 44px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+      gap: 16px;
       align-items: center;
-      flex-shrink: 0;
-      align-self: stretch;
+      position: relative;
     }
 
-    .wf-itin-day-badge {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background-color: var(--color-sun);
-      color: #FFFFFF;
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 13.5px;
+    .wf-spec-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      min-width: 0;
+    }
+
+    .wf-spec-divider {
+      width: 1px;
+      height: 38px;
+      background: var(--color-line);
+      flex-shrink: 0;
+    }
+
+    .wf-spec-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(234, 46, 0, 0.08);
+      color: var(--color-sun);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 12px rgba(234, 46, 0, 0.35);
+      font-size: 19px;
       flex-shrink: 0;
-      z-index: 2;
     }
 
-    .wf-itin-connecting-line {
-      width: 2px;
-      flex-grow: 1;
-      background-color: var(--color-line);
-      margin-top: 8px;
-      margin-bottom: -4px;
+    .wf-spec-content {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
     }
 
-    .wf-itinerary-row:last-child .wf-itin-connecting-line {
-      display: none;
+    .wf-spec-label {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 2px;
     }
 
-    /* Itinerary Content Card */
-    .wf-itin-card {
-      flex: 1;
-      background-color: var(--color-surface);
-      border: 1px solid var(--color-line);
-      border-radius: 18px;
-      padding: 14px 20px;
+    .wf-spec-val {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--color-ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (max-width: 900px) {
+      .wf-trip-spec-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+      .wf-spec-divider {
+        display: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .wf-trip-spec-strip {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+
+    /* 7. Editorial Itinerary Section Header */
+    .wf-itinerary-header {
+      margin-bottom: 24px;
+    }
+
+    .wf-itin-top-bar {
       display: flex;
       align-items: center;
-      gap: 16px;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .wf-itin-header-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-sun);
+    }
+
+    .wf-itin-controls {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-shell);
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--color-line);
+      font-size: 13px;
+    }
+
+    .wf-itin-ctrl-btn {
+      background: none;
+      border: none;
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      font-size: 12.5px;
+      font-weight: 600;
       cursor: pointer;
-      transition: all 250ms var(--ease-hover);
+      padding: 2px 6px;
+      border-radius: 4px;
+      transition: color 200ms ease;
     }
 
-    .wf-itin-card.is-expanded {
-      align-items: flex-start;
-      padding: 18px 20px;
+    .wf-itin-ctrl-btn:hover {
+      color: var(--color-sun);
     }
 
-    .wf-itin-card:hover {
-      border-color: rgba(234, 46, 0, 0.3);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
-      transform: translateY(-1px);
+    .wf-itin-ctrl-sep {
+      color: var(--color-line);
+      font-weight: 700;
     }
 
-    .wf-itin-thumb {
-      width: 72px;
-      height: 52px;
-      border-radius: 10px;
-      object-fit: cover;
+    /* 8. Editorial Day-by-Day Accordion Itinerary */
+    .wf-itinerary-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 64px;
+    }
+
+    /* Accordion Day Card */
+    .wf-itin-accordion-entry {
+      background: #FFFFFF;
+      border: 1.5px solid var(--color-line);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+      transition: border-color 250ms ease, box-shadow 250ms ease;
+    }
+
+    .wf-itin-accordion-entry:hover {
+      border-color: rgba(234, 46, 0, 0.35);
+      box-shadow: 0 8px 24px rgba(234, 46, 0, 0.06);
+    }
+
+    /* Header Row (Always Visible: Day Badge + Title + Arrow Button) */
+    .wf-itin-accordion-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      cursor: pointer;
+      user-select: none;
+      background: #FFFFFF;
+      gap: 16px;
+      transition: background-color 200ms ease;
+    }
+
+    .wf-itin-accordion-header:hover {
+      background-color: rgba(234, 46, 0, 0.02);
+    }
+
+    .wf-itin-header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      min-width: 0;
+      flex-wrap: wrap;
+    }
+
+    .wf-itin-day-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 14px;
+      background: rgba(234, 46, 0, 0.08);
+      color: var(--color-sun);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 999px;
       flex-shrink: 0;
-      background-color: var(--color-shell);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-      transition: width 200ms ease, height 200ms ease;
     }
 
-    .wf-itin-card.is-expanded .wf-itin-thumb {
-      width: 82px;
-      height: 68px;
-      border-radius: 12px;
-    }
-
-    .wf-itin-body {
+    .wf-itin-dest-heading {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--color-ink);
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      margin: 0;
       flex: 1;
       min-width: 0;
     }
 
-    .wf-itin-day-label {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-sun);
-      margin-bottom: 2px;
-    }
-
-    .wf-itin-title {
-      font-family: var(--font-display);
-      font-size: 16.5px;
-      font-weight: 600;
-      color: var(--color-ink);
-      line-height: 1.3;
-      margin-bottom: 0;
-      transition: margin-bottom 200ms ease;
-    }
-
-    .wf-itin-card.is-expanded .wf-itin-title {
-      margin-bottom: 6px;
-    }
-
-    .wf-itin-desc {
-      display: none;
-      font-size: 14px;
-      line-height: 1.55;
-      color: var(--color-body);
-      margin-top: 6px;
-    }
-
-    .wf-itin-card.is-expanded .wf-itin-desc {
-      display: block;
-    }
-
-    .wf-itin-toggle-btn {
-      width: 32px;
-      height: 32px;
+    /* Arrow Toggle Button */
+    .wf-itin-arrow-btn {
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      background: transparent;
+      background: var(--color-shell);
       border: 1px solid var(--color-line);
+      color: var(--color-ink);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-muted);
       cursor: pointer;
-      transition: all 200ms ease;
       flex-shrink: 0;
-      align-self: center;
+      transition: all 250ms ease;
     }
 
-    .wf-itin-card:hover .wf-itin-toggle-btn {
+    .wf-itin-accordion-header:hover .wf-itin-arrow-btn {
+      background: var(--color-sun);
+      color: #FFFFFF;
+      border-color: var(--color-sun);
+      transform: scale(1.05);
+    }
+
+    .wf-itin-arrow-icon {
+      transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+      transform: rotate(0deg); /* Expanded: points down */
+    }
+
+    /* When collapsed: rotate arrow & hide body so ONLY day & heading are visible */
+    .wf-itin-accordion-entry.is-collapsed .wf-itin-arrow-icon {
+      transform: rotate(-90deg); /* Collapsed: points right */
+    }
+
+    .wf-itin-accordion-entry.is-collapsed .wf-itin-accordion-body {
+      display: none !important;
+    }
+
+    /* Accordion Body */
+    .wf-itin-accordion-body {
+      padding: 0 24px 24px 24px;
+      border-top: 1px solid var(--color-line);
+      animation: itinFadeIn 250ms ease;
+    }
+
+    @keyframes itinFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .wf-itin-body-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 24px;
+      align-items: start;
+      padding-top: 20px;
+    }
+
+    /* Left: Destination Media Wrap */
+    .wf-itin-media-wrap {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
       background-color: var(--color-shell);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .wf-itin-media-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .wf-itin-media-wrap:hover img {
+      transform: scale(1.06);
+    }
+
+    .wf-itin-media-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(26, 22, 18, 0.82);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 9px;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      z-index: 2;
+    }
+
+    /* Right: Details / Brochure Steps */
+    .wf-itin-details-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    /* Brochure Step-by-Step Item */
+    .wf-itin-steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .wf-itin-step-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--color-body);
+    }
+
+    .wf-itin-step-arrow {
+      color: var(--color-sun);
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.5;
+      flex-shrink: 0;
+    }
+
+    .wf-itin-step-text {
+      flex: 1;
+    }
+
+    /* Places Covered Group */
+    .wf-itin-places-box {
+      margin-top: 4px;
+      padding: 12px 16px;
+      background: #FBFBFC;
+      border-radius: 12px;
+      border: 1px solid var(--color-line);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .wf-itin-places-title {
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .wf-itin-tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .wf-itin-place-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 11px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 500;
       color: var(--color-ink);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
     }
 
-    .wf-itin-toggle-btn svg {
-      transition: transform 300ms ease;
+    /* Stay & Meals Meta Strip */
+    .wf-itin-meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--color-line);
     }
 
-    .wf-itin-card.is-expanded .wf-itin-toggle-btn svg {
-      transform: rotate(180deg);
+    .wf-itin-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+
+    .wf-itin-meta-stay {
+      background: rgba(234, 46, 0, 0.07);
+      color: var(--color-sun);
+    }
+
+    .wf-itin-meta-meals {
+      background: #F0FBF4;
+      color: #1E8E3E;
+    }
+
+    @media (max-width: 860px) {
+      .wf-itin-body-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .wf-itin-media-wrap {
+        height: 220px;
+      }
+      .wf-itin-accordion-header {
+        padding: 16px 18px;
+      }
+      .wf-itin-accordion-body {
+        padding: 0 18px 18px 18px;
+      }
     }
 
     /* 7. What's Included & Not Included */
@@ -786,6 +1536,32 @@
       text-align: center;
     }
 
+    .wf-card-wa-direct-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 9px 16px;
+      background: #25D366;
+      color: #FFFFFF;
+      border-radius: 999px;
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+    }
+
+    .wf-card-wa-direct-btn:hover {
+      background: #20BD5A;
+      color: #FFFFFF;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+    }
+
     .wf-book-disclaimer {
       font-size: 10.5px;
       line-height: 1.35;
@@ -1015,37 +1791,11 @@
       .wf-pkg-page-wrap {
         padding-top: 86px;
       }
-      .wf-trip-hero-collage {
-        grid-template-columns: 1fr;
-        height: auto;
-      }
-      .wf-collage-left {
-        height: 280px;
-      }
-      .wf-collage-right {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        height: 150px;
-      }
-      .wf-trip-info-strip {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .wf-info-divider {
-        display: none;
-      }
       .wf-trip-highlights-box {
         grid-template-columns: 1fr;
       }
       .wf-inclusions-wrap {
         grid-template-columns: 1fr;
-      }
-      .wf-itin-card {
-        flex-direction: column;
-      }
-      .wf-itin-thumb {
-        width: 100%;
-        height: 120px;
       }
     }
 
@@ -1289,23 +2039,50 @@
         <span class="wf-crumb-current" id="trip-breadcrumb-title">Kerala Honeymoon Package</span>
       </nav>
 
-      <!-- 2. Category Eyebrow -->
-      <div class="wf-trip-category" id="trip-category-eyebrow">
-        KERALA · HONEYMOON & ROMANCE
+      <!-- 2. Header Bar with Category, Title, Summary & Top Actions -->
+      <div class="wf-trip-header-bar">
+        <div class="wf-trip-header-info">
+          <div class="wf-trip-category" id="trip-category-eyebrow">
+            KERALA · HONEYMOON & ROMANCE
+          </div>
+          <h1 class="wf-display-headline wf-trip-main-title" id="trip-title">
+            Kerala Honeymoon Package
+          </h1>
+          <p class="wf-lead wf-trip-main-desc" id="trip-summary">
+            A delightful 4-day romantic getaway focusing on the two most iconic highlights of Kerala: the cool hills of Munnar and the tranquil backwaters of Alleppey.
+          </p>
+        </div>
+
+        <!-- Share and Brochure Top Buttons -->
+        <div class="wf-trip-top-actions">
+          <button type="button" class="wf-top-btn wf-btn-share" id="trip-share-btn" aria-label="Share this package">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <span>Share</span>
+          </button>
+          
+          <button type="button" class="wf-top-btn wf-btn-brochure" id="trip-brochure-btn" aria-label="View package brochure">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Brochure</span>
+          </button>
+        </div>
       </div>
 
-      <!-- 3. Title & Description -->
-      <h1 class="wf-display-headline wf-trip-main-title" id="trip-title">
-        Kerala Honeymoon Package
-      </h1>
-      <p class="wf-lead wf-trip-main-desc" id="trip-summary">
-        A delightful 4-day romantic getaway focusing on the two most iconic highlights of Kerala: the cool hills of Munnar and the tranquil backwaters of Alleppey.
-      </p>
-
-      <!-- 4. Hero Image Collage -->
-      <div class="wf-trip-hero-collage">
-        <div class="wf-collage-left">
-          <img id="trip-photo-1" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=85" alt="Kerala Houseboat Backwaters" fetchpriority="high">
+      <!-- Hero Image Collage — 1 Big Left + 2 Stacked Right (Top Small & Down Small) -->
+      <div class="wf-trip-hero-collage" id="trip-hero-collage">
+        <div class="wf-collage-lead">
+          <img id="trip-photo-1" src="https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1600&q=85" alt="Tour Lead Photo" fetchpriority="high">
           <button class="wf-view-gallery-btn" id="open-gallery-btn" aria-label="View photo gallery">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -1316,60 +2093,12 @@
             <span class="wf-gallery-count-badge" id="gallery-count-badge">6</span>
           </button>
         </div>
-
-        <div class="wf-collage-right">
-          <div class="wf-collage-right-item">
-            <img id="trip-photo-2" src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1000&q=80" alt="Munnar Tea Hills">
+        <div class="wf-collage-stack">
+          <div class="wf-collage-thumb">
+            <img id="trip-photo-2" src="https://images.pexels.com/photos/30695323/pexels-photo-30695323.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tour Highlight 1" loading="lazy">
           </div>
-          <div class="wf-collage-right-item">
-            <img id="trip-photo-3" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Kerala Beach Sunset">
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. Package Information Strip -->
-      <div class="wf-trip-info-strip">
-        <div class="wf-info-item">
-          <span class="wf-info-icon">⏳</span>
-          <div>
-            <div class="wf-info-val" id="strip-duration">4 Days / 3 Nights</div>
-            <div class="wf-info-lbl">Duration</div>
-          </div>
-        </div>
-        <div class="wf-info-divider"></div>
-
-        <div class="wf-info-item">
-          <span class="wf-info-icon">💖</span>
-          <div>
-            <div class="wf-info-val" id="strip-style">Honeymoon & Romance</div>
-            <div class="wf-info-lbl">Travel Style</div>
-          </div>
-        </div>
-        <div class="wf-info-divider"></div>
-
-        <div class="wf-info-item">
-          <span class="wf-info-icon">👥</span>
-          <div>
-            <div class="wf-info-val" id="strip-group">Private Couple</div>
-            <div class="wf-info-lbl">Group Type</div>
-          </div>
-        </div>
-        <div class="wf-info-divider"></div>
-
-        <div class="wf-info-item">
-          <span class="wf-info-icon">🌤</span>
-          <div>
-            <div class="wf-info-val" id="strip-season">All Year</div>
-            <div class="wf-info-lbl">Best Season</div>
-          </div>
-        </div>
-        <div class="wf-info-divider"></div>
-
-        <div class="wf-info-item wf-info-item-route">
-          <span class="wf-info-icon">📍</span>
-          <div>
-            <div class="wf-info-val" id="strip-route">Cochin → Munnar → Alleppey → Cochin</div>
-            <div class="wf-info-lbl">Route</div>
+          <div class="wf-collage-thumb">
+            <img id="trip-photo-3" src="https://images.pexels.com/photos/39560039/pexels-photo-39560039.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tour Highlight 2" loading="lazy">
           </div>
         </div>
       </div>
@@ -1407,15 +2136,64 @@
             </div>
           </section>
 
-          <!-- Day-by-Day Itinerary -->
-          <section class="wf-itinerary-section">
-            <div class="wf-itinerary-header">
-              <h2 class="wf-trip-sec-title">Your Journey, Day by Day</h2>
-              <p class="wf-small" style="color: var(--color-muted);">A perfect blend of nature, romance, and relaxation.</p>
+          <!-- Day-by-Day Itinerary Section -->
+          <section class="wf-itinerary-section" id="itinerary-section">
+            <!-- 3. Trip Information Strip (Above Itinerary) -->
+            <div class="wf-trip-spec-strip" id="trip-spec-strip">
+              <div class="wf-spec-item">
+                <div class="wf-spec-icon-box">📍</div>
+                <div class="wf-spec-content">
+                  <span class="wf-spec-label">DESTINATION</span>
+                  <strong class="wf-spec-val" id="spec-destination">Kerala</strong>
+                </div>
+              </div>
+              <div class="wf-spec-divider"></div>
+              <div class="wf-spec-item">
+                <div class="wf-spec-icon-box">⏱</div>
+                <div class="wf-spec-content">
+                  <span class="wf-spec-label">DURATION</span>
+                  <strong class="wf-spec-val" id="spec-duration">4 Days / 3 Nights</strong>
+                </div>
+              </div>
+              <div class="wf-spec-divider"></div>
+              <div class="wf-spec-item">
+                <div class="wf-spec-icon-box">📅</div>
+                <div class="wf-spec-content">
+                  <span class="wf-spec-label">TRAVEL DATE</span>
+                  <strong class="wf-spec-val" id="spec-travel-date">Based on customer selection</strong>
+                </div>
+              </div>
+              <div class="wf-spec-divider"></div>
+              <div class="wf-spec-item">
+                <div class="wf-spec-icon-box">🛫</div>
+                <div class="wf-spec-content">
+                  <span class="wf-spec-label">DEPARTURE</span>
+                  <strong class="wf-spec-val" id="spec-departure">Cochin</strong>
+                </div>
+              </div>
             </div>
 
+            <!-- 2. Itinerary Section Header -->
+            <div class="wf-itinerary-header">
+              <div class="wf-itin-top-bar">
+                <div>
+                  <span class="wf-itin-header-badge">EXPLORE YOUR JOURNEY</span>
+                  <h2 class="wf-trip-sec-title" style="margin-bottom: 4px;">Your Journey, Day by Day</h2>
+                </div>
+                <div class="wf-itin-controls">
+                  <button type="button" class="wf-itin-ctrl-btn" onclick="toggleAllItineraryDays(true)" aria-label="Expand all itinerary days">Expand All</button>
+                  <span class="wf-itin-ctrl-sep">·</span>
+                  <button type="button" class="wf-itin-ctrl-btn" onclick="toggleAllItineraryDays(false)" aria-label="Collapse all itinerary days">Collapse All</button>
+                </div>
+              </div>
+              <p class="wf-trip-sec-desc" style="margin-bottom: 24px; max-width: 680px;">
+                Discover the day-wise experiences, places covered, and activities planned for every day of your trip. Click any day to collapse or expand.
+              </p>
+            </div>
+
+            <!-- Day-by-Day Accordion Container -->
             <div class="wf-itinerary-timeline" id="trip-itinerary-container">
-              <!-- Day entries injected by JS -->
+              <!-- Day entries dynamically injected by JS -->
             </div>
           </section>
 
@@ -1542,6 +2320,13 @@
                 <span>⚡ Instant Quote on WhatsApp • 100% Tailor-made</span>
               </div>
 
+              <a href="https://wa.me/918867229998" class="wf-card-wa-direct-btn" id="trip-card-wa-link" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Direct WhatsApp Chat</span>
+              </a>
+
               <div class="wf-form-toast" id="form-toast-msg">
                 ✓ Opening WhatsApp with your trip details...
               </div>
@@ -1625,7 +2410,6 @@
             <a href="destination-detail.html?slug=kerala" class="wf-footer-link">Kerala</a>
             <a href="destination-detail.html?slug=manali" class="wf-footer-link">Kullu-Manali</a>
             <a href="destination-detail.html?slug=goa" class="wf-footer-link">Goa</a>
-            <a href="destination-detail.html?slug=ladakh" class="wf-footer-link">Ladakh</a>
             <a href="destinations.html" class="wf-footer-link" style="opacity: 0.65; font-size: 13.5px; margin-top: 4px;">All destinations →</a>
           </div>
         </div>
@@ -1705,14 +2489,129 @@
     </div>
   </footer>
 
+  <!-- Share Modal Overlay -->
+  <div class="wf-share-modal-overlay" id="wf-share-modal" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="wf-share-modal-card">
+      <div class="wf-share-modal-header">
+        <h3 class="wf-share-modal-title" id="share-modal-title">Share this Package</h3>
+        <button type="button" class="wf-share-close-btn" id="share-modal-close" aria-label="Close share dialog">✕</button>
+      </div>
+
+      <!-- Preview card -->
+      <div class="wf-share-preview">
+        <img class="wf-share-thumb" id="share-preview-thumb" src="" alt="Package preview">
+        <div>
+          <div class="wf-share-pkg-title" id="share-preview-title">Kerala Honeymoon Package</div>
+          <div class="wf-share-pkg-meta" id="share-preview-meta">Crazy Tours and Travels</div>
+        </div>
+      </div>
+
+      <!-- Social Options Grid -->
+      <div class="wf-share-grid">
+        <a href="#" class="wf-share-option-btn wf-share-wa" id="share-btn-wa" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="#" class="wf-share-option-btn wf-share-fb" id="share-btn-fb" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="#" class="wf-share-option-btn wf-share-x" id="share-btn-x" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <span>X / Twitter</span>
+        </a>
+
+        <a href="#" class="wf-share-option-btn wf-share-mail" id="share-btn-mail">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <!-- Copy Direct Link Bar -->
+      <div class="wf-share-copy-box">
+        <input type="text" class="wf-share-url-input" id="share-url-input" readonly>
+        <button type="button" class="wf-share-copy-btn" id="share-copy-btn">Copy Link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brochure Modal Overlay -->
+  <div class="wf-brochure-modal-overlay" id="wf-brochure-modal" role="dialog" aria-modal="true" aria-labelledby="brochure-modal-title">
+    <div class="wf-brochure-card">
+      <div class="wf-brochure-topbar">
+        <div class="wf-brochure-header-left">
+          <div class="wf-brochure-title" id="brochure-modal-title">Official Package Brochure</div>
+          <span class="wf-brochure-page-badge" id="brochure-page-badge">Page 1 of 7</span>
+        </div>
+
+        <div class="wf-brochure-actions">
+          <button type="button" class="wf-brochure-btn-action" id="brochure-print-btn" title="Print or save brochure">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / PDF</span>
+          </button>
+          
+          <a href="#" class="wf-brochure-btn-action wf-brochure-btn-wa" id="brochure-wa-btn" target="_blank" rel="noopener" title="Request brochure on WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>WhatsApp PDF</span>
+          </a>
+
+          <button type="button" class="wf-brochure-close" id="brochure-modal-close" aria-label="Close brochure">✕</button>
+        </div>
+      </div>
+
+      <div class="wf-brochure-view-area">
+        <button type="button" class="wf-brochure-nav-btn wf-brochure-prev" id="brochure-prev-btn" aria-label="Previous page">◀</button>
+        <img class="wf-brochure-main-img" id="brochure-main-img" src="" alt="Brochure page">
+        <button type="button" class="wf-brochure-nav-btn wf-brochure-next" id="brochure-next-btn" aria-label="Next page">▶</button>
+      </div>
+
+      <div class="wf-brochure-thumbs-bar" id="brochure-thumbs-bar"></div>
+    </div>
+  </div>
+
   <script src="js/crazy-travels-data.js"></script>
   <script src="js/crazy-travels.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
-      // Default to kerala-honeymoon-4d3n if not specified
-      const slug = params.get('slug') || params.get('id') || 'kerala-honeymoon-4d3n';
-      const trip = getWayfareTrip(slug);
+      const queryParam = params.get('slug') || params.get('id');
+      let trip = queryParam ? (getWayfareTrip(queryParam) || (typeof getCrazyTravelsTrip === 'function' ? getCrazyTravelsTrip(queryParam) : null)) : null;
+
+      // Smart fallback if slug is a destination name or partial match
+      if (!trip && queryParam) {
+        const clean = queryParam.toLowerCase().trim();
+        const allTrips = (window.CRAZY_TRAVELS_DATA && window.CRAZY_TRAVELS_DATA.trips) || (typeof WAYFARE_DATA !== 'undefined' ? WAYFARE_DATA.trips : []);
+        trip = allTrips.find(t => 
+          (t.slug && t.slug.toLowerCase() === clean) ||
+          (t.id && t.id.toLowerCase() === clean) ||
+          (t.destination && t.destination.toLowerCase() === clean) ||
+          (t.slug && t.slug.toLowerCase().includes(clean)) ||
+          (t.name && t.name.toLowerCase().includes(clean))
+        );
+      }
+
+      // Default fallback so the package detail page NEVER renders empty
+      if (!trip) {
+        trip = getWayfareTrip('kerala-honeymoon-4d3n') || 
+               ((window.CRAZY_TRAVELS_DATA && window.CRAZY_TRAVELS_DATA.trips) ? window.CRAZY_TRAVELS_DATA.trips[0] : null);
+      }
 
       if (!trip) return;
 
@@ -1728,25 +2627,653 @@
       document.getElementById('trip-title').textContent = trip.name;
       document.getElementById('trip-summary').textContent = trip.summary;
 
-      // 2. Hero Images
-      const photos = trip.photos && trip.photos.length > 0 ? trip.photos : [
-        'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=85',
-        'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1000&q=80',
-        'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80'
-      ];
-      document.getElementById('trip-photo-1').src = photos[0];
-      document.getElementById('trip-photo-2').src = photos[1] || photos[0];
-      document.getElementById('trip-photo-3').src = photos[2] || photos[0];
+      // 2. Hero Images — Destination-curated, non-duplicate & proper aspect ratios
+      const destFallbacks = {
+        kerala: [
+          'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=85',
+          'https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
+        ],
+        manali: [
+          'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=85',
+          'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=1200&q=80'
+        ],
+        kashmir: [
+          'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1600&q=85',
+          'https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1200&q=80'
+        ],
+        goa: [
+          'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=85',
+          'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
+        ]
+      };
 
-      // 3. Information Strip
-      document.getElementById('strip-duration').textContent = trip.duration || '4 Days / 3 Nights';
-      document.getElementById('strip-style').textContent = trip.styleName || 'Honeymoon & Romance';
-      document.getElementById('strip-group').textContent = trip.groupSize || 'Private Couple';
-      document.getElementById('strip-season').textContent = trip.season || 'All Year';
-      document.getElementById('strip-route').textContent = trip.place || 'Cochin → Munnar → Alleppey → Cochin';
+      const destKey = (trip.destination || 'kerala').toLowerCase();
+      const fallbackList = destFallbacks[destKey] || destFallbacks.kerala;
+
+      // Extract authentic photos directly from this trip's itinerary and destination spots
+      const badSignatures = ['1534528741775', '1539571696357', '1540555700478', 'photo-1494790108377', 'photo-1507003211169'];
+      const isBadPhoto = (url) => !url || typeof url !== 'string' || badSignatures.some(sig => url.includes(sig));
+
+      const itinPhotos = [];
+      if (trip.itinerary && Array.isArray(trip.itinerary)) {
+        trip.itinerary.forEach(day => {
+          if (day.thumbnail && !isBadPhoto(day.thumbnail) && !itinPhotos.includes(day.thumbnail)) {
+            itinPhotos.push(day.thumbnail);
+          }
+          if (day.spots && Array.isArray(day.spots)) {
+            day.spots.forEach(sp => {
+              if (sp.img && !isBadPhoto(sp.img) && !itinPhotos.includes(sp.img)) {
+                itinPhotos.push(sp.img);
+              }
+            });
+          }
+        });
+      }
+
+      // Check masterTour from TOURS_DATA / getTourById
+      const masterTour = (typeof getTourById === 'function') ? getTourById(trip.slug || trip.id) : null;
+      if (masterTour) {
+        if (masterTour.heroImage && !isBadPhoto(masterTour.heroImage) && !itinPhotos.includes(masterTour.heroImage)) {
+          itinPhotos.unshift(masterTour.heroImage);
+        } else if (masterTour.image && !isBadPhoto(masterTour.image) && !itinPhotos.includes(masterTour.image)) {
+          itinPhotos.unshift(masterTour.image);
+        }
+        if (masterTour.itinerary && Array.isArray(masterTour.itinerary)) {
+          masterTour.itinerary.forEach(day => {
+            if (day.thumbnail && !isBadPhoto(day.thumbnail) && !itinPhotos.includes(day.thumbnail)) {
+              itinPhotos.push(day.thumbnail);
+            }
+            if (day.spots && Array.isArray(day.spots)) {
+              day.spots.forEach(sp => {
+                if (sp.img && !isBadPhoto(sp.img) && !itinPhotos.includes(sp.img)) {
+                  itinPhotos.push(sp.img);
+                }
+              });
+            }
+          });
+        }
+      }
+
+      // Also incorporate clean photos from trip.photos if available
+      if (trip.photos && Array.isArray(trip.photos)) {
+        trip.photos.forEach(p => {
+          if (!isBadPhoto(p) && !itinPhotos.includes(p)) {
+            itinPhotos.push(p);
+          }
+        });
+      }
+
+      let photos = itinPhotos.filter(p => !isBadPhoto(p));
+      for (const fb of fallbackList) {
+        if (photos.length >= 3) break;
+        if (!photos.includes(fb) && !isBadPhoto(fb)) {
+          photos.push(fb);
+        }
+      }
+
+      const p1El = document.getElementById('trip-photo-1');
+      const p2El = document.getElementById('trip-photo-2');
+      const p3El = document.getElementById('trip-photo-3');
+      if (p1El) p1El.src = photos[0];
+      if (p2El) p2El.src = photos[1];
+      if (p3El) p3El.src = photos[2];
+
+      // Note: The bottom information strip (.wf-trip-info-strip) was completely removed as requested.
+
+      // 3. Official Package Brochure Mapping for all 39 packages
+      const PACKAGE_BROCHURES = {
+        // Japan
+        'japan-autumn-classic-8d': {
+          title: 'Japan: Ancient Temples & Alpine Trails (8D/7N)',
+          pages: [
+            'assets/pdf_pages/japan_autumn_8d_p1.png',
+            'assets/pdf_pages/ladakh_highpass_7d6n_p2.png',
+            'assets/pdf_pages/ladakh_highpass_7d6n_p3.png',
+            'assets/pdf_pages/ladakh_highpass_7d6n_p4.png',
+            'assets/pdf_pages/ladakh_highpass_7d6n_p5.png',
+            'assets/pdf_pages/ladakh_highpass_7d6n_p9.png'
+          ]
+        },
+
+        // Kerala Packages
+        'kerala-honeymoon-5d4n': {
+          title: 'Kerala Honeymoon Package (5D/4N)',
+          pages: Array.from({length: 7}, (_, i) => `assets/pdf_pages/kerala_honeymoon_5d4n_p${i+1}.png`)
+        },
+        'kerala-honeymoon-4d3n': {
+          title: 'Kerala Honeymoon Package (4D/3N)',
+          pages: [
+            'assets/pdf_pages/kerala_honeymoon_4d3n_p1.png',
+            'assets/pdf_pages/kerala_honeymoon_5d4n_p2.png',
+            'assets/pdf_pages/kerala_honeymoon_5d4n_p3.png',
+            'assets/pdf_pages/kerala_honeymoon_5d4n_p4.png',
+            'assets/pdf_pages/kerala_honeymoon_5d4n_p6.png',
+            'assets/pdf_pages/kerala_honeymoon_5d4n_p7.png'
+          ]
+        },
+        'kerala-trivandrum-honeymoon-5d4n': {
+          title: 'Kerala Honeymoon Trivandrum & Kovalam Package (5D/4N)',
+          pages: [
+            'assets/pdf_pages/kerala_trivandrum_honeymoon_5d4n_p1.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p2.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p3.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p4.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p6.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p7.png',
+            'assets/pdf_pages/kerala_varkala_6d5n_p8.png'
+          ]
+        },
+        'kerala-jatayu-honeymoon-6d5n': {
+          title: 'Kerala Honeymoon Couple Jatayu Package (6D/5N)',
+          pages: Array.from({length: 8}, (_, i) => `assets/pdf_pages/kerala_jatayu_6d5n_p${i+1}.png`)
+        },
+        'kerala-varkala-honeymoon-6d5n': {
+          title: 'Kerala Honeymoon Couple Varkala Package (6D/5N)',
+          pages: Array.from({length: 8}, (_, i) => `assets/pdf_pages/kerala_varkala_6d5n_p${i+1}.png`)
+        },
+        'kerala-bachelor-4d3n': {
+          title: 'Kerala Bachelor Group Package (4D/3N)',
+          pages: [
+            'assets/pdf_pages/kerala_bachelor_5d4n_p1.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p2.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p3.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p4.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p6.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p7.png'
+          ]
+        },
+        'kerala-bachelor-5d4n': {
+          title: 'Kerala Bachelor Group Package (5D/4N)',
+          pages: Array.from({length: 7}, (_, i) => `assets/pdf_pages/kerala_bachelor_5d4n_p${i+1}.png`)
+        },
+        'kerala-trivandrum-bachelor-5d4n': {
+          title: 'Kerala Trivandrum Bachelor Group Package (5D/4N)',
+          pages: [
+            'assets/pdf_pages/kerala_trivandrum_bachelor_5d4n_p1.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p2.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p3.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p4.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p5.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p6.png',
+            'assets/pdf_pages/kerala_bachelor_5d4n_p7.png'
+          ]
+        },
+        'kerala-varkala-bachelor-6d5n': {
+          title: 'Kerala Varkala Bachelor Group Package (6D/5N)',
+          pages: Array.from({length: 8}, (_, i) => `assets/pdf_pages/kerala_varkala_6d5n_p${i+1}.png`)
+        },
+        'kerala-jatayu-bachelor-6d5n': {
+          title: 'Kerala Jatayu Bachelor Group Package (6D/5N)',
+          pages: Array.from({length: 8}, (_, i) => `assets/pdf_pages/kerala_jatayu_6d5n_p${i+1}.png`)
+        },
+
+        // Kashmir Packages
+        'kashmir-winter-group-4d3n': {
+          title: 'Kashmir Valley Group Expedition (4D/3N)',
+          pages: Array.from({length: 11}, (_, i) => `assets/pdf_pages/media_1791194403698_p${i+1}.png`)
+        },
+        'kashmir-honeymoon-couple-4d3n': {
+          title: 'Kashmir Romantic Couple & Honeymoon Package (4D/3N)',
+          pages: Array.from({length: 11}, (_, i) => `assets/pdf_pages/media_1791194403941_p${i+1}.png`)
+        },
+        'kashmir-sonmarg-couple-5d4n': {
+          title: 'Kashmir Grand Couple Expedition with Sonmarg (5D/4N)',
+          pages: Array.from({length: 12}, (_, i) => `assets/pdf_pages/media_1791194433079_p${i+1}.png`)
+        },
+        'kashmir-sonmarg-group-5d4n': {
+          title: 'Kashmir Grand Group Expedition with Sonmarg (5D/4N)',
+          pages: Array.from({length: 12}, (_, i) => `assets/pdf_pages/media_1791194433079_p${i+1}.png`)
+        },
+        'kashmir-paradise': {
+          title: 'Kashmir Paradise: Srinagar, Gulmarg & Pahalgam (6D/5N)',
+          pages: Array.from({length: 11}, (_, i) => `assets/pdf_pages/media_1791194403798_p${i+1}.png`)
+        },
+        'kashmir-romantic-couple-4d3n': {
+          title: 'Kashmir Romantic Couple & Honeymoon Package (4D/3N)',
+          pages: Array.from({length: 11}, (_, i) => `assets/pdf_pages/media_1791194403941_p${i+1}.png`)
+        },
+
+        // Goa Packages
+        'goa-bachelors-party-4d3n': {
+          title: 'Goa Bachelors Beach, Watersports & Nightlife Bash (4D/3N)',
+          pages: Array.from({length: 6}, (_, i) => `assets/pdf_pages/goa_bachelors_4d3n_p${i+1}.png`)
+        },
+        'goa-romantic-honeymoon-4d3n': {
+          title: 'Goa Luxury Romantic Honeymoon & Sunset Escapade (4D/3N)',
+          pages: Array.from({length: 6}, (_, i) => `assets/pdf_pages/goa_honeymoon_4d3n_p${i+1}.png`)
+        },
+        'goa-grand-family-heritage-5d4n': {
+          title: 'Goa Grand Heritage, Waterfalls & Coastal Family Holiday (5D/4N)',
+          pages: Array.from({length: 7}, (_, i) => `assets/pdf_pages/goa_family_5d4n_p${i+1}.png`)
+        },
+        'goa-south-goa-serenity-4d3n': {
+          title: 'South Goa Serenity & Beach Resort Retreat (4D/3N)',
+          pages: Array.from({length: 6}, (_, i) => `assets/pdf_pages/goa_south_4d3n_p${i+1}.png`)
+        },
+        'goa-getaway': {
+          title: 'Goa Getaway: Beaches, Heritage & Sunset Cruise (4D/3N)',
+          pages: [
+            'assets/pdf_pages/goa_getaway_4d3n_p1.png',
+            'assets/pdf_pages/goa_bachelors_4d3n_p2.png',
+            'assets/pdf_pages/goa_bachelors_4d3n_p3.png',
+            'assets/pdf_pages/goa_bachelors_4d3n_p4.png',
+            'assets/pdf_pages/goa_bachelors_4d3n_p5.png',
+            'assets/pdf_pages/goa_bachelors_4d3n_p6.png'
+          ]
+        },
+
+        // Manali & Kasol Packages
+        'manali-bachelors-3d2n': {
+          title: 'Kullu-Manali Bachelors Group Package (3D/2N)',
+          pages: Array.from({length: 9}, (_, i) => `assets/pdf_pages/media_1791137151750_p${i+1}.png`)
+        },
+        'manali-family-3d2n': {
+          title: 'Kullu-Manali Family Group Package (3D/2N)',
+          pages: Array.from({length: 9}, (_, i) => `assets/pdf_pages/media_1791137151836_p${i+1}.png`)
+        },
+        'manali-honeymoon-3d2n': {
+          title: 'Kullu-Manali Honeymoon Package (3D/2N)',
+          pages: Array.from({length: 9}, (_, i) => `assets/pdf_pages/media_1791137151909_p${i+1}.png`)
+        },
+        'kasol-manali-bachelors-4d3n': {
+          title: 'Kasol-Manali Bachelors Group Package (4D/3N)',
+          pages: Array.from({length: 10}, (_, i) => `assets/pdf_pages/media_1791137152052_p${i+1}.png`)
+        },
+        'kasol-manali-camping-4d3n': {
+          title: 'Kasol-Manali Riverside Camping & Adventure Package (4D/3N)',
+          pages: Array.from({length: 10}, (_, i) => `assets/pdf_pages/media_1791137152216_p${i+1}.png`)
+        },
+        'manali-family-snow-5d4n': {
+          title: 'Manali Family Snow Vacation & Solang Valley (5D/4N)',
+          pages: [
+            'assets/pdf_pages/manali_family_snow_5d4n_p1.png',
+            'assets/pdf_pages/media_1791137151836_p2.png',
+            'assets/pdf_pages/media_1791137151836_p3.png',
+            'assets/pdf_pages/media_1791137151836_p4.png',
+            'assets/pdf_pages/media_1791137151836_p5.png',
+            'assets/pdf_pages/media_1791137151836_p6.png',
+            'assets/pdf_pages/media_1791137151836_p7.png',
+            'assets/pdf_pages/media_1791137151836_p8.png',
+            'assets/pdf_pages/media_1791137151836_p9.png'
+          ]
+        },
+        'manali-adventure-escape-5d4n': {
+          title: 'Manali Adventure Escape & Rohtang Pass (5D/4N)',
+          pages: [
+            'assets/pdf_pages/manali_adventure_escape_5d4n_p1.png',
+            'assets/pdf_pages/media_1791137152216_p2.png',
+            'assets/pdf_pages/media_1791137152216_p3.png',
+            'assets/pdf_pages/media_1791137152216_p4.png',
+            'assets/pdf_pages/media_1791137152216_p5.png',
+            'assets/pdf_pages/media_1791137152216_p6.png',
+            'assets/pdf_pages/media_1791137152216_p7.png',
+            'assets/pdf_pages/media_1791137152216_p8.png',
+            'assets/pdf_pages/media_1791137152216_p9.png',
+            'assets/pdf_pages/media_1791137152216_p10.png'
+          ]
+        },
+        'manali-romantic-alpine-5d4n': {
+          title: 'Manali Romantic Alpine Retreat & Pine Valley (5D/4N)',
+          pages: [
+            'assets/pdf_pages/manali_romantic_alpine_5d4n_p1.png',
+            'assets/pdf_pages/media_1791137151909_p2.png',
+            'assets/pdf_pages/media_1791137151909_p3.png',
+            'assets/pdf_pages/media_1791137151909_p4.png',
+            'assets/pdf_pages/media_1791137151909_p5.png',
+            'assets/pdf_pages/media_1791137151909_p6.png',
+            'assets/pdf_pages/media_1791137151909_p7.png',
+            'assets/pdf_pages/media_1791137151909_p8.png',
+            'assets/pdf_pages/media_1791137151909_p9.png'
+          ]
+        },
+        'manali-bachelors-high-pass-4d3n': {
+          title: 'Manali Bachelors High Pass Tour & Camp (4D/3N)',
+          pages: [
+            'assets/pdf_pages/manali_bachelors_high_pass_4d3n_p1.png',
+            'assets/pdf_pages/media_1791137151750_p2.png',
+            'assets/pdf_pages/media_1791137151750_p3.png',
+            'assets/pdf_pages/media_1791137151750_p4.png',
+            'assets/pdf_pages/media_1791137151750_p5.png',
+            'assets/pdf_pages/media_1791137151750_p6.png',
+            'assets/pdf_pages/media_1791137151750_p7.png',
+            'assets/pdf_pages/media_1791137151750_p8.png',
+            'assets/pdf_pages/media_1791137151750_p9.png'
+          ]
+        },
+        'manali-solang-paragliding-4d3n': {
+          title: 'Solang Paragliding & Jogini Waterfall Trek (4D/3N)',
+          pages: [
+            'assets/pdf_pages/manali_solang_paragliding_4d3n_p1.png',
+            'assets/pdf_pages/media_1791137152216_p2.png',
+            'assets/pdf_pages/media_1791137152216_p3.png',
+            'assets/pdf_pages/media_1791137152216_p4.png',
+            'assets/pdf_pages/media_1791137152216_p5.png',
+            'assets/pdf_pages/media_1791137152216_p6.png',
+            'assets/pdf_pages/media_1791137152216_p7.png',
+            'assets/pdf_pages/media_1791137152216_p8.png',
+            'assets/pdf_pages/media_1791137152216_p9.png',
+            'assets/pdf_pages/media_1791137152216_p10.png'
+          ]
+        },
+        'manali-riverside-leisure-5d4n': {
+          title: 'Manali Riverside Peaceful Leisure & Cottage Retreat (5D/4N)',
+          pages: [
+            'assets/pdf_pages/manali_riverside_leisure_5d4n_p1.png',
+            'assets/pdf_pages/media_1791137151836_p2.png',
+            'assets/pdf_pages/media_1791137151836_p3.png',
+            'assets/pdf_pages/media_1791137151836_p4.png',
+            'assets/pdf_pages/media_1791137151836_p5.png',
+            'assets/pdf_pages/media_1791137151836_p6.png',
+            'assets/pdf_pages/media_1791137151836_p7.png',
+            'assets/pdf_pages/media_1791137151836_p8.png',
+            'assets/pdf_pages/media_1791137151836_p9.png'
+          ]
+        },
+        'manali-old-cafe-culture-4d3n': {
+          title: 'Old Manali Café Crawl & Heritage Culture Trail (4D/3N)',
+          pages: [
+            'assets/pdf_pages/manali_old_cafe_culture_4d3n_p1.png',
+            'assets/pdf_pages/media_1791137151750_p2.png',
+            'assets/pdf_pages/media_1791137151750_p3.png',
+            'assets/pdf_pages/media_1791137151750_p4.png',
+            'assets/pdf_pages/media_1791137151750_p5.png',
+            'assets/pdf_pages/media_1791137151750_p6.png',
+            'assets/pdf_pages/media_1791137151750_p7.png',
+            'assets/pdf_pages/media_1791137151750_p8.png',
+            'assets/pdf_pages/media_1791137151750_p9.png'
+          ]
+        },
+        'manali-rohtang-snow-safari-6d5n': {
+          title: 'Manali Rohtang Peak Snow Safari & Glaciers (6D/5N)',
+          pages: [
+            'assets/pdf_pages/manali_rohtang_snow_safari_6d5n_p1.png',
+            'assets/pdf_pages/media_1791137152216_p2.png',
+            'assets/pdf_pages/media_1791137152216_p3.png',
+            'assets/pdf_pages/media_1791137152216_p4.png',
+            'assets/pdf_pages/media_1791137152216_p5.png',
+            'assets/pdf_pages/media_1791137152216_p6.png',
+            'assets/pdf_pages/media_1791137152216_p7.png',
+            'assets/pdf_pages/media_1791137152216_p8.png',
+            'assets/pdf_pages/media_1791137152216_p9.png',
+            'assets/pdf_pages/media_1791137152216_p10.png'
+          ]
+        },
+        'kasol-manali-honeymoon-4d3n': {
+          title: 'Kasol & Manali Twin Valley Honeymoon Special (4D/3N)',
+          pages: [
+            'assets/pdf_pages/kasol_manali_honeymoon_4d3n_p1.png',
+            'assets/pdf_pages/media_1791137151909_p2.png',
+            'assets/pdf_pages/media_1791137151909_p3.png',
+            'assets/pdf_pages/media_1791137151909_p4.png',
+            'assets/pdf_pages/media_1791137151909_p5.png',
+            'assets/pdf_pages/media_1791137151909_p6.png',
+            'assets/pdf_pages/media_1791137151909_p7.png',
+            'assets/pdf_pages/media_1791137151909_p8.png',
+            'assets/pdf_pages/media_1791137151909_p9.png'
+          ]
+        },
+        'kasol-manali-river-camp-4d3n': {
+          title: 'Kasol & Manali Romantic Riverside Camp & Kheerganga (4D/3N)',
+          pages: [
+            'assets/pdf_pages/kasol_manali_river_camp_4d3n_p1.png',
+            'assets/pdf_pages/media_1791137152216_p2.png',
+            'assets/pdf_pages/media_1791137152216_p3.png',
+            'assets/pdf_pages/media_1791137152216_p4.png',
+            'assets/pdf_pages/media_1791137152216_p5.png',
+            'assets/pdf_pages/media_1791137152216_p6.png',
+            'assets/pdf_pages/media_1791137152216_p7.png',
+            'assets/pdf_pages/media_1791137152216_p8.png',
+            'assets/pdf_pages/media_1791137152216_p9.png',
+            'assets/pdf_pages/media_1791137152216_p10.png'
+          ]
+        },
+        'manali-hampta-pass-trek-5d4n': {
+          title: 'Manali Hampta Pass Trek & Chandratal Expedition (5D/4N)',
+          pages: [
+            'assets/pdf_pages/manali_hampta_pass_trek_5d4n_p1.png',
+            'assets/pdf_pages/media_1791137152216_p2.png',
+            'assets/pdf_pages/media_1791137152216_p3.png',
+            'assets/pdf_pages/media_1791137152216_p4.png',
+            'assets/pdf_pages/media_1791137152216_p5.png',
+            'assets/pdf_pages/media_1791137152216_p6.png',
+            'assets/pdf_pages/media_1791137152216_p7.png',
+            'assets/pdf_pages/media_1791137152216_p8.png',
+            'assets/pdf_pages/media_1791137152216_p9.png',
+            'assets/pdf_pages/media_1791137152216_p10.png'
+          ]
+        },
+
+        // Ladakh Packages
+        'ladakh-high-pass-odyssey-7d6n': {
+          title: 'Ladakh High Pass Odyssey: Nubra & Pangong Tso (7D/6N)',
+          pages: Array.from({length: 9}, (_, i) => `assets/pdf_pages/ladakh_highpass_7d6n_p${i+1}.png`)
+        }
+      };
+
+      // Find brochure data or pick destination default
+      let activeBrochure = PACKAGE_BROCHURES[trip.slug] || PACKAGE_BROCHURES[trip.id];
+      if (!activeBrochure) {
+        if (destKey === 'kerala') {
+          activeBrochure = PACKAGE_BROCHURES['kerala-honeymoon-5d4n'];
+        } else if (destKey === 'goa') {
+          activeBrochure = PACKAGE_BROCHURES['goa-bachelors-party-4d3n'];
+        } else if (destKey === 'kashmir') {
+          activeBrochure = PACKAGE_BROCHURES['kashmir-winter-group-4d3n'];
+        } else if (destKey === 'ladakh') {
+          activeBrochure = PACKAGE_BROCHURES['ladakh-high-pass-odyssey-7d6n'];
+        } else {
+          activeBrochure = PACKAGE_BROCHURES['manali-bachelors-3d2n'];
+        }
+      }
+
+      // 4. Share Button & Share Modal Logic
+      const shareModal = document.getElementById('wf-share-modal');
+      const shareBtn = document.getElementById('trip-share-btn');
+      const shareCloseBtn = document.getElementById('share-modal-close');
+      const shareUrlInput = document.getElementById('share-url-input');
+      const shareCopyBtn = document.getElementById('share-copy-btn');
+      const currentUrl = window.location.href;
+
+      if (shareBtn && shareModal) {
+        shareBtn.addEventListener('click', () => {
+          document.getElementById('share-preview-thumb').src = photos[0];
+          document.getElementById('share-preview-title').textContent = trip.name;
+          document.getElementById('share-preview-meta').textContent = `${trip.duration || ''} · ${trip.priceFormatted || 'Price on Request'}`;
+          shareUrlInput.value = currentUrl;
+
+          // Configure direct social sharing links
+          const shareText = `Check out this ${trip.name} from Crazy Tours and Travels (${trip.duration || ''}):`;
+          const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + currentUrl)}`;
+          const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+          const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`;
+          const mailUrl = `mailto:?subject=${encodeURIComponent(trip.name + ' — Crazy Tours & Travels')}&body=${encodeURIComponent(shareText + '\n\n' + currentUrl)}`;
+
+          document.getElementById('share-btn-wa').href = waUrl;
+          document.getElementById('share-btn-fb').href = fbUrl;
+          document.getElementById('share-btn-x').href = xUrl;
+          document.getElementById('share-btn-mail').href = mailUrl;
+
+          // Native navigator share if on mobile supported device
+          if (navigator.share && window.innerWidth < 768) {
+            navigator.share({
+              title: trip.name,
+              text: shareText,
+              url: currentUrl
+            }).catch(() => {
+              // User cancelled or unsupported, fallback to modal
+              shareModal.classList.add('is-open');
+              document.body.style.overflow = 'hidden';
+            });
+          } else {
+            shareModal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+
+        function closeShareModal() {
+          shareModal.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+
+        if (shareCloseBtn) shareCloseBtn.addEventListener('click', closeShareModal);
+        shareModal.addEventListener('click', (e) => {
+          if (e.target === shareModal) closeShareModal();
+        });
+
+        if (shareCopyBtn) {
+          shareCopyBtn.addEventListener('click', async () => {
+            try {
+              await navigator.clipboard.writeText(currentUrl);
+              shareCopyBtn.textContent = '✓ Copied!';
+              shareCopyBtn.classList.add('copied');
+              setTimeout(() => {
+                shareCopyBtn.textContent = 'Copy Link';
+                shareCopyBtn.classList.remove('copied');
+              }, 2000);
+            } catch (err) {
+              shareUrlInput.select();
+              document.execCommand('copy');
+              shareCopyBtn.textContent = '✓ Copied!';
+              setTimeout(() => { shareCopyBtn.textContent = 'Copy Link'; }, 2000);
+            }
+          });
+        }
+      }
+
+      // 5. Brochure Button & Brochure Modal Logic
+      const brochureModal = document.getElementById('wf-brochure-modal');
+      const brochureBtn = document.getElementById('trip-brochure-btn');
+      const brochureCloseBtn = document.getElementById('brochure-modal-close');
+      const brochureMainImg = document.getElementById('brochure-main-img');
+      const brochurePageBadge = document.getElementById('brochure-page-badge');
+      const brochureModalTitle = document.getElementById('brochure-modal-title');
+      const brochurePrevBtn = document.getElementById('brochure-prev-btn');
+      const brochureNextBtn = document.getElementById('brochure-next-btn');
+      const brochureThumbsBar = document.getElementById('brochure-thumbs-bar');
+      const brochurePrintBtn = document.getElementById('brochure-print-btn');
+      const brochureWaBtn = document.getElementById('brochure-wa-btn');
+
+      let currentBrochurePage = 0;
+      let brochurePages = activeBrochure ? activeBrochure.pages : [];
+
+      function showBrochurePage(pageIdx) {
+        if (!brochurePages || brochurePages.length === 0) return;
+        currentBrochurePage = Math.max(0, Math.min(pageIdx, brochurePages.length - 1));
+        
+        brochureMainImg.src = brochurePages[currentBrochurePage];
+        brochureMainImg.style.opacity = '1';
+
+        brochurePageBadge.textContent = `Page ${currentBrochurePage + 1} of ${brochurePages.length}`;
+
+        // Update thumbnail active indicators
+        document.querySelectorAll('.wf-brochure-thumb-item').forEach((thumb, idx) => {
+          thumb.classList.toggle('is-active', idx === currentBrochurePage);
+        });
+
+        // Scroll thumb into view
+        const activeThumb = document.querySelectorAll('.wf-brochure-thumb-item')[currentBrochurePage];
+        if (activeThumb && brochureThumbsBar) {
+          activeThumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      }
+
+      if (brochureBtn && brochureModal) {
+        brochureBtn.addEventListener('click', () => {
+          brochureModalTitle.textContent = activeBrochure.title || `${trip.name} Brochure`;
+          
+          // Populate WhatsApp brochure link
+          if (brochureWaBtn) {
+            const waReqText = encodeURIComponent(`Hello Crazy Tours! Please share the complete PDF brochure for "${trip.name}" (${trip.duration || ''}).`);
+            brochureWaBtn.href = `https://wa.me/918867229998?text=${waReqText}`;
+          }
+
+          // Populate thumbnails
+          if (brochureThumbsBar) {
+            brochureThumbsBar.innerHTML = brochurePages.map((pg, idx) => `
+              <div class="wf-brochure-thumb-item ${idx === 0 ? 'is-active' : ''}" data-idx="${idx}">
+                <img src="${pg}" alt="Page ${idx + 1}" loading="lazy">
+              </div>
+            `).join('');
+
+            document.querySelectorAll('.wf-brochure-thumb-item').forEach(item => {
+              item.addEventListener('click', () => {
+                const idx = parseInt(item.getAttribute('data-idx'), 10);
+                showBrochurePage(idx);
+              });
+            });
+          }
+
+          showBrochurePage(0);
+          brochureModal.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        });
+
+        function closeBrochureModal() {
+          brochureModal.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+
+        if (brochureCloseBtn) brochureCloseBtn.addEventListener('click', closeBrochureModal);
+        brochureModal.addEventListener('click', (e) => {
+          if (e.target === brochureModal) closeBrochureModal();
+        });
+
+        if (brochurePrevBtn) {
+          brochurePrevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentBrochurePage > 0) {
+              showBrochurePage(currentBrochurePage - 1);
+            } else {
+              showBrochurePage(brochurePages.length - 1);
+            }
+          });
+        }
+
+        if (brochureNextBtn) {
+          brochureNextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentBrochurePage < brochurePages.length - 1) {
+              showBrochurePage(currentBrochurePage + 1);
+            } else {
+              showBrochurePage(0);
+            }
+          });
+        }
+
+        // Print handler (safely using DOM APIs, avoids document.write and raw body tags)
+        if (brochurePrintBtn) {
+          brochurePrintBtn.addEventListener('click', () => {
+            const win = window.open('', '_blank');
+            if (!win) return;
+            win.document.title = (activeBrochure ? activeBrochure.title : trip.name) + ' — Crazy Tours and Travels';
+            const style = win.document.createElement('style');
+            style.textContent = 'body { margin: 0; background: #fff; font-family: sans-serif; text-align: center; } img { max-width: 100%; height: auto; page-break-after: always; display: block; margin: 0 auto 20px; } @media print { img { margin: 0; width: 100%; height: 100vh; object-fit: contain; } }';
+            win.document.head.appendChild(style);
+            brochurePages.forEach(p => {
+              const img = win.document.createElement('img');
+              img.src = p;
+              win.document.body.appendChild(img);
+            });
+            setTimeout(() => { win.print(); }, 400);
+          });
+        }
+
+        // Keyboard navigation for brochure modal
+        document.addEventListener('keydown', (e) => {
+          if (!brochureModal.classList.contains('is-open')) return;
+          if (e.key === 'Escape') closeBrochureModal();
+          if (e.key === 'ArrowLeft' && brochurePrevBtn) brochurePrevBtn.click();
+          if (e.key === 'ArrowRight' && brochureNextBtn) brochureNextBtn.click();
+        });
+      }
 
       // 4. Overview & Highlights
-      document.getElementById('trip-overview').innerHTML = trip.overview;
+      const overviewEl = document.getElementById('trip-overview');
+      if (overviewEl) overviewEl.innerHTML = trip.overview || trip.summary || '';
 
       const highlights = trip.highlights || [
         `Signature sights across ${trip.destinationName || 'the region'}`,
@@ -1755,51 +3282,246 @@
         "24/7 dedicated travel concierge assistance"
       ];
       const hlContainer = document.getElementById('trip-highlights-box');
-      hlContainer.innerHTML = highlights.map(hl => `
-        <div class="wf-hl-item">
-          <span class="wf-hl-icon">●</span>
-          <span>${hl}</span>
-        </div>
-      `).join('');
+      if (hlContainer) {
+        hlContainer.innerHTML = highlights.map(hl => `
+          <div class="wf-hl-item">
+            <span class="wf-hl-icon">●</span>
+            <span>${hl}</span>
+          </div>
+        `).join('');
+      }
 
-      // 5. Day-by-Day Itinerary (Exact Blueprint with Accordion Toggle)
+      // 5. Trip Information Strip Population (Above Itinerary)
+      const specDest = document.getElementById('spec-destination');
+      const specDur = document.getElementById('spec-duration');
+      const specDate = document.getElementById('spec-travel-date');
+      const specDep = document.getElementById('spec-departure');
+
+      if (specDest) specDest.textContent = trip.destinationName || trip.destination || 'India';
+      if (specDur) specDur.textContent = trip.duration || (trip.days ? `${trip.days} Days / ${trip.days - 1} Nights` : 'Flexible');
+      if (specDate) specDate.textContent = trip.nextDeparture || 'Based on customer selection';
+      if (specDep) {
+        let departureCity = 'Cochin';
+        if (trip.place && trip.place.includes('→')) {
+          departureCity = trip.place.split('→')[0].trim();
+        } else if (trip.departureCity) {
+          departureCity = trip.departureCity;
+        } else if (trip.destination) {
+          const d = trip.destination.toLowerCase();
+          if (d === 'manali') departureCity = 'Delhi / Chandigarh';
+          else if (d === 'kashmir') departureCity = 'Srinagar';
+          else if (d === 'goa') departureCity = 'Goa Airport / Madgaon';
+          else if (d === 'ladakh') departureCity = 'Leh';
+        }
+        specDep.textContent = departureCity;
+      }
+
+      // 6. Day-by-Day Editorial Travel Itinerary Timeline
       const itContainer = document.getElementById('trip-itinerary-container');
       const itinerary = trip.itinerary || [];
-      itContainer.innerHTML = itinerary.map((item, idx) => {
-        const dayNumberStr = String(item.day || (idx + 1)).padStart(2, '0');
-        const thumb = item.thumbnail || photos[idx % photos.length] || photos[0];
-        return `
-          <div class="wf-itinerary-row">
-            <div class="wf-itin-line-wrap">
-              <div class="wf-itin-day-badge">${dayNumberStr}</div>
-              <div class="wf-itin-connecting-line"></div>
-            </div>
 
-            <div class="wf-itin-card is-expanded" data-day="${idx}">
-              <img class="wf-itin-thumb" src="${thumb}" alt="Day ${dayNumberStr} thumbnail" loading="lazy">
-              
-              <div class="wf-itin-body">
-                <div class="wf-itin-day-label">DAY ${dayNumberStr}</div>
-                <h3 class="wf-itin-title">${item.title}</h3>
-                <p class="wf-itin-desc">${item.description}</p>
-              </div>
+      // Curated destination-specific day image resolver
+      const DEST_DAY_FALLBACKS = {
+        kerala: [
+          'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80', // Cheeyappara Waterfalls & Munnar Drive
+          'https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?auto=format&fit=crop&w=800&q=80', // Munnar Tea Gardens
+          'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80', // Periyar Wildlife / Thekkady
+          'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80', // Alleppey Houseboat Backwaters
+          'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80', // Fort Cochin Heritage
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80', // Sunset Beach
+          'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80'  // Jatayu Palm Groves
+        ],
+        manali: [
+          'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=800&q=80'
+        ],
+        kashmir: [
+          'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+        ],
+        goa: [
+          'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+        ]
+      };
 
-              <div class="wf-itin-toggle-btn" aria-label="Toggle details">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('');
+      function parseDayDetails(item) {
+        let points = [];
+        let places = [];
+        let stay = item.stay || '';
+        let meals = item.meals || '';
 
-      // Add accordion click handling to itinerary cards
-      document.querySelectorAll('.wf-itin-card').forEach(card => {
-        card.addEventListener('click', () => {
-          card.classList.toggle('is-expanded');
+        if (Array.isArray(item.points) && item.points.length > 0) {
+          points = [...item.points];
+        }
+
+        if (Array.isArray(item.places) && item.places.length > 0) {
+          places = [...item.places];
+        } else if (Array.isArray(item.spots) && item.spots.length > 0) {
+          places = item.spots.map(s => typeof s === 'string' ? s : s.name).filter(Boolean);
+        }
+
+        const desc = item.description || '';
+
+        // If no explicit points, parse from description
+        if (points.length === 0 && desc) {
+          let cleanDesc = desc;
+          
+          if (/places covered:\s*/i.test(cleanDesc)) {
+            const parts = cleanDesc.split(/places covered:\s*/i);
+            cleanDesc = parts[0];
+            const rest = parts[1] || '';
+            const sub = rest.split(/overnight stay:\s*|overnight:\s*|stay:\s*/i);
+            if (places.length === 0 && sub[0]) {
+              places = sub[0].split(/[,•;]+/).map(p => p.trim()).filter(p => p.length > 1);
+            }
+            if (!stay && sub[1]) {
+              stay = sub[1].split(/meals:\s*/i)[0].trim().replace(/\.$/, '');
+            }
+          } else if (/overnight stay:\s*|overnight:\s*/i.test(cleanDesc)) {
+            const parts = cleanDesc.split(/overnight stay:\s*|overnight:\s*/i);
+            cleanDesc = parts[0];
+            if (!stay && parts[1]) {
+              stay = parts[1].split(/meals:\s*/i)[0].trim().replace(/\.$/, '');
+            }
+          }
+
+          // Split remaining narrative into brochure bullet steps
+          if (cleanDesc.includes('\n')) {
+            points = cleanDesc.split('\n').map(l => l.replace(/^[➔•\-\*]\s*/, '').trim()).filter(Boolean);
+          } else {
+            const sentences = cleanDesc.match(/[^\.!\?]+[\.!\?]+/g);
+            if (sentences && sentences.length > 0) {
+              points = sentences.map(s => s.trim()).filter(s => s.length > 5);
+            } else if (cleanDesc.trim()) {
+              points = [cleanDesc.trim()];
+            }
+          }
+        }
+
+        return { points, places, stay, meals };
+      }
+
+      window.toggleItineraryDay = function(dayNumber) {
+        const card = document.getElementById(`itin-day-${dayNumber}`);
+        if (!card) return;
+        const isCollapsed = card.classList.toggle('is-collapsed');
+        const header = card.querySelector('.wf-itin-accordion-header');
+        if (header) {
+          header.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
+        }
+      };
+
+      window.toggleAllItineraryDays = function(expand) {
+        const cards = document.querySelectorAll('.wf-itin-accordion-entry');
+        cards.forEach(card => {
+          if (expand) {
+            card.classList.remove('is-collapsed');
+            const h = card.querySelector('.wf-itin-accordion-header');
+            if (h) h.setAttribute('aria-expanded', 'true');
+          } else {
+            card.classList.add('is-collapsed');
+            const h = card.querySelector('.wf-itin-accordion-header');
+            if (h) h.setAttribute('aria-expanded', 'false');
+          }
         });
-      });
+      };
+
+      if (itContainer) {
+        itContainer.innerHTML = itinerary.map((item, idx) => {
+          const dayNum = item.day || (idx + 1);
+          const dayNumberStr = String(dayNum).padStart(2, '0');
+          const dKey = (trip.destination || 'kerala').toLowerCase();
+          const fallbackPool = DEST_DAY_FALLBACKS[dKey] || DEST_DAY_FALLBACKS.kerala;
+          const dayImage = item.thumbnail || fallbackPool[idx % fallbackPool.length];
+          const details = parseDayDetails(item);
+
+          // Build brochure-style points with orange arrows
+          const pointsHtml = details.points.map(pt => `
+            <div class="wf-itin-step-row">
+              <span class="wf-itin-step-arrow">➔</span>
+              <span class="wf-itin-step-text">${pt}</span>
+            </div>
+          `).join('');
+
+          // Places covered badges
+          const placesHtml = details.places.length > 0 ? `
+            <div class="wf-itin-places-box">
+              <div class="wf-itin-places-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Places Covered</span>
+              </div>
+              <div class="wf-itin-tags-row">
+                ${details.places.map(p => `<span class="wf-itin-place-tag">${p}</span>`).join('')}
+              </div>
+            </div>
+          ` : '';
+
+          // Stay & Meals meta
+          const hasMeta = details.stay || details.meals;
+          const metaHtml = hasMeta ? `
+            <div class="wf-itin-meta-strip">
+              ${details.stay ? `<span class="wf-itin-meta-badge wf-itin-meta-stay">🏨 <strong>Stay:</strong> ${details.stay}</span>` : ''}
+              ${details.meals ? `<span class="wf-itin-meta-badge wf-itin-meta-meals">🍽 <strong>Meals:</strong> ${details.meals}</span>` : ''}
+            </div>
+          ` : '';
+
+          return `
+            <div class="wf-itin-accordion-entry" id="itin-day-${dayNum}" data-day="${dayNum}">
+              <!-- Header Row: Always visible with Day Badge, Heading, and Toggle Arrow -->
+              <div class="wf-itin-accordion-header" onclick="toggleItineraryDay(${dayNum})" role="button" tabindex="0" aria-expanded="true">
+                <div class="wf-itin-header-left">
+                  <span class="wf-itin-day-pill">DAY ${dayNumberStr}</span>
+                  <h3 class="wf-itin-dest-heading">${item.title}</h3>
+                </div>
+                <button type="button" class="wf-itin-arrow-btn" aria-label="Toggle Day ${dayNumberStr} details" onclick="event.stopPropagation(); toggleItineraryDay(${dayNum});">
+                  <svg class="wf-itin-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Collapsible Body: Fully hidden when day is collapsed -->
+              <div class="wf-itin-accordion-body">
+                <div class="wf-itin-body-layout">
+                  <!-- Destination Photo Card -->
+                  <div class="wf-itin-media-col">
+                    <div class="wf-itin-media-wrap">
+                      <img src="${dayImage}" alt="Day ${dayNumberStr} - ${item.title}" loading="lazy">
+                      <span class="wf-itin-media-badge">DAY ${dayNumberStr}</span>
+                    </div>
+                  </div>
+
+                  <!-- Brochure-Style Details -->
+                  <div class="wf-itin-details-col">
+                    <div class="wf-itin-steps-list">
+                      ${pointsHtml}
+                    </div>
+                    ${placesHtml}
+                    ${metaHtml}
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        if (params.get('collapseDay1')) {
+          toggleItineraryDay(1);
+        }
+        if (params.get('collapseAll')) {
+          toggleAllItineraryDays(false);
+        }
+      }
 
       // 6. Inclusions & Exclusions
       const included = trip.included || [
@@ -1837,6 +3559,11 @@
       document.getElementById('card-price-display').textContent = trip.priceFormatted || 'Price on Request';
       document.getElementById('card-departure-date').textContent = trip.nextDeparture || 'Daily Private Departures';
       
+      const badgeEl = document.getElementById('card-highlight-badge');
+      if (badgeEl) {
+        badgeEl.textContent = trip.styleName || (trip.travelStyle ? trip.travelStyle.toUpperCase() : 'Signature Tour');
+      }
+
       const waLink = document.getElementById('trip-card-wa-link');
       if (waLink) {
         const waText = encodeURIComponent(`Hello Crazy Tours! I am interested in booking the "${trip.name}" (${trip.priceFormatted || ''}). Please share details.`);

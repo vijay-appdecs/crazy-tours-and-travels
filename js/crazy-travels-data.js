@@ -6,7 +6,7 @@ const CRAZY_TRAVELS_DATA = {
   "brand": {
     "name": "Crazy Tours and Travels",
     "shortName": "Crazy Tours",
-    "tagline": "Travel Beyond Ordinary \u2014 Luxury & Experiential Journeys",
+    "tagline": "Travel Beyond Ordinary — Luxury & Experiential Journeys",
     "logoIcon": "assets/images/logo-icon.png",
     "logoFull": "assets/images/logo.png",
     "email": "crazytraveller11@gmail.com",
@@ -22,7 +22,7 @@ const CRAZY_TRAVELS_DATA = {
       "since": "2015",
       "maxTravelers": "12 max",
       "localGuides": "100%",
-      "countries": "5 destinations",
+      "countries": "4 destinations",
       "avgGroupSize": "8",
       "support": "24/7 Telugu Concierge",
       "rating": "4.9",
@@ -148,23 +148,6 @@ const CRAZY_TRAVELS_DATA = {
       ]
     },
     {
-      "id": "ladakh",
-      "slug": "ladakh",
-      "name": "Ladakh",
-      "region": "Trans-Himalayas",
-      "tagline": "High mountain passes, turquoise lakes & Buddhist monasteries",
-      "bestTime": "May to September",
-      "intro": "The Land of High Passes. Cross Khardung La at 17,582 feet, ride double-humped camels through the white sand dunes of Nubra Valley, and witness the shifting sapphire blues of Pangong Tso.",
-      "primaryPhoto": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-      "secondaryPhoto": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-      "overview": "An awe-inspiring high-altitude desert where ancient Tibetan monasteries perch on barren cliffs and crystal lakes reflect snow peaks. Expert oxygen-assisted logistics provided.",
-      "highlights": [
-        "Camping in luxury yurts beside the changeless waters of Pangong Tso",
-        "Bactrian camel ride through the cold desert dunes of Hunder",
-        "Morning prayer chant ceremonies at Thiksey and Hemis monasteries"
-      ]
-    },
-    {
       "id": "japan",
       "slug": "japan",
       "name": "Japan",
@@ -192,7 +175,7 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "culture",
       "styleName": "Heritage & Living Culture",
       "days": 8,
-      "duration": "8 days",
+      "duration": "8D/7N",
       "price": 185000,
       "priceFormatted": "from ₹1,85,000",
       "groupSize": "Small Group (Max 12)",
@@ -204,51 +187,61 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "An 8-day cinematic journey from Tokyo's neon alleys to Kyoto's serene temple gardens, Hakone hot springs, and ancient cedar mountain trails.",
       "overview": "Curated for travelers seeking deep cultural resonance. Includes 7-day JR rail pass, authentic onsen ryokan stays with multi-course Kaiseki dinners, and private local guide access.",
       "photos": [
+        "https://images.pexels.com/photos/35181432/pexels-photo-35181432.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/18234078/pexels-photo-18234078.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Tokyo: Neon Lights & Shinjuku Walk",
-          "description": "Land at Tokyo Haneda/Narita. Private airport greeting and transfer to hotel in Shinjuku. Evening welcome dinner with local ramen and skyline views."
+          "description": "Land at Tokyo Haneda/Narita. Private airport greeting and transfer to hotel in Shinjuku. Evening welcome dinner with local ramen and skyline views.",
+          "thumbnail": "https://images.pexels.com/photos/35568183/pexels-photo-35568183.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Tokyo Heritage: Asakusa Sensoji & Meiji Shrine",
-          "description": "Explore ancient Sensoji temple, walk through the tranquil forests of Meiji Jingu shrine, and witness the bustling Shibuya crossing."
+          "description": "Explore ancient Sensoji temple, walk through the tranquil forests of Meiji Jingu shrine, and witness the bustling Shibuya crossing.",
+          "thumbnail": "https://images.pexels.com/photos/20255540/pexels-photo-20255540.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Hakone Hot Springs & Mount Fuji Vistas",
-          "description": "Scenic train to Hakone. Cruise Lake Ashi with views of Mount Fuji and check into an authentic hot spring ryokan with traditional onsen baths."
+          "description": "Scenic train to Hakone. Cruise Lake Ashi with views of Mount Fuji and check into an authentic hot spring ryokan with traditional onsen baths.",
+          "thumbnail": "https://images.pexels.com/photos/8896605/pexels-photo-8896605.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Shinkansen Bullet Train to Kyoto & Gion Sunset",
-          "description": "Board the high-speed Shinkansen to Kyoto. Tour the lantern-lit wooden tea houses of Gion and sample seasonal Kyoto matcha sweets."
+          "description": "Board the high-speed Shinkansen to Kyoto. Tour the lantern-lit wooden tea houses of Gion and sample seasonal Kyoto matcha sweets.",
+          "thumbnail": "https://images.pexels.com/photos/27241387/pexels-photo-27241387.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Arashiyama Bamboo Forest & Golden Pavilion",
-          "description": "Serenity in Arashiyama bamboo groves, followed by the gold-leaf reflection of Kinkaku-ji temple and Ryoanji rock garden."
+          "description": "Serenity in Arashiyama bamboo groves, followed by the gold-leaf reflection of Kinkaku-ji temple and Ryoanji rock garden.",
+          "thumbnail": "https://images.pexels.com/photos/35181469/pexels-photo-35181469.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Fushimi Inari Torii Path & Nara Deer Park",
-          "description": "Hike the 10,000 red torii gates of Fushimi Inari before heading to Nara to see the Great Buddha of Todai-ji and bow to sacred deer."
+          "description": "Hike the 10,000 red torii gates of Fushimi Inari before heading to Nara to see the Great Buddha of Todai-ji and bow to sacred deer.",
+          "thumbnail": "https://images.pexels.com/photos/26946364/pexels-photo-26946364.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 7,
           "title": "Osaka Food Haven: Dotonbori Street Eats",
-          "description": "Travel to vibrant Osaka, experience street food culture in Dotonbori, and tour the historic ramparts of Osaka Castle."
+          "description": "Travel to vibrant Osaka, experience street food culture in Dotonbori, and tour the historic ramparts of Osaka Castle.",
+          "thumbnail": "https://images.pexels.com/photos/30700527/pexels-photo-30700527.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 8,
           "title": "Farewell Japan & Kansai Airport Departure",
-          "description": "Final morning souvenir shopping and matcha tasting before transfer to Kansai International Airport for your flight home."
+          "description": "Final morning souvenir shopping and matcha tasting before transfer to Kansai International Airport for your flight home.",
+          "thumbnail": "https://images.pexels.com/photos/31193736/pexels-photo-31193736.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/35181432/pexels-photo-35181432.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-honeymoon-5d4n",
@@ -259,47 +252,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 24500,
-      "priceFormatted": "from \u20b924,500",
+      "priceFormatted": "from ₹24,500",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Cochin",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Cochin",
       "featured": true,
       "summary": "An enchanting 5-day romantic escape covering mist-clad Munnar tea gardens, Periyar wildlife sanctuary in Thekkady, serene Alleppey backwaters, and colonial Fort Cochin.",
       "overview": "Curated specially for couples seeking romance amidst nature. Experience tea hills, spice plantations, Periyar lake boating, backwater sunsets, and private cab comfort with dedicated 24/7 Telugu concierge care.",
       "photos": [
-        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/13045091/pexels-photo-13045091.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/14577611/pexels-photo-14577611.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/18606529/pexels-photo-18606529.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/36717711/pexels-photo-36717711.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/36982207/pexels-photo-36982207.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/26969133/pexels-photo-26969133.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Cochin: Fort Cochin Heritage & Departure",
-          "description": "After breakfast, drive 1 hour to Cochin. Tour Fort Cochin's colonial landmarks before drop-off at Cochin Airport or Railway Station. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street, Fort Cochin Coastal Walk. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, drive 1 hour to Cochin. Tour Fort Cochin's colonial landmarks before drop-off at Cochin Airport or Railway Station. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street, Fort Cochin Coastal Walk. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/15308719/pexels-photo-15308719.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -310,7 +308,8 @@ const CRAZY_TRAVELS_DATA = {
         "Full sightseeing itinerary as per route in Munnar, Thekkady, Alleppey & Fort Cochin",
         "All fuel, state border taxes, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge assistance throughout your journey"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/13045091/pexels-photo-13045091.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-honeymoon-4d3n",
@@ -321,7 +320,7 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 Days / 3 Nights",
+      "duration": "4D/3N",
       "price": 19600,
       "priceFormatted": "from ₹19,600",
       "groupSize": "Private Couple",
@@ -340,42 +339,60 @@ const CRAZY_TRAVELS_DATA = {
         "Private & Comfortable Transfers"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=85",
-        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1000&q=80",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+        "https://images.pexels.com/photos/13828622/pexels-photo-13828622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/19930339/pexels-photo-19930339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/1050604/pexels-photo-1050604.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "gallery": [
-        { "title": "Munnar Tea Plantations", "url": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80" },
-        { "title": "Kerala Houseboats", "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80" },
-        { "title": "Cheeyappara Waterfalls", "url": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80" },
-        { "title": "Sunset Beaches", "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" },
-        { "title": "Fort Cochin Heritage", "url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80" },
-        { "title": "Misty Mountains", "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80" }
+        {
+          "title": "Munnar Tea Plantations",
+          "url": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Kerala Houseboats",
+          "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Cheeyappara Waterfalls",
+          "url": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Sunset Beaches",
+          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Fort Cochin Heritage",
+          "url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "title": "Misty Mountains",
+          "url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
+        }
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
           "description": "Arrive at Cochin and meet your representative. Drive to Munnar enjoying scenic views, waterfalls, and lush tea estates.",
-          "thumbnail": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=400&q=80"
+          "thumbnail": "https://images.pexels.com/photos/5114713/pexels-photo-5114713.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration",
           "description": "Visit tea gardens, Eravikulam National Park (optional), Mattupetty Dam, Echo Point, and more.",
-          "thumbnail": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=400&q=80"
+          "thumbnail": "https://images.pexels.com/photos/22644810/pexels-photo-22644810.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Alleppey – Backwaters Experience",
           "description": "Check out and drive to Alleppey. Enjoy a private houseboat stay with delicious meals and peaceful backwater views.",
-          "thumbnail": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=400&q=80"
+          "thumbnail": "https://images.pexels.com/photos/10933045/pexels-photo-10933045.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Fort Cochin Sightseeing & Departure",
           "description": "After breakfast, check out and explore Fort Cochin's heritage spots. Later, transfer to Cochin Airport or Railway Station.",
-          "thumbnail": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=400&q=80"
+          "thumbnail": "https://images.pexels.com/photos/34058995/pexels-photo-34058995.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -393,7 +410,8 @@ const CRAZY_TRAVELS_DATA = {
         "Personal expenses",
         "Travel insurance",
         "Activities not mentioned in the itinerary"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/13828622/pexels-photo-13828622.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-trivandrum-honeymoon-5d4n",
@@ -404,47 +422,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 24500,
-      "priceFormatted": "from \u20b924,500",
+      "priceFormatted": "from ₹24,500",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Varkala / Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Varkala / Trivandrum",
       "featured": true,
       "summary": "A deeply rewarding couples journey blending Munnar misty hills, Thekkady wildlife, an included 1-hour Alleppey Shikara ride, Varkala cliff sea views, and sacred Padmanabhaswamy Temple.",
       "overview": "Combining romantic hill stations, tranquil backwaters with included Shikara cruise, and coastal spirituality. Includes 2N Munnar, 1N Alleppey, and 1N Varkala or Trivandrum.",
       "photos": [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/10229156/pexels-photo-10229156.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/8565753/pexels-photo-8565753.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/32486141/pexels-photo-32486141.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/20522541/pexels-photo-20522541.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/35994957/pexels-photo-35994957.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/32200589/pexels-photo-32200589.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Included 1-Hour Backwater Shikara",
-          "description": "After breakfast, journey down from Thekkady to Alleppey. Enjoy an included 1-hour Shikara boat ride through backwater canals and relax by the beach. Places covered: Alleppey Backwaters Network, Floating Paddy Fields & Palms, 1-Hour Included Shikara Boat Ride, Alleppey Beach Sunset. Overnight stay: Alleppey Hotel / Resort."
+          "description": "After breakfast, journey down from Thekkady to Alleppey. Enjoy an included 1-hour Shikara boat ride through backwater canals and relax by the beach. Places covered: Alleppey Backwaters Network, Floating Paddy Fields & Palms, 1-Hour Included Shikara Boat Ride, Alleppey Beach Sunset. Overnight stay: Alleppey Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/19260643/pexels-photo-19260643.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Varkala Cliff / Trivandrum Padmanabhaswamy Temple & Departure",
-          "description": "After breakfast, travel south along the coastal highway to Varkala Cliff and Thiruvananthapuram. Visit the majestic Sree Ananthapadmanabha Swamy Temple, Napier Museum, and Secretariat before return departure. Places covered: Varkala Beach & Cliff Lookout, Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat & Mini Zoo. Overnight stay: Departure / End of Tour (or 1N Varkala/Trivandrum depending on return timing)."
+          "description": "After breakfast, travel south along the coastal highway to Varkala Cliff and Thiruvananthapuram. Visit the majestic Sree Ananthapadmanabha Swamy Temple, Napier Museum, and Secretariat before return departure. Places covered: Varkala Beach & Cliff Lookout, Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat & Mini Zoo. Overnight stay: Departure / End of Tour (or 1N Varkala/Trivandrum depending on return timing).",
+          "thumbnail": "https://images.pexels.com/photos/24361040/pexels-photo-24361040.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -456,7 +479,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Thekkady, Alleppey, Varkala Cliff & Trivandrum",
         "All toll taxes, parking fees, driver allowance, and fuel",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/10229156/pexels-photo-10229156.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-jatayu-honeymoon-6d5n",
@@ -467,52 +491,58 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 29400,
-      "priceFormatted": "from \u20b929,400",
+      "priceFormatted": "from ₹29,400",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Jatayu \u2192 Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Jatayu → Trivandrum",
       "featured": true,
       "summary": "An unforgettable 6-day honeymoon expedition combining Munnar tea hills, Thekkady wildlife, Alleppey canals, the iconic 200-ft Jatayu Earth's Center bird sculpture, and Trivandrum's royal heritage.",
       "overview": "The ultimate Kerala romantic itinerary. Features panoramic hill stations, Periyar boat safaris, backwaters, the architectural marvel of Jatayu Earth's Center, and Trivandrum beach.",
       "photos": [
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/29451111/pexels-photo-29451111.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/9615608/pexels-photo-9615608.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/27728559/pexels-photo-27728559.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/39294794/pexels-photo-39294794.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/18617044/pexels-photo-18617044.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/37654954/pexels-photo-37654954.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/38087449/pexels-photo-38087449.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Jatayu Earth's Center & Trivandrum Beach",
-          "description": "After breakfast, embark on a 160 km (approx 4:30 hours) drive to the world-renowned Jatayu Earth's Center at Chadayamangalam. Ascend the rock mountain to view the world's largest bird sculpture, then continue to Trivandrum Beach. Places covered: Jatayu Earth's Center Rock Sculpture, Jatayu Nature Park & Cable Car Point, Trivandrum / Kovalam Beach, Coastal Promenade. Overnight stay: Trivandrum or Kovalam Hotel."
+          "description": "After breakfast, embark on a 160 km (approx 4:30 hours) drive to the world-renowned Jatayu Earth's Center at Chadayamangalam. Ascend the rock mountain to view the world's largest bird sculpture, then continue to Trivandrum Beach. Places covered: Jatayu Earth's Center Rock Sculpture, Jatayu Nature Park & Cable Car Point, Trivandrum / Kovalam Beach, Coastal Promenade. Overnight stay: Trivandrum or Kovalam Hotel.",
+          "thumbnail": "https://images.pexels.com/photos/30205066/pexels-photo-30205066.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Trivandrum City Sightseeing & Return Journey",
-          "description": "After breakfast, check-out and visit the spiritual and royal landmarks of Trivandrum including Padmanabhaswamy Temple and Napier Museum, before returning to Cochin Airport/Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat Building, Mini Zoo & Botanical Gardens. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, check-out and visit the spiritual and royal landmarks of Trivandrum including Padmanabhaswamy Temple and Napier Museum, before returning to Cochin Airport/Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat Building, Mini Zoo & Botanical Gardens. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/30205132/pexels-photo-30205132.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -523,7 +553,8 @@ const CRAZY_TRAVELS_DATA = {
         "Sightseeing in Munnar, Thekkady, Alleppey, Jatayu Earth's Center, and Trivandrum",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/29451111/pexels-photo-29451111.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-varkala-honeymoon-6d5n",
@@ -534,52 +565,58 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 29400,
-      "priceFormatted": "from \u20b929,400",
+      "priceFormatted": "from ₹29,400",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Varkala \u2192 Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Varkala → Trivandrum",
       "featured": true,
       "summary": "A magnificent 6-day couples voyage covering the misty hills of Munnar, wildlife of Thekkady, backwaters of Alleppey, the sensational red cliff beaches of Varkala, and Trivandrum.",
       "overview": "Immerse in the dramatic beauty of Varkala's sandstone cliffs, sunset ocean walks, backwater tranquility, and tea valleys. Includes 2N Munnar, 1N Thekkady, 1N Alleppey, and 1N Varkala cliff resort.",
       "photos": [
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/27566375/pexels-photo-27566375.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/13828621/pexels-photo-13828621.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/8257830/pexels-photo-8257830.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/34327066/pexels-photo-34327066.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/7125438/pexels-photo-7125438.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/14730414/pexels-photo-14730414.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/31595391/pexels-photo-31595391.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Varkala: Red Laterite Cliff & Coastal Waters",
-          "description": "After breakfast, drive approx 125 km (3:30 hours) south to the breathtaking coastal town of Varkala. Check-in to cliffside hotel, explore Varkala Beach and Cliff, and try thrilling water sports. Places covered: Varkala Beach (Papanasam Beach), Varkala Cliff Promenade, Mangrove Waterways, Helipad & Sunset Points. Overnight stay: Varkala Hotel / Resort."
+          "description": "After breakfast, drive approx 125 km (3:30 hours) south to the breathtaking coastal town of Varkala. Check-in to cliffside hotel, explore Varkala Beach and Cliff, and try thrilling water sports. Places covered: Varkala Beach (Papanasam Beach), Varkala Cliff Promenade, Mangrove Waterways, Helipad & Sunset Points. Overnight stay: Varkala Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/34174745/pexels-photo-34174745.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Trivandrum Cultural Heritage & Return Journey",
-          "description": "After breakfast, check-out and explore the capital city of Thiruvananthapuram. Visit the ancient Padmanabhaswamy Temple, museums, and zoo before your return transfer to Airport or Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Government Secretariat Building, Thiruvananthapuram Mini Zoo. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, check-out and explore the capital city of Thiruvananthapuram. Visit the ancient Padmanabhaswamy Temple, museums, and zoo before your return transfer to Airport or Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Government Secretariat Building, Thiruvananthapuram Mini Zoo. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/28961752/pexels-photo-28961752.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -590,7 +627,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Thekkady, Alleppey, Varkala Cliff & Trivandrum",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/27566375/pexels-photo-27566375.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-bachelor-4d3n",
@@ -601,42 +639,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 9600,
-      "priceFormatted": "from \u20b99,600",
+      "priceFormatted": "from ₹9,600",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Alleppey \u2192 Cochin",
+      "place": "Cochin → Munnar → Alleppey → Cochin",
       "featured": true,
       "summary": "An action-packed 4-day road trip for bachelor squads covering Cheeyappara waterfalls, Mattupetty adventure sports, tea plantations, and Alleppey backwaters.",
       "overview": "Perfect for friends and bachelor squads seeking scenic drives, ziplines, tea valleys, and relaxing backwater hangouts with private chauffeur transit.",
       "photos": [
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/30778230/pexels-photo-30778230.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/36908140/pexels-photo-36908140.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/35588039/pexels-photo-35588039.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/17545322/pexels-photo-17545322.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/34324342/pexels-photo-34324342.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Alleppey Backwaters & Beach Sunset",
-          "description": "After breakfast, descend from misty hills toward the serene backwater capital of Alleppey. Cruise past swaying coconut palms and emerald paddy fields, and visit Alleppey Beach. Places covered: Alleppey Backwaters Canal Network, Floating Paddy Fields & Coconut Lagoons, Shikara Boat Cruise Point, Alleppey Beach & Old Pier. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend from misty hills toward the serene backwater capital of Alleppey. Cruise past swaying coconut palms and emerald paddy fields, and visit Alleppey Beach. Places covered: Alleppey Backwaters Canal Network, Floating Paddy Fields & Coconut Lagoons, Shikara Boat Cruise Point, Alleppey Beach & Old Pier. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/28890056/pexels-photo-28890056.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Fort Cochin Heritage Sightseeing & Return Departure",
-          "description": "After breakfast, transfer to Cochin. Explore historical monuments of Fort Cochin before heading to Cochin Airport or Railway Station for your journey home. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street & Synagogue Area, Fort Cochin Heritage Precinct. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, transfer to Cochin. Explore historical monuments of Fort Cochin before heading to Cochin Airport or Railway Station for your journey home. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street & Synagogue Area, Fort Cochin Heritage Precinct. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/38087959/pexels-photo-38087959.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -646,7 +688,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Alleppey backwaters, and Fort Cochin",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge assistance"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/30778230/pexels-photo-30778230.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-bachelor-5d4n",
@@ -657,47 +700,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 12000,
-      "priceFormatted": "from \u20b912,000",
+      "priceFormatted": "from ₹12,000",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Cochin",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Cochin",
       "featured": true,
       "summary": "The quintessential 5-day Kerala road trip for friends: Munnar tea heights, Thekkady wildlife sanctuary & martial arts, Alleppey backwater cruise, and Fort Cochin cafes.",
       "overview": "Curated for groups and bachelor parties seeking hill station views, Periyar wildlife boat safaris, backwaters, and local cuisine with dedicated private vehicle.",
       "photos": [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/26385098/pexels-photo-26385098.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/31211077/pexels-photo-31211077.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/13693386/pexels-photo-13693386.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/9543350/pexels-photo-9543350.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/12921487/pexels-photo-12921487.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/26969129/pexels-photo-26969129.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/11521892/pexels-photo-11521892.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Cochin: Fort Cochin Heritage & Departure",
-          "description": "After breakfast, drive 1 hour to Cochin. Tour Fort Cochin's colonial landmarks before drop-off at Cochin Airport or Railway Station. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street, Fort Cochin Coastal Walk. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, drive 1 hour to Cochin. Tour Fort Cochin's colonial landmarks before drop-off at Cochin Airport or Railway Station. Places covered: Mattancherry Dutch Palace, St. Francis Church, Jews Street, Fort Cochin Coastal Walk. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/12066477/pexels-photo-12066477.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -707,7 +755,8 @@ const CRAZY_TRAVELS_DATA = {
         "Full route sightseeing across Munnar, Thekkady, Alleppey & Fort Cochin",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/26385098/pexels-photo-26385098.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-trivandrum-bachelor-5d4n",
@@ -718,47 +767,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 12000,
-      "priceFormatted": "from \u20b912,000",
+      "priceFormatted": "from ₹12,000",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Varkala / Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Varkala / Trivandrum",
       "featured": true,
       "summary": "A diverse 5-day group tour combining Munnar tea hills, Thekkady wildlife, an included 1-hour Alleppey backwater Shikara cruise, Varkala coastal cliff, and Trivandrum.",
       "overview": "Designed for friends seeking adventure and exploration. Includes 2N Munnar, 1N Alleppey, and 1N Varkala or Trivandrum with included Shikara cruise.",
       "photos": [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/19691929/pexels-photo-19691929.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/34411160/pexels-photo-34411160.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/5217061/pexels-photo-5217061.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/26969139/pexels-photo-26969139.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/35491392/pexels-photo-35491392.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/39294793/pexels-photo-39294793.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Included 1-Hour Backwater Shikara",
-          "description": "After breakfast, journey down from Thekkady to Alleppey. Enjoy an included 1-hour Shikara boat ride through backwater canals and relax by the beach. Places covered: Alleppey Backwaters Network, Floating Paddy Fields & Palms, 1-Hour Included Shikara Boat Ride, Alleppey Beach Sunset. Overnight stay: Alleppey Hotel / Resort."
+          "description": "After breakfast, journey down from Thekkady to Alleppey. Enjoy an included 1-hour Shikara boat ride through backwater canals and relax by the beach. Places covered: Alleppey Backwaters Network, Floating Paddy Fields & Palms, 1-Hour Included Shikara Boat Ride, Alleppey Beach Sunset. Overnight stay: Alleppey Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/17928231/pexels-photo-17928231.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Varkala Cliff / Trivandrum Padmanabhaswamy Temple & Departure",
-          "description": "After breakfast, travel south along the coastal highway to Varkala Cliff and Thiruvananthapuram. Visit the majestic Sree Ananthapadmanabha Swamy Temple, Napier Museum, and Secretariat before return departure. Places covered: Varkala Beach & Cliff Lookout, Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat & Mini Zoo. Overnight stay: Departure / End of Tour (or 1N Varkala/Trivandrum depending on return timing)."
+          "description": "After breakfast, travel south along the coastal highway to Varkala Cliff and Thiruvananthapuram. Visit the majestic Sree Ananthapadmanabha Swamy Temple, Napier Museum, and Secretariat before return departure. Places covered: Varkala Beach & Cliff Lookout, Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat & Mini Zoo. Overnight stay: Departure / End of Tour (or 1N Varkala/Trivandrum depending on return timing).",
+          "thumbnail": "https://images.pexels.com/photos/5390337/pexels-photo-5390337.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -769,7 +823,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Thekkady, Alleppey, Varkala & Trivandrum",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/19691929/pexels-photo-19691929.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-varkala-bachelor-6d5n",
@@ -780,52 +835,58 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 14400,
-      "priceFormatted": "from \u20b914,400",
+      "priceFormatted": "from ₹14,400",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Varkala \u2192 Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Varkala → Trivandrum",
       "featured": true,
       "summary": "An epic 6-day road trip for bachelor groups combining mist-clad Munnar tea hills, Thekkady jungle safari, Alleppey backwaters, and nightlife & water sports on Varkala Cliff.",
       "overview": "Experience water sports on Varkala Cliff (surfing, parasailing, kayaking), beach shacks, Periyar boating, and scenic hill country with dedicated private vehicle.",
       "photos": [
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/32603973/pexels-photo-32603973.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/31084858/pexels-photo-31084858.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/34411159/pexels-photo-34411159.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/20480594/pexels-photo-20480594.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/32066842/pexels-photo-32066842.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/32262517/pexels-photo-32262517.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/35152825/pexels-photo-35152825.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Varkala: Red Laterite Cliff & Coastal Waters",
-          "description": "After breakfast, drive approx 125 km (3:30 hours) south to the breathtaking coastal town of Varkala. Check-in to cliffside hotel, explore Varkala Beach and Cliff, and try thrilling water sports. Places covered: Varkala Beach (Papanasam Beach), Varkala Cliff Promenade, Mangrove Waterways, Helipad & Sunset Points. Overnight stay: Varkala Hotel / Resort."
+          "description": "After breakfast, drive approx 125 km (3:30 hours) south to the breathtaking coastal town of Varkala. Check-in to cliffside hotel, explore Varkala Beach and Cliff, and try thrilling water sports. Places covered: Varkala Beach (Papanasam Beach), Varkala Cliff Promenade, Mangrove Waterways, Helipad & Sunset Points. Overnight stay: Varkala Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/33460200/pexels-photo-33460200.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Trivandrum Cultural Heritage & Return Journey",
-          "description": "After breakfast, check-out and explore the capital city of Thiruvananthapuram. Visit the ancient Padmanabhaswamy Temple, museums, and zoo before your return transfer to Airport or Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Government Secretariat Building, Thiruvananthapuram Mini Zoo. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, check-out and explore the capital city of Thiruvananthapuram. Visit the ancient Padmanabhaswamy Temple, museums, and zoo before your return transfer to Airport or Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Government Secretariat Building, Thiruvananthapuram Mini Zoo. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/18639344/pexels-photo-18639344.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -835,7 +896,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Thekkady, Alleppey, Varkala & Trivandrum",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/32603973/pexels-photo-32603973.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kerala-jatayu-bachelor-6d5n",
@@ -846,52 +908,58 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 14400,
-      "priceFormatted": "from \u20b914,400",
+      "priceFormatted": "from ₹14,400",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Cochin \u2192 Munnar \u2192 Thekkady \u2192 Alleppey \u2192 Jatayu \u2192 Trivandrum",
+      "place": "Cochin → Munnar → Thekkady → Alleppey → Jatayu → Trivandrum",
       "featured": true,
       "summary": "An adventurous 6-day road trip for bachelor groups exploring Munnar tea hills, Periyar wildlife, Alleppey backwaters, the monumental Jatayu Earth's Center bird sculpture, and Trivandrum beach.",
       "overview": "Combine high-altitude hill country, wildlife, waterways, and the world's largest bird sculpture atop a 1,000-ft rock mountain with cable car ropeway and adventure activities.",
       "photos": [
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/31843397/pexels-photo-31843397.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/34058994/pexels-photo-34058994.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Cochin & Scenic Drive to Munnar",
-          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort."
+          "description": "Arrival at Cochin Railway Station or Airport. Meet the private cab driver and transfer to Munnar through mist-clad hills, rushing waterfalls, and cardamom valleys. Places covered: Cheeyappara Waterfalls, Valara Waterfalls, Spice Plantations, Jipe Line Point. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/12649479/pexels-photo-12649479.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Munnar Valley Exploration (Mattupetty Direction)",
-          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort."
+          "description": "After delicious breakfast, head out to explore the Mattupetty circuit of Munnar covering tranquil dams, misty echo points, sprawling tea estates, and adventure parks. Places covered: Mattupetty Dam, Echo Point, Photo Point, Elephant Park, Tea Museum, Muttupetty Adventure Park. Overnight stay: Munnar Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/39917690/pexels-photo-39917690.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Munnar to Thekkady: Spice Hills & Periyar Boating",
-          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort."
+          "description": "After breakfast, take a scenic 3-hour journey to Thekkady through rolling tea valleys and cardamom ridges. Check-in to hotel, enjoy boating in Periyar Lake, and attend vibrant evening cultural shows. Places covered: Scenic Mountain Roads & Tea Plantations, Periyar Lake Wildlife Sanctuary, Kathakali Classical Dance Theater, Kalaripayattu Martial Arts Arena. Overnight stay: Thekkady Hotel / Resort.",
+          "thumbnail": "https://images.pexels.com/photos/4578637/pexels-photo-4578637.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Thekkady to Alleppey: Backwaters & Beach",
-          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on)."
+          "description": "After breakfast, descend through rubber and pepper estates to Alleppey. Marvel at swaying coconut palms, floating paddy fields, take a relaxing Shikara boat ride, and catch the sunset at Alleppey Beach. Places covered: Coconut Palm Lagoons & Waterways, Floating Paddy Fields (Kuttanad), Shikara Boat Cruise in Backwaters, Alleppey Beach in Evening. Overnight stay: Alleppey Hotel / Resort (Houseboat optional add-on).",
+          "thumbnail": "https://images.pexels.com/photos/32992108/pexels-photo-32992108.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Alleppey to Jatayu Earth's Center & Trivandrum Beach",
-          "description": "After breakfast, embark on a 160 km (approx 4:30 hours) drive to the world-renowned Jatayu Earth's Center at Chadayamangalam. Ascend the rock mountain to view the world's largest bird sculpture, then continue to Trivandrum Beach. Places covered: Jatayu Earth's Center Rock Sculpture, Jatayu Nature Park & Cable Car Point, Trivandrum / Kovalam Beach, Coastal Promenade. Overnight stay: Trivandrum or Kovalam Hotel."
+          "description": "After breakfast, embark on a 160 km (approx 4:30 hours) drive to the world-renowned Jatayu Earth's Center at Chadayamangalam. Ascend the rock mountain to view the world's largest bird sculpture, then continue to Trivandrum Beach. Places covered: Jatayu Earth's Center Rock Sculpture, Jatayu Nature Park & Cable Car Point, Trivandrum / Kovalam Beach, Coastal Promenade. Overnight stay: Trivandrum or Kovalam Hotel.",
+          "thumbnail": "https://images.pexels.com/photos/34014754/pexels-photo-34014754.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Trivandrum City Sightseeing & Return Journey",
-          "description": "After breakfast, check-out and visit the spiritual and royal landmarks of Trivandrum including Padmanabhaswamy Temple and Napier Museum, before returning to Cochin Airport/Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat Building, Mini Zoo & Botanical Gardens. Overnight stay: Departure / End of Tour."
+          "description": "After breakfast, check-out and visit the spiritual and royal landmarks of Trivandrum including Padmanabhaswamy Temple and Napier Museum, before returning to Cochin Airport/Railway Station. Places covered: Sree Ananthapadmanabha Swamy Temple, Napier Museum & Art Gallery, Secretariat Building, Mini Zoo & Botanical Gardens. Overnight stay: Departure / End of Tour.",
+          "thumbnail": "https://images.pexels.com/photos/18837864/pexels-photo-18837864.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -901,7 +969,8 @@ const CRAZY_TRAVELS_DATA = {
         "Complete sightseeing across Munnar, Thekkady, Alleppey, Jatayu Earth's Center & Trivandrum",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/31843397/pexels-photo-31843397.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kashmir-winter-group-4d3n",
@@ -912,42 +981,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 8500,
-      "priceFormatted": "from \u20b98,500",
+      "priceFormatted": "from ₹8,500",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Srinagar Local \u2192 Gulmarg \u2192 Pahalgam \u2192 Departure",
+      "place": "Srinagar Local → Gulmarg → Pahalgam → Departure",
       "featured": true,
       "summary": "Embark on an unforgettable Himalayan expedition to Kashmir: tranquil Shikara boat ride on Dal Lake, snow thrills and cable car at Gulmarg, and picturesque saffron valleys of Pahalgam with dedicated Sedan cab transfers and Telugu customer care.",
       "overview": "Carefully designed for friends squads, bachelors, and adventure groups. Witness snow-clad peaks, historical Shankaracharya temple, vibrant Lal Chowk, Nishat and Shalimar Mughal gardens, world-famous Gulmarg ski resort, and Betaab valley in Pahalgam.",
       "photos": [
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/14177070/pexels-photo-14177070.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/35030070/pexels-photo-35030070.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/40002832/pexels-photo-40002832.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Welcome to Srinagar Local Sightseeing & Dal Lake Shikara",
-          "description": "Welcome to Srinagar! You will be met by our representative at Srinagar Airport or Bus Stand and transferred to the hotel for check-in (12:00 PM). After refreshing, proceed for local sightseeing: visit Shankaracharya Temple located at a height of 1,100 ft above the main city on top of a hill dedicated to Lord Shiva (oldest shrine in Kashmir valley). Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Mughal King Asif Khan. Stroll through Lal Chowk, the historic heart of Srinagar where Jawaharlal Nehru unfurled the Indian national flag in 1948. In the evening, enjoy a 1-hour Shikara ride on the world-famous Dal Lake covering floating gardens, vegetable gardens, golden lake, inner markets like Meena bazaar, and scenic views of the Zabarwan mountains. Return to Srinagar hotel for dinner and rest night."
+          "description": "Welcome to Srinagar! You will be met by our representative at Srinagar Airport or Bus Stand and transferred to the hotel for check-in (12:00 PM). After refreshing, proceed for local sightseeing: visit Shankaracharya Temple located at a height of 1,100 ft above the main city on top of a hill dedicated to Lord Shiva (oldest shrine in Kashmir valley). Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Mughal King Asif Khan. Stroll through Lal Chowk, the historic heart of Srinagar where Jawaharlal Nehru unfurled the Indian national flag in 1948. In the evening, enjoy a 1-hour Shikara ride on the world-famous Dal Lake covering floating gardens, vegetable gardens, golden lake, inner markets like Meena bazaar, and scenic views of the Zabarwan mountains. Return to Srinagar hotel for dinner and rest night.",
+          "thumbnail": "https://images.pexels.com/photos/35255985/pexels-photo-35255985.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
-          "title": "Gulmarg Excursion \u2014 Meadow of Flowers & Gondola Ride (55 km)",
-          "description": "After breakfast, proceed to Gulmarg (55 km, 'Meadow of Flowers') discovered by the 16th-century Kashmiri romantic poet inspired by its grassy slopes covered with wild flowers. In winter, Gulmarg transforms into India's premier ski resort with one of the best ski slopes in the world and highest 18-hole golf course. Enjoy the world-famous Gondola cable car (on own expense) offering rides to the upland meadows of Kongdori and beyond to the top of the Apharwat range at 14,000 ft for viewing the Himalayan peaks. (Note: In winter due to heavy snowfall, cabs go only up to Tangmarg, from where tourists hire snow-chain 4x4 vehicles at approx \u20b9800\u2013\u20b91,200 per person). Later drive back to Srinagar, enjoy a warm dinner and overnight stay."
+          "title": "Gulmarg Excursion — Meadow of Flowers & Gondola Ride (55 km)",
+          "description": "After breakfast, proceed to Gulmarg (55 km, 'Meadow of Flowers') discovered by the 16th-century Kashmiri romantic poet inspired by its grassy slopes covered with wild flowers. In winter, Gulmarg transforms into India's premier ski resort with one of the best ski slopes in the world and highest 18-hole golf course. Enjoy the world-famous Gondola cable car (on own expense) offering rides to the upland meadows of Kongdori and beyond to the top of the Apharwat range at 14,000 ft for viewing the Himalayan peaks. (Note: In winter due to heavy snowfall, cabs go only up to Tangmarg, from where tourists hire snow-chain 4x4 vehicles at approx ₹800–₹1,200 per person). Later drive back to Srinagar, enjoy a warm dinner and overnight stay.",
+          "thumbnail": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
-          "title": "Pahalgam \u2014 Valley of Shepherds & Betaab Valley (87 km)",
-          "description": "After breakfast, proceed to Pahalgam (87 km, 'Valley of Shepherds'). En route visit fragrant saffron fields and cricket bat factories, then continue driving towards Pahalgam, the most famous location for the Indian film industry. Admire the serene surroundings and lush Lidder river. Visit Betaab Valley situated 15 km from Pahalgam (named after Sunny Deol and Amrita Singh's debut hit film Betaab), surrounded by lush green meadows and snow-clad mountains. Also visit Aru Valley (12 km scenic village) or Chandanwari (16 km), or visit Mini-Switzerland (4 to 5 km from taxi stand by horse ride or walk). (Note: Our cabs go to Pahalgam taxi stand; union taxis/horses for Aru, Betaab, Chandanwari or Mini-Switzerland are booked locally). Return to Srinagar hotel for dinner and rest overnight."
+          "title": "Pahalgam — Valley of Shepherds & Betaab Valley (87 km)",
+          "description": "After breakfast, proceed to Pahalgam (87 km, 'Valley of Shepherds'). En route visit fragrant saffron fields and cricket bat factories, then continue driving towards Pahalgam, the most famous location for the Indian film industry. Admire the serene surroundings and lush Lidder river. Visit Betaab Valley situated 15 km from Pahalgam (named after Sunny Deol and Amrita Singh's debut hit film Betaab), surrounded by lush green meadows and snow-clad mountains. Also visit Aru Valley (12 km scenic village) or Chandanwari (16 km), or visit Mini-Switzerland (4 to 5 km from taxi stand by horse ride or walk). (Note: Our cabs go to Pahalgam taxi stand; union taxis/horses for Aru, Betaab, Chandanwari or Mini-Switzerland are booked locally). Return to Srinagar hotel for dinner and rest overnight.",
+          "thumbnail": "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 4,
           "title": "Departure from Srinagar with Cherished Memories",
-          "description": "After breakfast, check out from the hotel (10:00 AM). Get transferred to Srinagar Airport or Bus Stand for your further onward destination. Your back-home trip ends with beautiful, lifelong memories of Kashmir with Crazy Tours and Travels."
+          "description": "After breakfast, check out from the hotel (10:00 AM). Get transferred to Srinagar Airport or Bus Stand for your further onward destination. Your back-home trip ends with beautiful, lifelong memories of Kashmir with Crazy Tours and Travels.",
+          "thumbnail": "https://images.pexels.com/photos/37746693/pexels-photo-37746693.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -959,7 +1032,8 @@ const CRAZY_TRAVELS_DATA = {
         "Srinagar airport or bus stand pickup and drop-off",
         "All driver allowances, fuel charges, toll taxes, and parking fees",
         "24/7 Telugu Customer Care Concierge Support throughout your journey"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/14177070/pexels-photo-14177070.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kashmir-honeymoon-couple-4d3n",
@@ -970,42 +1044,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 23999,
-      "priceFormatted": "from \u20b923,999",
+      "priceFormatted": "from ₹23,999",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Srinagar Local \u2192 Gulmarg \u2192 Pahalgam \u2192 Departure",
+      "place": "Srinagar Local → Gulmarg → Pahalgam → Departure",
       "featured": true,
       "summary": "Celebrate love in Paradise on Earth. Exclusive couple's getaway featuring private Sedan cab transfers, 1-hour romantic Shikara ride on Dal Lake, special Honeymoon Bed Decoration, snowy adventures at Gulmarg, and romantic walks in Pahalgam.",
       "overview": "Designed for newlyweds and couples seeking intimacy amidst Himalayas. Includes warm candlelit dinners, cozy heated rooms, breathtaking snow peaks, private Shikara cruise, and 24/7 Telugu customer care support.",
       "photos": [
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/8303558/pexels-photo-8303558.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/18907680/pexels-photo-18907680.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/8303561/pexels-photo-8303561.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Srinagar, Romantic Dal Lake Shikara & Mughal Gardens",
-          "description": "Warm welcome at Srinagar Airport or Bus Stand by our representative and transfer to hotel (check-in 12:00 PM). After relaxing, visit Shankaracharya Temple at 1,100 ft with panoramic views over the valley. Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Asif Khan and Shalimar Garden. Explore historic Lal Chowk. In the evening, immerse yourselves in a romantic 1-hour Shikara ride on Dal Lake across floating gardens, lotus blooms, and Meena bazaar against the Zabarwan mountain backdrop. Enjoy a special romantic dinner and overnight stay in Srinagar."
+          "description": "Warm welcome at Srinagar Airport or Bus Stand by our representative and transfer to hotel (check-in 12:00 PM). After relaxing, visit Shankaracharya Temple at 1,100 ft with panoramic views over the valley. Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Asif Khan and Shalimar Garden. Explore historic Lal Chowk. In the evening, immerse yourselves in a romantic 1-hour Shikara ride on Dal Lake across floating gardens, lotus blooms, and Meena bazaar against the Zabarwan mountain backdrop. Enjoy a special romantic dinner and overnight stay in Srinagar.",
+          "thumbnail": "https://images.pexels.com/photos/25786566/pexels-photo-25786566.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
-          "title": "Gulmarg \u2014 Snow Wonderland & Gondola Cable Car (55 km)",
-          "description": "After a hearty breakfast, take a scenic drive to Gulmarg (55 km, 'Meadow of Flowers'). Discover snow-covered pine slopes, world's highest golf course, and take the world's 2nd highest Gondola cable car ride (at own expense) reaching 14,000 ft Apharwat peak for majestic Himalayan vistas. (Winter note: heavy snow requires 4x4 snow-chain cab from Tangmarg at \u20b9800\u2013\u20b91,200 pp). Enjoy couple snow photography, sledging, or skiing. Return to Srinagar for dinner and cozy overnight stay."
+          "title": "Gulmarg — Snow Wonderland & Gondola Cable Car (55 km)",
+          "description": "After a hearty breakfast, take a scenic drive to Gulmarg (55 km, 'Meadow of Flowers'). Discover snow-covered pine slopes, world's highest golf course, and take the world's 2nd highest Gondola cable car ride (at own expense) reaching 14,000 ft Apharwat peak for majestic Himalayan vistas. (Winter note: heavy snow requires 4x4 snow-chain cab from Tangmarg at ₹800–₹1,200 pp). Enjoy couple snow photography, sledging, or skiing. Return to Srinagar for dinner and cozy overnight stay.",
+          "thumbnail": "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
-          "title": "Pahalgam \u2014 Saffron Valleys & Betaab Valley Romance (87 km)",
-          "description": "After breakfast, proceed to Pahalgam (87 km, 'Valley of Shepherds'). En route view purple saffron fields and willow cricket bat factories. Enjoy the serene Lidder riverbanks. Visit romantic Betaab Valley (15 km from Pahalgam, named after hit film Betaab) with pine slopes and snow-capped peaks. Explore Aru Valley (12 km) or take a romantic horse ride to Mini-Switzerland (4 to 5 km from taxi stand). (Note: Pahalgam taxi union cabs and horses are booked locally). Return to Srinagar for dinner and overnight stay."
+          "title": "Pahalgam — Saffron Valleys & Betaab Valley Romance (87 km)",
+          "description": "After breakfast, proceed to Pahalgam (87 km, 'Valley of Shepherds'). En route view purple saffron fields and willow cricket bat factories. Enjoy the serene Lidder riverbanks. Visit romantic Betaab Valley (15 km from Pahalgam, named after hit film Betaab) with pine slopes and snow-capped peaks. Explore Aru Valley (12 km) or take a romantic horse ride to Mini-Switzerland (4 to 5 km from taxi stand). (Note: Pahalgam taxi union cabs and horses are booked locally). Return to Srinagar for dinner and overnight stay.",
+          "thumbnail": "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 4,
           "title": "Departure with Cherished Honeymoon Memories",
-          "description": "After breakfast, check out from the hotel (10:00 AM). Transfer to Srinagar Airport or Bus Stand for your journey back home, carrying eternal romantic memories of Kashmir."
+          "description": "After breakfast, check out from the hotel (10:00 AM). Transfer to Srinagar Airport or Bus Stand for your journey back home, carrying eternal romantic memories of Kashmir.",
+          "thumbnail": "https://images.pexels.com/photos/21927155/pexels-photo-21927155.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1018,7 +1096,8 @@ const CRAZY_TRAVELS_DATA = {
         "Srinagar airport or bus stand pickup and drop-off",
         "All fuel, driver allowances, toll taxes, and parking fees",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/8303558/pexels-photo-8303558.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kashmir-sonmarg-couple-5d4n",
@@ -1029,47 +1108,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 34999,
-      "priceFormatted": "from \u20b934,999",
+      "priceFormatted": "from ₹34,999",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Srinagar Local \u2192 Gulmarg \u2192 Sonmarg \u2192 Pahalgam Stay \u2192 Departure",
+      "place": "Srinagar Local → Gulmarg → Sonmarg → Pahalgam Stay → Departure",
       "featured": true,
       "summary": "The ultimate 5-day Kashmir romantic voyage: includes Sonmarg 'Meadow of Gold', Gulmarg ski slopes & Gondola, Dal Lake Shikara ride, AND an overnight stay in the magical river valley of Pahalgam.",
       "overview": "Experience every crown jewel of Kashmir. Features 3 nights in Srinagar plus 1 night in picturesque Pahalgam, 4 daily breakfasts & dinners, private Sedan cab, Honeymoon bed decoration, and 24/7 Telugu customer care support.",
       "photos": [
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/24974753/pexels-photo-24974753.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/36613137/pexels-photo-36613137.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/15257503/pexels-photo-15257503.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Welcome to Srinagar Local Sightseeing & Dal Lake Shikara",
-          "description": "Welcome at Srinagar Airport or Bus Stand by our representative and transfer to hotel (check-in 12:00 PM). After refreshing, proceed for local sightseeing: visit Shankaracharya Temple at 1,100 ft above the main city dedicated to Lord Shiva (oldest shrine in Kashmir valley). Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Asif Khan and Shalimar Garden. Walk through historic Lal Chowk shopping area. In the evening, enjoy a 1-hour Shikara ride on Dal Lake covering floating gardens, vegetable gardens, golden lake, Meena bazaar, and canals with scenic Zabarwan mountain views. Return to Srinagar hotel for dinner and rest night."
+          "description": "Welcome at Srinagar Airport or Bus Stand by our representative and transfer to hotel (check-in 12:00 PM). After refreshing, proceed for local sightseeing: visit Shankaracharya Temple at 1,100 ft above the main city dedicated to Lord Shiva (oldest shrine in Kashmir valley). Visit Nishat Garden ('Garden of Pleasure') built in 1633 by Asif Khan and Shalimar Garden. Walk through historic Lal Chowk shopping area. In the evening, enjoy a 1-hour Shikara ride on Dal Lake covering floating gardens, vegetable gardens, golden lake, Meena bazaar, and canals with scenic Zabarwan mountain views. Return to Srinagar hotel for dinner and rest night.",
+          "thumbnail": "https://images.pexels.com/photos/18298527/pexels-photo-18298527.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
-          "title": "Gulmarg Excursion \u2014 Meadow of Flowers & Gondola Ride (55 km)",
-          "description": "After breakfast, proceed to Gulmarg (55 km, 'Meadow of Flowers') discovered by 16th-century Kashmiri poet. In winter Gulmarg turns into India's premier ski resort with one of the best ski slopes in the world and highest 18-hole golf course. Enjoy the world's 2nd highest Gondola cable car (on own expense) offering rides to Kongdori upland meadows and up to 14,000 ft Apharwat range for viewing Himalayan peaks. (Winter note: cabs go up to Tangmarg, tourists hire snow-chain 4x4 vehicles at approx \u20b9800\u2013\u20b91,200 pp). Later return to Srinagar for dinner and overnight stay in hotel."
+          "title": "Gulmarg Excursion — Meadow of Flowers & Gondola Ride (55 km)",
+          "description": "After breakfast, proceed to Gulmarg (55 km, 'Meadow of Flowers') discovered by 16th-century Kashmiri poet. In winter Gulmarg turns into India's premier ski resort with one of the best ski slopes in the world and highest 18-hole golf course. Enjoy the world's 2nd highest Gondola cable car (on own expense) offering rides to Kongdori upland meadows and up to 14,000 ft Apharwat range for viewing Himalayan peaks. (Winter note: cabs go up to Tangmarg, tourists hire snow-chain 4x4 vehicles at approx ₹800–₹1,200 pp). Later return to Srinagar for dinner and overnight stay in hotel.",
+          "thumbnail": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
-          "title": "Sonmarg Excursion \u2014 Meadow of Gold & Glacier Views (82 km)",
-          "description": "After breakfast, leave for Sonmarg (82 km, 'Meadow of Gold') for a day trip. The drive from Srinagar to Sonmarg is exceptionally beautiful as you pass through charming towns, villages, and paddy fields with pristine rivers flowing on one side. In Sonmarg you can do thrilling snow activities like skiing, yak ride, horse ride, and snow bike. Later drive back to Srinagar hotel for dinner and overnight rest."
+          "title": "Sonmarg Excursion — Meadow of Gold & Glacier Views (82 km)",
+          "description": "After breakfast, leave for Sonmarg (82 km, 'Meadow of Gold') for a day trip. The drive from Srinagar to Sonmarg is exceptionally beautiful as you pass through charming towns, villages, and paddy fields with pristine rivers flowing on one side. In Sonmarg you can do thrilling snow activities like skiing, yak ride, horse ride, and snow bike. Later drive back to Srinagar hotel for dinner and overnight rest.",
+          "thumbnail": "https://images.pexels.com/photos/22027165/pexels-photo-22027165.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Pahalgam Valley of Shepherds & OVERNIGHT STAY IN PAHALGAM (87 km)",
-          "description": "After breakfast, check out from the Srinagar hotel and proceed to Pahalgam (87 km, 'Valley of Shepherds') via en route sightseeing of world-famous saffron fields and willow cricket bat factories. Continue drive to Pahalgam, the most famous place for the Indian film industry. Admire the serenity and visit Betaab Valley (15 km from Pahalgam, famous for Sunny Deol's hit debut film Betaab) and Aru Valley (12 km scenic village) or Chandanwari (16 km), or visit Mini-Switzerland of India (4 to 5 km from taxi stand by horse ride or walk). (Note: Our cabs go to Pahalgam taxi stand; union taxis/horses are hired locally). Check in to Pahalgam hotel, enjoy a peaceful dinner and OVERNIGHT STAY IN PAHALGAM."
+          "description": "After breakfast, check out from the Srinagar hotel and proceed to Pahalgam (87 km, 'Valley of Shepherds') via en route sightseeing of world-famous saffron fields and willow cricket bat factories. Continue drive to Pahalgam, the most famous place for the Indian film industry. Admire the serenity and visit Betaab Valley (15 km from Pahalgam, famous for Sunny Deol's hit debut film Betaab) and Aru Valley (12 km scenic village) or Chandanwari (16 km), or visit Mini-Switzerland of India (4 to 5 km from taxi stand by horse ride or walk). (Note: Our cabs go to Pahalgam taxi stand; union taxis/horses are hired locally). Check in to Pahalgam hotel, enjoy a peaceful dinner and OVERNIGHT STAY IN PAHALGAM.",
+          "thumbnail": "https://images.pexels.com/photos/29494184/pexels-photo-29494184.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Departure from Pahalgam/Srinagar",
-          "description": "After breakfast, check out from the Pahalgam hotel (10:00 AM) and get transferred to Srinagar Airport or Bus Stand for your further onward destination. A memorable back-home trip ends with beautiful, lasting memories of Kashmir."
+          "description": "After breakfast, check out from the Pahalgam hotel (10:00 AM) and get transferred to Srinagar Airport or Bus Stand for your further onward destination. A memorable back-home trip ends with beautiful, lasting memories of Kashmir.",
+          "thumbnail": "https://images.pexels.com/photos/37241100/pexels-photo-37241100.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1082,7 +1166,8 @@ const CRAZY_TRAVELS_DATA = {
         "Srinagar airport or bus stand pickup and drop-off",
         "All driver allowances, fuel, toll taxes, and parking fees",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/24974753/pexels-photo-24974753.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kashmir-sonmarg-group-5d4n",
@@ -1093,47 +1178,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 11499,
-      "priceFormatted": "from \u20b911,499",
+      "priceFormatted": "from ₹11,499",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Srinagar Local \u2192 Gulmarg \u2192 Sonmarg \u2192 Pahalgam Stay \u2192 Departure",
+      "place": "Srinagar Local → Gulmarg → Sonmarg → Pahalgam Stay → Departure",
       "featured": true,
       "summary": "Comprehensive 5-day group adventure across the whole Kashmir valley: Shankaracharya, Dal Lake Shikara, Gulmarg ski resort, Sonmarg 'Meadow of Gold', and an overnight stay in picturesque Pahalgam with private Sedan cab and 24/7 Telugu concierge.",
       "overview": "Curated for groups of friends, college buddies, and bachelors looking for complete snow immersion. Experience Dal Lake, Apharwat gondola, Sindh river valley, and Pahalgam pine forests with authentic local guidance and transparent pricing.",
       "photos": [
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/38677822/pexels-photo-38677822.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/35027239/pexels-photo-35027239.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/35414086/pexels-photo-35414086.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Srinagar & Dal Lake Shikara Cruise",
-          "description": "Arrival at Srinagar Airport or Bus Stand. Representative meeting and transfer to hotel (check-in 12:00 PM). Visit Shankaracharya Temple at 1,100 ft, Nishat Garden built in 1633, and Lal Chowk. Evening 1-hour Shikara ride on Dal Lake visiting floating markets and watching the sunset behind Zabarwan mountains. Dinner and night stay in Srinagar."
+          "description": "Arrival at Srinagar Airport or Bus Stand. Representative meeting and transfer to hotel (check-in 12:00 PM). Visit Shankaracharya Temple at 1,100 ft, Nishat Garden built in 1633, and Lal Chowk. Evening 1-hour Shikara ride on Dal Lake visiting floating markets and watching the sunset behind Zabarwan mountains. Dinner and night stay in Srinagar.",
+          "thumbnail": "https://images.pexels.com/photos/34971547/pexels-photo-34971547.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Gulmarg Ski Resort & Gondola Cable Car (55 km)",
-          "description": "After breakfast drive to Gulmarg (55 km, 'Meadow of Flowers'). Ride the Gondola cable car up to Kongdori and Apharwat (14,000 ft). Experience snow skiing and snow bikes. (Snow-chain vehicle from Tangmarg in winter at \u20b9800\u2013\u20b91,200 pp). Return to Srinagar for dinner and overnight stay."
+          "description": "After breakfast drive to Gulmarg (55 km, 'Meadow of Flowers'). Ride the Gondola cable car up to Kongdori and Apharwat (14,000 ft). Experience snow skiing and snow bikes. (Snow-chain vehicle from Tangmarg in winter at ₹800–₹1,200 pp). Return to Srinagar for dinner and overnight stay.",
+          "thumbnail": "https://images.pexels.com/photos/18447359/pexels-photo-18447359.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Sonmarg Meadow of Gold Expedition (82 km)",
-          "description": "Breakfast and scenic drive to Sonmarg (82 km) along the Sindh River. Marvel at snow-clad peaks, glacier views, yak rides, and snow sledging. Return to Srinagar for dinner and overnight stay."
+          "description": "Breakfast and scenic drive to Sonmarg (82 km) along the Sindh River. Marvel at snow-clad peaks, glacier views, yak rides, and snow sledging. Return to Srinagar for dinner and overnight stay.",
+          "thumbnail": "https://images.pexels.com/photos/39449125/pexels-photo-39449125.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Pahalgam Valley of Shepherds & Overnight Stay (87 km)",
-          "description": "Breakfast, checkout Srinagar hotel, drive to Pahalgam visiting saffron fields and bat factories en route. Explore Betaab Valley, Aru Valley, and Mini-Switzerland. Check in to Pahalgam hotel, dinner, and peaceful overnight stay."
+          "description": "Breakfast, checkout Srinagar hotel, drive to Pahalgam visiting saffron fields and bat factories en route. Explore Betaab Valley, Aru Valley, and Mini-Switzerland. Check in to Pahalgam hotel, dinner, and peaceful overnight stay.",
+          "thumbnail": "https://images.pexels.com/photos/10538891/pexels-photo-10538891.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Departure from Pahalgam / Srinagar",
-          "description": "Breakfast, 10:00 AM hotel checkout, transfer to Srinagar Airport or Bus Stand for departure with unforgettable memories."
+          "description": "Breakfast, 10:00 AM hotel checkout, transfer to Srinagar Airport or Bus Stand for departure with unforgettable memories.",
+          "thumbnail": "https://images.pexels.com/photos/7562495/pexels-photo-7562495.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1145,7 +1235,8 @@ const CRAZY_TRAVELS_DATA = {
         "Srinagar airport or bus stand pickup and drop-off",
         "All driver allowances, fuel, toll taxes, and parking fees",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/38677822/pexels-photo-38677822.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "kashmir-paradise",
@@ -1156,9 +1247,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 32500,
-      "priceFormatted": "from \u20b932,500",
+      "priceFormatted": "from ₹32,500",
       "groupSize": "Private Couple",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1168,40 +1259,46 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Stay in an authentic carved cedar houseboat on Dal Lake, ride the world's second-highest cable car at Gulmarg Gondola, and wander pine valleys in Pahalgam.",
       "overview": "Discover the true 'Paradise on Earth'. Glide on Dal Lake aboard a decorated Shikara, ascend above the clouds at 13,780 feet on the Gulmarg Gondola, and stroll through saffron fields and roaring Lidder river cascades.",
       "photos": [
-        "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/34325642/pexels-photo-34325642.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrive Srinagar & Dal Lake Shikara Ride",
-          "description": "Warm greeting at Srinagar Airport. Transfer to your luxury houseboat on Dal Lake. In the evening, enjoy a 1-hour relaxing Shikara ride past floating lotus gardens and char chinar."
+          "description": "Warm greeting at Srinagar Airport. Transfer to your luxury houseboat on Dal Lake. In the evening, enjoy a 1-hour relaxing Shikara ride past floating lotus gardens and char chinar.",
+          "thumbnail": "https://images.pexels.com/photos/25786570/pexels-photo-25786570.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Srinagar Mughal Gardens & Old City",
-          "description": "Explore royal Mughal terraced gardens: Nishat Bagh (Garden of Pleasure) and Shalimar Bagh (Abode of Love). Visit the historic Shankaracharya Hill Temple for panoramic views."
+          "description": "Explore royal Mughal terraced gardens: Nishat Bagh (Garden of Pleasure) and Shalimar Bagh (Abode of Love). Visit the historic Shankaracharya Hill Temple for panoramic views.",
+          "thumbnail": "https://images.pexels.com/photos/36856155/pexels-photo-36856155.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Gulmarg Meadow of Flowers & Gondola Ride",
-          "description": "Drive through willow and apple orchards to Gulmarg at 8,690 ft. Board the world-famous Gulmarg Gondola Phase 1 & Phase 2 up to Kongdoori and Apharwat Peak at 13,780 ft."
+          "description": "Drive through willow and apple orchards to Gulmarg at 8,690 ft. Board the world-famous Gulmarg Gondola Phase 1 & Phase 2 up to Kongdoori and Apharwat Peak at 13,780 ft.",
+          "thumbnail": "https://images.pexels.com/photos/34954207/pexels-photo-34954207.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Pahalgam Valley of Shepherds via Pampore",
-          "description": "Drive to Pahalgam along the Lidder River. Stop at Pampore saffron fields and Awantipora temple ruins. Check in to river-view hotel in Pahalgam and stroll along Lidder banks."
+          "description": "Drive to Pahalgam along the Lidder River. Stop at Pampore saffron fields and Awantipora temple ruins. Check in to river-view hotel in Pahalgam and stroll along Lidder banks.",
+          "thumbnail": "https://images.pexels.com/photos/36096800/pexels-photo-36096800.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Betaab Valley, Aru & Chandanwari",
-          "description": "Take local mountain union cabs to explore iconic Betaab Valley (famed for Bollywood movies), tranquil Aru Valley, and Chandanwari snow point."
+          "description": "Take local mountain union cabs to explore iconic Betaab Valley (famed for Bollywood movies), tranquil Aru Valley, and Chandanwari snow point.",
+          "thumbnail": "https://images.pexels.com/photos/38351611/pexels-photo-38351611.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Kashmir Crafts & Airport Departure",
-          "description": "Drive back to Srinagar. Shop for authentic Pashmina shawls, walnut wood carvings, and pure saffron before flight drop-off."
+          "description": "Drive back to Srinagar. Shop for authentic Pashmina shawls, walnut wood carvings, and pure saffron before flight drop-off.",
+          "thumbnail": "https://images.pexels.com/photos/27108526/pexels-photo-27108526.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1210,8 +1307,9 @@ const CRAZY_TRAVELS_DATA = {
         "Daily Breakfasts and Dinners (Authentic Wazwan / North Indian options)",
         "1-Hour Sunset Shikara Ride on Dal Lake",
         "Toll fees, parking charges, fuel and driver allowances",
-        "24/7 Telugu Customer Care Support (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 \u0c15\u0c38\u0c4d\u0c1f\u0c2e\u0c30\u0c4d \u0c15\u0c47\u0c30\u0c4d)"
-      ]
+        "24/7 Telugu Customer Care Support (తెలుగు కస్టమర్ కేర్)"
+      ],
+      "coverImage": "https://images.pexels.com/photos/34325642/pexels-photo-34325642.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "goa-bachelors-party-4d3n",
@@ -1222,42 +1320,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 7999,
-      "priceFormatted": "from \u20b97,999",
+      "priceFormatted": "from ₹7,999",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "North Goa Beaches \u2192 Calangute Watersports \u2192 Anjuna & Chapora \u2192 Mandovi Sunset Cruise",
+      "place": "North Goa Beaches → Calangute Watersports → Anjuna & Chapora → Mandovi Sunset Cruise",
       "featured": true,
       "summary": "The ultimate party and watersports getaway crafted for bachelor groups and friends squads. Thrill with a 5-in-1 watersports combo, chill at Baga and Anjuna beach shacks, visit Chapora Fort (Dil Chahta Hai), and party aboard a sunset Mandovi DJ cruise.",
       "overview": "Designed for maximum energy, seaside fun, and freedom. Includes airport/railway transfers, lively beach resort with pool, watersports combo, sunset party cruise, and dedicated 24/7 Telugu customer care support.",
       "photos": [
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/20375420/pexels-photo-20375420.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/29557167/pexels-photo-29557167.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/978667/pexels-photo-978667.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in Goa, Resort Check-in & Baga Beach Sunset",
-          "description": "Arrive at Goa Airport (Mopa / Dabolim) or Thivim/Madgaon railway station. Our driver will meet you and transfer you to your lively North Goa resort. Check in (1:00 PM), relax by the swimming pool, and head out to Baga Beach in the evening. Experience beach shacks, chilled vibes, and explore the famous Tito's nightlife lane."
+          "description": "Arrive at Goa Airport (Mopa / Dabolim) or Thivim/Madgaon railway station. Our driver will meet you and transfer you to your lively North Goa resort. Check in (1:00 PM), relax by the swimming pool, and head out to Baga Beach in the evening. Experience beach shacks, chilled vibes, and explore the famous Tito's nightlife lane.",
+          "thumbnail": "https://images.pexels.com/photos/30441277/pexels-photo-30441277.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Adrenaline Day: 5-in-1 Watersports Combo & Calangute Beach",
-          "description": "After breakfast, head to Calangute beach for high-octane water adventures. Experience the thrilling 5-in-1 combo: soar with Parasailing, speed across waves on a Jet Ski, enjoy the bumpy Banana ride, test your balance on the Bumper ride, and speed boat cruise. Spend the afternoon swimming, sipping coconut water, and lounging by the beach. Evening free for party and shacks."
+          "description": "After breakfast, head to Calangute beach for high-octane water adventures. Experience the thrilling 5-in-1 combo: soar with Parasailing, speed across waves on a Jet Ski, enjoy the bumpy Banana ride, test your balance on the Bumper ride, and speed boat cruise. Spend the afternoon swimming, sipping coconut water, and lounging by the beach. Evening free for party and shacks.",
+          "thumbnail": "https://images.pexels.com/photos/27806262/pexels-photo-27806262.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Fort Chapora, Vagator & Sunset Mandovi River DJ Cruise",
-          "description": "After breakfast, drive to Chapora Fort, the iconic 'Dil Chahta Hai' viewpoint overlooking Vagator Beach and the Arabian Sea. Visit Anjuna Beach and vibrant flea markets. In the late afternoon, head to Panaji for a 1-hour sunset cruise along the Mandovi River featuring energetic Bollywood DJ tracks, Goan folk dances, and sparkling river views. Enjoy dinner at Panaji or Candolim."
+          "description": "After breakfast, drive to Chapora Fort, the iconic 'Dil Chahta Hai' viewpoint overlooking Vagator Beach and the Arabian Sea. Visit Anjuna Beach and vibrant flea markets. In the late afternoon, head to Panaji for a 1-hour sunset cruise along the Mandovi River featuring energetic Bollywood DJ tracks, Goan folk dances, and sparkling river views. Enjoy dinner at Panaji or Candolim.",
+          "thumbnail": "https://images.pexels.com/photos/3182926/pexels-photo-3182926.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Farewell Goa Departure",
-          "description": "Enjoy breakfast at the resort. Spend your morning shopping for cashew nuts, feni, and souvenirs. Check out at 11:00 AM. Our cab transfers you to Goa airport or railway station for your journey back home with unforgettable memories."
+          "description": "Enjoy breakfast at the resort. Spend your morning shopping for cashew nuts, feni, and souvenirs. Check out at 11:00 AM. Our cab transfers you to Goa airport or railway station for your journey back home with unforgettable memories.",
+          "thumbnail": "https://images.pexels.com/photos/37940208/pexels-photo-37940208.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1269,7 +1371,8 @@ const CRAZY_TRAVELS_DATA = {
         "Sightseeing tour covering Calangute, Baga, Anjuna, Vagator, and Chapora Fort",
         "All toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/20375420/pexels-photo-20375420.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "goa-romantic-honeymoon-4d3n",
@@ -1280,42 +1383,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 21999,
-      "priceFormatted": "from \u20b921,999",
+      "priceFormatted": "from ₹21,999",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Resort Check-in \u2192 Candlelight Dinner \u2192 Fontainhas Latin Quarter \u2192 Mandovi Cruise \u2192 Departure",
+      "place": "Resort Check-in → Candlelight Dinner → Fontainhas Latin Quarter → Mandovi Cruise → Departure",
       "featured": true,
       "summary": "Celebrate newlywed bliss in tropical paradise. Private AC Sedan transfers, 4-star beachside resort stay with pool, romantic candlelight beach dinner with cake and flower bed decoration, vibrant Fontainhas Latin quarter photo stroll, and sunset Mandovi river cruise.",
       "overview": "Curated exclusively for couples seeking romance, privacy, and coastal elegance. Enjoy slow mornings, private beach walks, candlelit beach dinners under swaying palms, and 24/7 Telugu customer care support.",
       "photos": [
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/31928086/pexels-photo-31928086.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/29885040/pexels-photo-29885040.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/29202786/pexels-photo-29202786.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Welcome to Goa, Resort Check-in & Romantic Beach Evening",
-          "description": "Upon arrival at Goa Airport or Railway Station, meet your private chauffeur in an air-conditioned sedan. Transfer to your 4-star beach resort. Check in (1:00 PM) to find your room dressed with special Honeymoon Bed Decoration. Spend a leisurely afternoon lounging by the swimming pool or strolling along the beach. Evening at leisure."
+          "description": "Upon arrival at Goa Airport or Railway Station, meet your private chauffeur in an air-conditioned sedan. Transfer to your 4-star beach resort. Check in (1:00 PM) to find your room dressed with special Honeymoon Bed Decoration. Spend a leisurely afternoon lounging by the swimming pool or strolling along the beach. Evening at leisure.",
+          "thumbnail": "https://images.pexels.com/photos/28840873/pexels-photo-28840873.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Aguada Fort, Sinquerim & Romantic Candlelight Beach Dinner",
-          "description": "After a relaxed breakfast, visit historic Fort Aguada and its 17th-century Portuguese lighthouse overlooking the vast Arabian Sea. Walk down to Sinquerim Beach for serene coastal views. Return to the resort for an afternoon couple spa or pool time. In the evening, enjoy a magical 3-course Candlelight Dinner on the beach with celebration cake under the starlit sky."
+          "description": "After a relaxed breakfast, visit historic Fort Aguada and its 17th-century Portuguese lighthouse overlooking the vast Arabian Sea. Walk down to Sinquerim Beach for serene coastal views. Return to the resort for an afternoon couple spa or pool time. In the evening, enjoy a magical 3-course Candlelight Dinner on the beach with celebration cake under the starlit sky.",
+          "thumbnail": "https://images.pexels.com/photos/31077552/pexels-photo-31077552.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Fontainhas Latin Quarter Heritage Walk & Sunset River Cruise",
-          "description": "Breakfast at the resort. Drive to Panaji's enchanting Fontainhas Latin Quarter, Asia's only preserved Portuguese residential area. Capture gorgeous couple photos against yellow, blue, and terracotta heritage villas. Visit the Church of Our Lady of the Immaculate Conception. In the late afternoon, board a luxury Sunset Catamaran Cruise on the Mandovi River with Goan folk dances and sparkling golden skies."
+          "description": "Breakfast at the resort. Drive to Panaji's enchanting Fontainhas Latin Quarter, Asia's only preserved Portuguese residential area. Capture gorgeous couple photos against yellow, blue, and terracotta heritage villas. Visit the Church of Our Lady of the Immaculate Conception. In the late afternoon, board a luxury Sunset Catamaran Cruise on the Mandovi River with Goan folk dances and sparkling golden skies.",
+          "thumbnail": "https://images.pexels.com/photos/37706898/pexels-photo-37706898.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Breakfast & Sweet Goodbye to Goa",
-          "description": "Enjoy your final leisurely breakfast at the resort. Take a morning dip in the pool or pick up traditional Goan bebinca and cashews. Checkout at 11:00 AM. Your private chauffeur drops you at Goa Airport or Railway Station for your journey home."
+          "description": "Enjoy your final leisurely breakfast at the resort. Take a morning dip in the pool or pick up traditional Goan bebinca and cashews. Checkout at 11:00 AM. Your private chauffeur drops you at Goa Airport or Railway Station for your journey home.",
+          "thumbnail": "https://images.pexels.com/photos/35898250/pexels-photo-35898250.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1328,7 +1435,8 @@ const CRAZY_TRAVELS_DATA = {
         "Sightseeing to Aguada Fort, Sinquerim Beach, Fontainhas Latin Quarter & Miramar Beach",
         "All driver allowances, fuel, toll taxes, and parking charges",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/31928086/pexels-photo-31928086.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "goa-grand-family-heritage-5d4n",
@@ -1339,47 +1447,52 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 11499,
-      "priceFormatted": "from \u20b911,499",
+      "priceFormatted": "from ₹11,499",
       "groupSize": "Private Family (3-8)",
       "pace": "Moderate & Balanced",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "North Goa Beaches \u2192 Dudhsagar Falls & Spices \u2192 Old Goa Churches \u2192 Miramar & Cruise \u2192 Departure",
+      "place": "North Goa Beaches → Dudhsagar Falls & Spices → Old Goa Churches → Miramar & Cruise → Departure",
       "featured": true,
       "summary": "A wholesome 5-day family escape blending UNESCO world heritage cathedrals, the thundering 4-tiered Dudhsagar Waterfalls via open jungle jeep safari, aromatic spice plantation with traditional Goan buffet lunch, sunny beaches, and sunset river cruise.",
       "overview": "Curated with comfort, culture, and safety for families of all generations. Dedicated private AC vehicle throughout, family resort with swimming pool, all entry tickets and safari arranged, and 24/7 Telugu customer care support.",
       "photos": [
-        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/5935635/pexels-photo-5935635.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/35299851/pexels-photo-35299851.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/30943318/pexels-photo-30943318.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Welcome to Goa & Relaxed Beach Resort Check-in",
-          "description": "Meet your private chauffeur at Goa Airport or Railway Station. Enjoy a smooth drive to your family resort. Check in (1:00 PM), unwind in spacious rooms, and spend a relaxing afternoon swimming in the pool. Evening walk to Calangute Beach to watch the ocean sunset and enjoy seaside family dining."
+          "description": "Meet your private chauffeur at Goa Airport or Railway Station. Enjoy a smooth drive to your family resort. Check in (1:00 PM), unwind in spacious rooms, and spend a relaxing afternoon swimming in the pool. Evening walk to Calangute Beach to watch the ocean sunset and enjoy seaside family dining.",
+          "thumbnail": "https://images.pexels.com/photos/10772756/pexels-photo-10772756.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Dudhsagar Waterfalls Jeep Safari & Spice Plantation Feast",
-          "description": "Early morning drive to Kulem for the thrilling open-top Jeep Safari through Bhagwan Mahavir Wildlife Sanctuary to the base of Dudhsagar Waterfalls ('Sea of Milk'). Marvel at the 4-tiered cascading water amidst dense jungle. Later visit Sahakari Spice Plantation: greeted with flower garlands and herbal tea, take a guided tour of vanilla, cardamom, and cinnamon groves, followed by a sumptuous traditional Goan buffet lunch. Return to resort in evening."
+          "description": "Early morning drive to Kulem for the thrilling open-top Jeep Safari through Bhagwan Mahavir Wildlife Sanctuary to the base of Dudhsagar Waterfalls ('Sea of Milk'). Marvel at the 4-tiered cascading water amidst dense jungle. Later visit Sahakari Spice Plantation: greeted with flower garlands and herbal tea, take a guided tour of vanilla, cardamom, and cinnamon groves, followed by a sumptuous traditional Goan buffet lunch. Return to resort in evening.",
+          "thumbnail": "https://images.pexels.com/photos/3974376/pexels-photo-3974376.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Old Goa UNESCO Heritage Churches & Mandovi River Cruise",
-          "description": "After breakfast, visit UNESCO World Heritage sites in Old Goa: the 16th-century Basilica of Bom Jesus housing the sacred relics of St. Francis Xavier, and the grand Se Cathedral (largest church in Asia). Visit Mangueshi Temple. In the afternoon, head to Miramar Beach and Dona Paula viewpoint. End the evening with a joyous 1-hour Mandovi River Sunset Cruise featuring live folk music, Portuguese Corridinho dance, and panoramic views of Panaji."
+          "description": "After breakfast, visit UNESCO World Heritage sites in Old Goa: the 16th-century Basilica of Bom Jesus housing the sacred relics of St. Francis Xavier, and the grand Se Cathedral (largest church in Asia). Visit Mangueshi Temple. In the afternoon, head to Miramar Beach and Dona Paula viewpoint. End the evening with a joyous 1-hour Mandovi River Sunset Cruise featuring live folk music, Portuguese Corridinho dance, and panoramic views of Panaji.",
+          "thumbnail": "https://images.pexels.com/photos/36832373/pexels-photo-36832373.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "North Goa Coastal Day: Fort Aguada & Baga Beach Leisure",
-          "description": "After breakfast, visit historic Fort Aguada and its historic lighthouse. Continue to Sinquerim Beach. Spend the afternoon at Baga Beach where family members can relax on deck chairs, try optional gentle banana boat rides, or explore beachside cafes. Evening shopping in Panaji or Candolim market."
+          "description": "After breakfast, visit historic Fort Aguada and its historic lighthouse. Continue to Sinquerim Beach. Spend the afternoon at Baga Beach where family members can relax on deck chairs, try optional gentle banana boat rides, or explore beachside cafes. Evening shopping in Panaji or Candolim market.",
+          "thumbnail": "https://images.pexels.com/photos/39653707/pexels-photo-39653707.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Farewell Goa Departure",
-          "description": "Enjoy breakfast at the resort. Check out at 11:00 AM. Your private AC vehicle transfers your family to Goa Airport or Railway Station with happy hearts and cherished family memories."
+          "description": "Enjoy breakfast at the resort. Check out at 11:00 AM. Your private AC vehicle transfers your family to Goa Airport or Railway Station with happy hearts and cherished family memories.",
+          "thumbnail": "https://images.pexels.com/photos/14860387/pexels-photo-14860387.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1393,7 +1506,8 @@ const CRAZY_TRAVELS_DATA = {
         "Calangute, Baga, Miramar Beach & Dona Paula viewpoint tours",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/5935635/pexels-photo-5935635.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "goa-south-goa-serenity-4d3n",
@@ -1404,42 +1518,46 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 13999,
-      "priceFormatted": "from \u20b913,999",
+      "priceFormatted": "from ₹13,999",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
       "nextDeparture": "Daily Private Departures",
-      "place": "Palolem Crescent Beach \u2192 Cabo de Rama Cliffs \u2192 Agonda & Dolphin Safari \u2192 Departure",
+      "place": "Palolem Crescent Beach → Cabo de Rama Cliffs → Agonda & Dolphin Safari → Departure",
       "featured": false,
       "summary": "Escape to the tranquil, unspoiled shores of South Goa. Experience powdery white sands at Palolem, dramatic panoramic sea cliffs at Cabo de Rama Fort, peaceful Agonda beach, and an early morning boat cruise for dolphin spotting.",
       "overview": "Ideal for couples, solo travelers, and peace-seekers desiring calm seas, fresh organic seafood shacks, yoga vibes, and heritage fort vistas away from the bustling crowds.",
       "photos": [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/37937666/pexels-photo-37937666.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/38833387/pexels-photo-38833387.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/188014/pexels-photo-188014.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival in South Goa & Palolem Crescent Beach Leisure",
-          "description": "Arrive in Goa and transfer to your peaceful South Goa resort. Check in (1:00 PM) and head to crescent-shaped Palolem Beach, fringed by leaning coconut palms and calm blue waters. Relax on a beach bed, sample fresh grilled prawns, and enjoy the golden sunset."
+          "description": "Arrive in Goa and transfer to your peaceful South Goa resort. Check in (1:00 PM) and head to crescent-shaped Palolem Beach, fringed by leaning coconut palms and calm blue waters. Relax on a beach bed, sample fresh grilled prawns, and enjoy the golden sunset.",
+          "thumbnail": "https://images.pexels.com/photos/28355680/pexels-photo-28355680.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Morning Dolphin Safari & Agonda Beach Peace",
-          "description": "Start early with a boat ride from Palolem into the Arabian Sea to watch playful wild dolphins leaping in morning waters. Afterward, head to nearby Agonda Beach, voted among Asia's top beaches for peace and cleanliness. Enjoy beach yoga, relaxed cafe breakfasts, and pristine seclusion."
+          "description": "Start early with a boat ride from Palolem into the Arabian Sea to watch playful wild dolphins leaping in morning waters. Afterward, head to nearby Agonda Beach, voted among Asia's top beaches for peace and cleanliness. Enjoy beach yoga, relaxed cafe breakfasts, and pristine seclusion.",
+          "thumbnail": "https://images.pexels.com/photos/30977044/pexels-photo-30977044.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Cabo de Rama Fort Sea Cliffs & Colva Beach Stroll",
-          "description": "After breakfast, drive along scenic coastal roads to the ancient Cabo de Rama Fort. Walk along the ramparts for dramatic panoramic views of crashing ocean waves. Explore secluded Cabo de Rama beach. In the afternoon, visit Colva and Benaulim beaches with traditional fishing boats and Goan culture."
+          "description": "After breakfast, drive along scenic coastal roads to the ancient Cabo de Rama Fort. Walk along the ramparts for dramatic panoramic views of crashing ocean waves. Explore secluded Cabo de Rama beach. In the afternoon, visit Colva and Benaulim beaches with traditional fishing boats and Goan culture.",
+          "thumbnail": "https://images.pexels.com/photos/10898926/pexels-photo-10898926.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Breakfast & Departure from South Goa",
-          "description": "Enjoy breakfast overlooking palm trees. Check out at 11:00 AM. Our chauffeur transfers you to Goa Airport or Railway Station for your departure, refreshed by South Goa's serenity."
+          "description": "Enjoy breakfast overlooking palm trees. Check out at 11:00 AM. Our chauffeur transfers you to Goa Airport or Railway Station for your departure, refreshed by South Goa's serenity.",
+          "thumbnail": "https://images.pexels.com/photos/11944898/pexels-photo-11944898.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1451,7 +1569,8 @@ const CRAZY_TRAVELS_DATA = {
         "Sightseeing in Palolem, Agonda, Colva, and Benaulim",
         "All fuel, toll taxes, parking fees, and driver allowances",
         "24/7 Telugu Customer Care Concierge Support"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/37937666/pexels-photo-37937666.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "goa-getaway",
@@ -1462,9 +1581,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 16999,
-      "priceFormatted": "from \u20b916,999",
+      "priceFormatted": "from ₹16,999",
       "groupSize": "Private Couple",
       "pace": "Moderate & Balanced",
       "season": "All Year",
@@ -1474,30 +1593,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Unwind at golden palm-fringed sands, experience thrilling water sports in Calangute, explore colorful Latin quarters of Fontainhas, and enjoy a sunset catamaran cruise.",
       "overview": "The quintessential tropical holiday. Bask in warm Arabian Sea waters, enjoy fresh seafood shacks with live acoustic music, uncover Portuguese colonial villas in Panaji, and cruise under golden twilight skies.",
       "photos": [
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.pexels.com/photos/3113226/pexels-photo-3113226.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/35916752/pexels-photo-35916752.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/36090195/pexels-photo-36090195.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrive Goa, Resort Check-in & Beach Sunset",
-          "description": "Private cab pickup from Mopa / Dabolim Airport or Thivim Station. Settle into beach resort, enjoy pool access, and take an evening sunset walk on Calangute Beach."
+          "description": "Private cab pickup from Mopa / Dabolim Airport or Thivim Station. Settle into beach resort, enjoy pool access, and take an evening sunset walk on Calangute Beach.",
+          "thumbnail": "https://images.pexels.com/photos/14665858/pexels-photo-14665858.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "North Goa Forts, Watersports & Vagator Cliffs",
-          "description": "Explore 17th-century Portuguese Aguada Fort and lighthouse. Head to Baga for parasailing, jet ski, and banana boat rides. Catch sunset from Vagator cliff-top cafes."
+          "description": "Explore 17th-century Portuguese Aguada Fort and lighthouse. Head to Baga for parasailing, jet ski, and banana boat rides. Catch sunset from Vagator cliff-top cafes.",
+          "thumbnail": "https://images.pexels.com/photos/15100234/pexels-photo-15100234.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Old Goa Churches, Fontainhas & Sunset Cruise",
-          "description": "Discover UNESCO Basilica of Bom Jesus, Se Cathedral, and walk through vibrant pastel Portuguese homes in Fontainhas. In the evening, enjoy sunset cruise on Mandovi River with Goan folk dances."
+          "description": "Discover UNESCO Basilica of Bom Jesus, Se Cathedral, and walk through vibrant pastel Portuguese homes in Fontainhas. In the evening, enjoy sunset cruise on Mandovi River with Goan folk dances.",
+          "thumbnail": "https://images.pexels.com/photos/8112500/pexels-photo-8112500.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Morning Beach Stroll, Cashew Shopping & Departure",
-          "description": "Leisurely breakfast, swimming pool swim, shop for famous Goan feni, spices and roasted cashews before cab transfer to airport."
+          "description": "Leisurely breakfast, swimming pool swim, shop for famous Goan feni, spices and roasted cashews before cab transfer to airport.",
+          "thumbnail": "https://images.pexels.com/photos/39233943/pexels-photo-39233943.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1506,8 +1629,9 @@ const CRAZY_TRAVELS_DATA = {
         "Daily Buffet Breakfast",
         "1-Hour Sunset Cruise Ticket on Mandovi River",
         "Driver allowances, tolls, fuel and parking fees",
-        "24/7 Telugu Customer Care Support (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 \u0c15\u0c38\u0c4d\u0c1f\u0c2e\u0c30\u0c4d \u0c15\u0c47\u0c30\u0c4d)"
-      ]
+        "24/7 Telugu Customer Care Support (తెలుగు కస్టమర్ కేర్)"
+      ],
+      "coverImage": "https://images.pexels.com/photos/3113226/pexels-photo-3113226.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "id": "manali-bachelors-3d2n",
@@ -1518,9 +1642,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 3,
-      "duration": "3 days",
+      "duration": "3D/2N",
       "price": 6999,
-      "priceFormatted": "from \u20b96,999",
+      "priceFormatted": "from ₹6,999",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1530,25 +1654,28 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Designed exclusively for bachelors and friends squads: Delhi-Manali round trip bus tickets, 2 nights premium hotel, personal Swift taxi, snow point at Atal Tunnel & Sissu, and thrilling Beas river rafting.",
       "overview": "Escape to the snow-draped Himalayas with your squad! Our Kullu-Manali Bachelors Group Package is engineered for maximum adventure and zero stress. From round-trip Volvo coach transfers starting from Delhi to a dedicated personal Swift cab throughout your 3 days, enjoy snow adventures across Atal Tunnel, explore Old Manali nightlife, and conquer Beas river rapids.",
       "photos": [
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Local Sight Seeing",
-          "description": "Arrival at Manali Bus Station, meet your friendly cab driver and transfer to the hotel. Check-in time at the hotel 12 noon (early check-in depends on availability). After check-in, freshen up and then head out to explore Manali Local Sight Seeing. After exploring get back to hotel for dinner and rest overnight."
+          "description": "Arrival at Manali Bus Station, meet your friendly cab driver and transfer to the hotel. Check-in time at the hotel 12 noon (early check-in depends on availability). After check-in, freshen up and then head out to explore Manali Local Sight Seeing. After exploring get back to hotel for dinner and rest overnight.",
+          "thumbnail": "https://images.pexels.com/photos/17937696/pexels-photo-17937696.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Snow Point - Atal Tunnel & Solang Valley",
-          "description": "Wake up in the morning, after having breakfast, it\u2019s time to explore Snow Point! Today we are going to explore Solang Valley, Atal Tunnel and Sissu or Koksar in Lahaul Valley. Here tourists can enjoy adventure activities and experience breathtaking snow-capped mountain views. After exploring head back to the hotel, enjoy delicious dinner and rest overnight."
+          "description": "Wake up in the morning, after having breakfast, it’s time to explore Snow Point! Today we are going to explore Solang Valley, Atal Tunnel and Sissu or Koksar in Lahaul Valley. Here tourists can enjoy adventure activities and experience breathtaking snow-capped mountain views. After exploring head back to the hotel, enjoy delicious dinner and rest overnight.",
+          "thumbnail": "https://images.pexels.com/photos/14572763/pexels-photo-14572763.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
-          "title": "Kullu & Adventure Activities \u2014 Return Bus",
-          "description": "After having breakfast check out from the hotel. Tourists can enjoy thrilling adventure activities like Paragliding & River Rafting. Post activities, visit Vaishno Devi Temple and historic Naggar Castle. Then get back to Manali and catch your bus at Manali Bus Station."
+          "title": "Kullu & Adventure Activities — Return Bus",
+          "description": "After having breakfast check out from the hotel. Tourists can enjoy thrilling adventure activities like Paragliding & River Rafting. Post activities, visit Vaishno Devi Temple and historic Naggar Castle. Then get back to Manali and catch your bus at Manali Bus Station.",
+          "thumbnail": "https://images.pexels.com/photos/11786796/pexels-photo-11786796.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1558,7 +1685,8 @@ const CRAZY_TRAVELS_DATA = {
         "Three Days Sight Seeing (Manali, Atal Tunnel, Kullu)",
         "Three Days Personal Taxi (Swift)",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-family-3d2n",
@@ -1569,9 +1697,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 3,
-      "duration": "3 days",
+      "duration": "3D/2N",
       "price": 7499,
-      "priceFormatted": "from \u20b97,499",
+      "priceFormatted": "from ₹7,499",
       "groupSize": "Private Family (3-8)",
       "pace": "Moderate & Balanced",
       "season": "All Year",
@@ -1581,25 +1709,28 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "A delightful mountain getaway for families: Round-trip Volvo tickets from Delhi, premium family accommodation, delicious breakfast and dinners with one-time non-veg dinner, dedicated Swift taxi, and 24/7 Telugu support.",
       "overview": "Make cherished memories with your loved ones among the snowy slopes of Manali. We provide comfortable family-oriented hotel properties, warm meals including special non-veg dinners, and safe, well-timed transfers in a personal Swift cab. From ancient temples to the snow excitement at Atal Tunnel and peaceful heritage at Naggar Castle, your family is cared for every step of the journey.",
       "photos": [
-        "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1597167231350-d057a45dc868?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Local Sight Seeing",
-          "description": "Arrival at Manali Bus Station, meet your cab driver and transfer comfortably to your hotel. Check-in time 12 noon (early check-in subject to availability). Relax and freshen up, then explore Manali Local Sight Seeing: Hidimba Temple, Mall Road, Tibetan Monastery, Old Manali, and Van Vihar. Return to hotel for delicious dinner and rest."
+          "description": "Arrival at Manali Bus Station, meet your cab driver and transfer comfortably to your hotel. Check-in time 12 noon (early check-in subject to availability). Relax and freshen up, then explore Manali Local Sight Seeing: Hidimba Temple, Mall Road, Tibetan Monastery, Old Manali, and Van Vihar. Return to hotel for delicious dinner and rest.",
+          "thumbnail": "https://images.pexels.com/photos/775206/pexels-photo-775206.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Snow Point - Atal Tunnel & Solang Valley",
-          "description": "After a hearty breakfast, head out to explore Snow Point! Explore Solang Valley, cross the Atal Tunnel, and reach Sissu or Koksar. Experience snow-capped mountain views, take memorable family photos in the snow, and enjoy safe activities. Return to the hotel for a piping hot dinner."
+          "description": "After a hearty breakfast, head out to explore Snow Point! Explore Solang Valley, cross the Atal Tunnel, and reach Sissu or Koksar. Experience snow-capped mountain views, take memorable family photos in the snow, and enjoy safe activities. Return to the hotel for a piping hot dinner.",
+          "thumbnail": "https://images.pexels.com/photos/6496159/pexels-photo-6496159.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
-          "title": "Kullu Sightseeing & Adventure \u2014 Return Bus",
-          "description": "After breakfast, check out from the hotel. Visit historic Naggar Castle and the sacred Vaishno Devi Temple in Kullu. Family members wishing to experience Paragliding or River Rafting can enjoy them on a direct payment basis. Transfer to Manali Bus Station to board your return bus to Delhi."
+          "title": "Kullu Sightseeing & Adventure — Return Bus",
+          "description": "After breakfast, check out from the hotel. Visit historic Naggar Castle and the sacred Vaishno Devi Temple in Kullu. Family members wishing to experience Paragliding or River Rafting can enjoy them on a direct payment basis. Transfer to Manali Bus Station to board your return bus to Delhi.",
+          "thumbnail": "https://images.pexels.com/photos/28206557/pexels-photo-28206557.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1609,7 +1740,8 @@ const CRAZY_TRAVELS_DATA = {
         "Three Days Sight Seeing (Manali, Atal Tunnel, Kullu)",
         "Three Days Personal Taxi (Swift)",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1597167231350-d057a45dc868?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-honeymoon-3d2n",
@@ -1620,9 +1752,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 3,
-      "duration": "3 days",
+      "duration": "3D/2N",
       "price": 17999,
-      "priceFormatted": "from \u20b917,999",
+      "priceFormatted": "from ₹17,999",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
@@ -1632,25 +1764,28 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "The ultimate romantic Himalayan escape: Delhi-Manali round trip tickets, 2 nights premium stay, private Swift cab, snow points, plus One Night Candle Light Dinner, Honeymoon Bed Decoration with Cake, and 24/7 Telugu care.",
       "overview": "Celebrate your love amidst misty cedar forests and snow-capped Himalayan peaks. Created exclusively for newlyweds and couples, this package includes a private Swift car for intimate sightseeing, cozy hotel stays, and unforgettable romantic highlights: a special candle light dinner, exquisite honeymoon bed decoration, and celebratory cake in your room.",
       "photos": [
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Local Sight Seeing & Romantic Stroll",
-          "description": "Arrival at Manali Bus Station where your private chauffeur welcomes you. Transfer to the hotel. Check-in time 12 noon (early check-in subject to availability). Freshen up in your honeymoon room, then explore Manali Local Sight Seeing: Hidimba Temple nestled in towering pines, Mall Road hand-in-hand stroll, Tibetan Monastery, Old Manali cozy cafes, and Van Vihar. Return to hotel for dinner and restful night."
+          "description": "Arrival at Manali Bus Station where your private chauffeur welcomes you. Transfer to the hotel. Check-in time 12 noon (early check-in subject to availability). Freshen up in your honeymoon room, then explore Manali Local Sight Seeing: Hidimba Temple nestled in towering pines, Mall Road hand-in-hand stroll, Tibetan Monastery, Old Manali cozy cafes, and Van Vihar. Return to hotel for dinner and restful night.",
+          "thumbnail": "https://images.pexels.com/photos/12779583/pexels-photo-12779583.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Snow Point - Atal Tunnel & Candle Light Celebration",
-          "description": "Wake up to crisp mountain views. After breakfast, head out for Snow Point! Explore Solang Valley, drive through the historic Atal Tunnel, and visit Sissu or Koksar snow fields. Play in the snow and marvel at the Himalayan panorama. In the evening, head back to your hotel for the highlight: Romantic Candle Light Dinner, Honeymoon Bed Decoration, and celebratory Cake."
+          "description": "Wake up to crisp mountain views. After breakfast, head out for Snow Point! Explore Solang Valley, drive through the historic Atal Tunnel, and visit Sissu or Koksar snow fields. Play in the snow and marvel at the Himalayan panorama. In the evening, head back to your hotel for the highlight: Romantic Candle Light Dinner, Honeymoon Bed Decoration, and celebratory Cake.",
+          "thumbnail": "https://images.pexels.com/photos/10915590/pexels-photo-10915590.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
-          "title": "Kullu Heritage & Scenic Drive \u2014 Return Bus",
-          "description": "After having breakfast, check out from the hotel. Visit the romantic Naggar Castle with its timeless wooden architecture and Kullu valley balcony view. Visit Vaishno Devi temple. Optional adventure sports (tandem paragliding & rafting) available. Later, chauffeur drops you at Manali Bus Station to catch your return bus."
+          "title": "Kullu Heritage & Scenic Drive — Return Bus",
+          "description": "After having breakfast, check out from the hotel. Visit the romantic Naggar Castle with its timeless wooden architecture and Kullu valley balcony view. Visit Vaishno Devi temple. Optional adventure sports (tandem paragliding & rafting) available. Later, chauffeur drops you at Manali Bus Station to catch your return bus.",
+          "thumbnail": "https://images.pexels.com/photos/13927123/pexels-photo-13927123.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1662,7 +1797,8 @@ const CRAZY_TRAVELS_DATA = {
         "One Night Candle Light Dinner",
         "Honeymoon Bed Decoration with Cake",
         "24/7 Telugu Customer Care Support"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "kasol-manali-bachelors-4d3n",
@@ -1673,9 +1809,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 8499,
-      "priceFormatted": "from \u20b98,499",
+      "priceFormatted": "from ₹8,499",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1683,32 +1819,36 @@ const CRAZY_TRAVELS_DATA = {
       "place": "Kullu-Manali Circuit",
       "featured": true,
       "summary": "The definitive Himachal group adventure! 4 Days and 3 Nights spanning Manali snow points, Atal Tunnel, Beas river rafting, and the bohemian cafe culture of Kasol and holy Manikaran hot springs. Dedicated Swift cab and Delhi Volvo included.",
-      "overview": "Why stop at Manali when you can experience the bohemian paradise of Parvati Valley too? This 4-day extravaganza takes your crew through Hidimba Temple, Solang snow peaks, Atal Tunnel to Sissu, white water rafting in Kullu, and on to Kasol \u2014 celebrated as the \"Mini Israel of India\". Stay in cozy mountain hotels or riverside camps, explore Manikaran Sahib Gurudwara and its natural healing hot sulphur springs, and create legendary travel stories.",
+      "overview": "Why stop at Manali when you can experience the bohemian paradise of Parvati Valley too? This 4-day extravaganza takes your crew through Hidimba Temple, Solang snow peaks, Atal Tunnel to Sissu, white water rafting in Kullu, and on to Kasol — celebrated as the \"Mini Israel of India\". Stay in cozy mountain hotels or riverside camps, explore Manikaran Sahib Gurudwara and its natural healing hot sulphur springs, and create legendary travel stories.",
       "photos": [
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Local Sight Seeing",
-          "description": "Arrival at Manali Bus Station, meet your cab driver and transfer to hotel. Check-in time 12 noon (early check-in depends on availability). After check-in, freshen up and go to Manali Local Sight Seeing: Hidimba Temple, Mall Road, Monastery, Old Manali, and Van Vihar. Return to hotel for dinner and rest overnight."
+          "description": "Arrival at Manali Bus Station, meet your cab driver and transfer to hotel. Check-in time 12 noon (early check-in depends on availability). After check-in, freshen up and go to Manali Local Sight Seeing: Hidimba Temple, Mall Road, Monastery, Old Manali, and Van Vihar. Return to hotel for dinner and rest overnight.",
+          "thumbnail": "https://images.pexels.com/photos/12828313/pexels-photo-12828313.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Snow Point - Atal Tunnel & Solang Valley",
-          "description": "Wake up in the morning, after breakfast it is time to explore Snow Point! Explore Solang Valley, pass through Atal Tunnel, and reach Sissu or Koksar in Lahaul Valley. Tourists can enjoy adventure activities and experience breathtaking snow-capped mountain views. Head back to hotel for dinner and rest."
+          "description": "Wake up in the morning, after breakfast it is time to explore Snow Point! Explore Solang Valley, pass through Atal Tunnel, and reach Sissu or Koksar in Lahaul Valley. Tourists can enjoy adventure activities and experience breathtaking snow-capped mountain views. Head back to hotel for dinner and rest.",
+          "thumbnail": "https://images.pexels.com/photos/32536512/pexels-photo-32536512.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Kullu Adventure Activities to Kasol",
-          "description": "After having breakfast check out from the hotel. Tourists can enjoy thrilling adventure activities: Paragliding & River Rafting in Kullu. Post activities, visit Vaishno Devi Temple and Naggar Castle. Afterwards, head out to Kasol Hotel or Riverside Camps, enjoy delicious dinner, bonfire vibes, and rest overnight."
+          "description": "After having breakfast check out from the hotel. Tourists can enjoy thrilling adventure activities: Paragliding & River Rafting in Kullu. Post activities, visit Vaishno Devi Temple and Naggar Castle. Afterwards, head out to Kasol Hotel or Riverside Camps, enjoy delicious dinner, bonfire vibes, and rest overnight.",
+          "thumbnail": "https://images.pexels.com/photos/36544383/pexels-photo-36544383.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Kasol - Manikaran & Return Bus Station",
-          "description": "After having breakfast, check out from the hotel / camps. Head out to explore Kasol, known as the \"Mini Israel of India\", famous for riverside cafes and mountain culture. Visit Manikaran Temple dedicated to Lord Shiva and Parvati, and the historic Manikaran Sahib Gurudwara where natural hot springs offer medicinal benefits. Later, head back to Manali and catch your bus at Manali Bus Station."
+          "description": "After having breakfast, check out from the hotel / camps. Head out to explore Kasol, known as the \"Mini Israel of India\", famous for riverside cafes and mountain culture. Visit Manikaran Temple dedicated to Lord Shiva and Parvati, and the historic Manikaran Sahib Gurudwara where natural hot springs offer medicinal benefits. Later, head back to Manali and catch your bus at Manali Bus Station.",
+          "thumbnail": "https://images.pexels.com/photos/33014478/pexels-photo-33014478.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1718,8 +1858,9 @@ const CRAZY_TRAVELS_DATA = {
         "Four Days Sight Seeing (Manali, Atal Tunnel, Kullu, Kasol & Manikaran)",
         "Four Days Personal Taxi (Swift)",
         "24/7 Telugu Customer Care Support",
-        "Optional Luxury Camps in Kasol (+\u20b9899/- extra cost)"
-      ]
+        "Optional Luxury Camps in Kasol (+₹899/- extra cost)"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "kasol-manali-camping-4d3n",
@@ -1730,9 +1871,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 8499,
-      "priceFormatted": "from \u20b98,499",
+      "priceFormatted": "from ₹8,499",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1742,30 +1883,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "The ultimate Kasol-Manali camping fusion: Delhi-Manali Volvo AC bus, 2 nights hotel in Manali, 1 night luxury Swiss riverside camp in Kasol with music & bonfire, Atal Tunnel snow points, and Beas river rafting.",
       "overview": "Combine high-altitude snow thrills with bohemian valley vibes! Spend two days conquering Solang Valley, Atal Tunnel snow points, and Beas white water rapids before moving into Kasol for an unforgettable riverside camping night under starlit skies.",
       "photos": [
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Local Sight Seeing",
-          "description": "Arrival at Manali Bus Station, private Swift cab greeting and hotel check-in. Explore Hidimba Temple, Mall Road, Tibetan Monastery, Old Manali, and Van Vihar before an evening dinner."
+          "description": "Arrival at Manali Bus Station, private Swift cab greeting and hotel check-in. Explore Hidimba Temple, Mall Road, Tibetan Monastery, Old Manali, and Van Vihar before an evening dinner.",
+          "thumbnail": "https://images.pexels.com/photos/12784538/pexels-photo-12784538.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Snow Point - Atal Tunnel & Solang Valley",
-          "description": "Head out after hot breakfast to Solang Valley for ski slopes, quad biking, and paragliding. Cross the world-record Atal Tunnel into Sissu waterfalls and snowfields in Lahaul Valley."
+          "description": "Head out after hot breakfast to Solang Valley for ski slopes, quad biking, and paragliding. Cross the world-record Atal Tunnel into Sissu waterfalls and snowfields in Lahaul Valley.",
+          "thumbnail": "https://images.pexels.com/photos/11948660/pexels-photo-11948660.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Kullu Rafting & Drive to Kasol Riverside Camp",
-          "description": "Check out from Manali hotel and drive along Beas River for thrilling Grade III rafting in Kullu. Afternoon drive into mystical Parvati Valley to check in at Kasol Riverside Camp with acoustic music & campfire night."
+          "description": "Check out from Manali hotel and drive along Beas River for thrilling Grade III rafting in Kullu. Afternoon drive into mystical Parvati Valley to check in at Kasol Riverside Camp with acoustic music & campfire night.",
+          "thumbnail": "https://images.pexels.com/photos/19211465/pexels-photo-19211465.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Kasol, Manikaran Gurudwara & Departure",
-          "description": "Wake up to misty pine river views. Trek to Chalal village, visit holy Manikaran Sahib natural hot sulphur springs, explore Kasol cafes, and transfer back to Manali bus station for Volvo return."
+          "description": "Wake up to misty pine river views. Trek to Chalal village, visit holy Manikaran Sahib natural hot sulphur springs, explore Kasol cafes, and transfer back to Manali bus station for Volvo return.",
+          "thumbnail": "https://images.pexels.com/photos/16456117/pexels-photo-16456117.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1775,8 +1920,9 @@ const CRAZY_TRAVELS_DATA = {
         "Three Breakfasts and Three Dinners (One Time Non-Veg Dinner Included)",
         "Four Days Sightseeing: Manali, Atal Tunnel, Kullu & Kasol",
         "Four Days Dedicated Swift Taxi for transfers & sightseeing",
-        "24/7 Telugu Customer Care Support (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 \u0c15\u0c38\u0c4d\u0c1f\u0c2e\u0c30\u0c4d \u0c15\u0c47\u0c30\u0c4d)"
-      ]
+        "24/7 Telugu Customer Care Support (తెలుగు కస్టమర్ కేర్)"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-family-snow-5d4n",
@@ -1787,9 +1933,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "adventure",
       "styleName": "Adventure & Snow",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 19500,
-      "priceFormatted": "from \u20b919,500",
+      "priceFormatted": "from ₹19,500",
       "groupSize": "Private Family (3-8)",
       "pace": "Moderate & Balanced",
       "season": "All Year",
@@ -1799,35 +1945,40 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "A memorable mountain vacation for families: Play in the snow at Solang Valley, ride alpine cable cars, visit ancient wooden temples, explore Naggar heritage castle, and stay in deluxe family suites.",
       "overview": "Curated specially for multi-generational families with kids and seniors. Enjoy slow, comfortable travel with private Swift/Innova cab, verified sanitized family rooms, child-safe snow points, and dedicated 24/7 Telugu care.",
       "photos": [
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Volvo Arrival, Resort Check-in & Mall Road Leisure",
-          "description": "Morning private cab pickup at Manali Private Volvo stand. Check-in to your premium family mountain-view suite, relax with welcome tea, and explore Mall Road and Van Vihar pine sanctuary at a gentle pace."
+          "description": "Morning private cab pickup at Manali Private Volvo stand. Check-in to your premium family mountain-view suite, relax with welcome tea, and explore Mall Road and Van Vihar pine sanctuary at a gentle pace.",
+          "thumbnail": "https://images.pexels.com/photos/32109153/pexels-photo-32109153.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang Valley Snow Fun & High Altitude Cable Car",
-          "description": "Full-day family excitement in Solang Valley. Enjoy thrilling cable car ropeway flights with 360-degree views of snow peaks, snow sledding, yak rides for kids, and warm Maggi and hot chocolate at alpine cafes."
+          "description": "Full-day family excitement in Solang Valley. Enjoy thrilling cable car ropeway flights with 360-degree views of snow peaks, snow sledding, yak rides for kids, and warm Maggi and hot chocolate at alpine cafes.",
+          "thumbnail": "https://images.pexels.com/photos/20848215/pexels-photo-20848215.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Atal Tunnel North Portal & Sissu Lahaul Valley Outing",
-          "description": "An unforgettable drive through the world's longest high-altitude tunnel (9.02 km) emerging into the snow wonderworld of Lahaul Valley. Explore frozen Sissu waterfall, play in thick clean snow, and click family portraits."
+          "description": "An unforgettable drive through the world's longest high-altitude tunnel (9.02 km) emerging into the snow wonderworld of Lahaul Valley. Explore frozen Sissu waterfall, play in thick clean snow, and click family portraits.",
+          "thumbnail": "https://images.pexels.com/photos/1124002/pexels-photo-1124002.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Hadimba Temple, Vashisht Springs & Naggar Royal Castle",
-          "description": "Cultural immersion day: Seek blessings at the 16th-century wooden Hadimba Temple, take a relaxing dip in Vashisht natural hot sulphur springs, and visit the historic stone-and-timber Naggar Castle overlooking the valley."
+          "description": "Cultural immersion day: Seek blessings at the 16th-century wooden Hadimba Temple, take a relaxing dip in Vashisht natural hot sulphur springs, and visit the historic stone-and-timber Naggar Castle overlooking the valley.",
+          "thumbnail": "https://images.pexels.com/photos/19872275/pexels-photo-19872275.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Kullu Shawl Weavers, Angora Farm & Evening Volvo Boarding",
-          "description": "Check-out after hearty breakfast. Drive along river Beas towards Kullu, stop at government-certified handloom weaving societies, visit Angora rabbit farms, and board your comfortable AC Volvo bus back to Delhi."
+          "description": "Check-out after hearty breakfast. Drive along river Beas towards Kullu, stop at government-certified handloom weaving societies, visit Angora rabbit farms, and board your comfortable AC Volvo bus back to Delhi.",
+          "thumbnail": "https://images.pexels.com/photos/13561678/pexels-photo-13561678.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1837,7 +1988,8 @@ const CRAZY_TRAVELS_DATA = {
         "Private Swift / Innova for 5 Days Sightseeing",
         "Atal Tunnel, Solang, Naggar & Kullu Sightseeing",
         "24/7 Telugu Customer Care Concierge"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-adventure-escape-5d4n",
@@ -1848,9 +2000,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 14500,
-      "priceFormatted": "from \u20b914,500",
+      "priceFormatted": "from ₹14,500",
       "groupSize": "Private Group (2-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1860,35 +2012,40 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Five action-packed days in the Himalayas: River rafting down Beas torrents, tandem paragliding flights in Solang, Rohtang Pass glacier safari, and cozy mountain lodge evenings.",
       "overview": "Designed for thrill-seekers who crave heart-pumping mountain activities. From navigating white-water rapids to flying high over pine canopies and climbing to 13,050 feet at Rohtang Pass.",
       "photos": [
-        "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival, Camp/Hotel Check-in & Old Manali Acclimatization",
-          "description": "Arrive at Manali, transfer to your hotel. Acclimatize to mountain air, hike through Old Manali's cedar forests, and visit rustic bakeries and vibrant cafes."
+          "description": "Arrive at Manali, transfer to your hotel. Acclimatize to mountain air, hike through Old Manali's cedar forests, and visit rustic bakeries and vibrant cafes.",
+          "thumbnail": "https://images.pexels.com/photos/31103894/pexels-photo-31103894.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang Valley Thrill Arena: Paragliding & ATV Quad Biking",
-          "description": "An adrenaline-fueled day: Soar like an eagle with tandem high-glide paragliding, maneuver rugged ATV quad bikes over mountain terrain, and ride the ropeway."
+          "description": "An adrenaline-fueled day: Soar like an eagle with tandem high-glide paragliding, maneuver rugged ATV quad bikes over mountain terrain, and ride the ropeway.",
+          "thumbnail": "https://images.pexels.com/photos/23928501/pexels-photo-23928501.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Atal Tunnel & Sissu Snowmobile Safari",
-          "description": "Cross the mighty Pir Panjal range through the Atal Tunnel. Reach the freezing white plains of Sissu, hire snowmobiles, and trek along frozen riverbanks."
+          "description": "Cross the mighty Pir Panjal range through the Atal Tunnel. Reach the freezing white plains of Sissu, hire snowmobiles, and trek along frozen riverbanks.",
+          "thumbnail": "https://images.pexels.com/photos/29494221/pexels-photo-29494221.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Jogini Waterfalls Cliff Trek & Vashisht Rock Clamber",
-          "description": "Trek through apple orchards and pine woods to the multi-tier Jogini Waterfalls. Dip your feet in natural plunge pools and visit Vashisht natural hot springs."
+          "description": "Trek through apple orchards and pine woods to the multi-tier Jogini Waterfalls. Dip your feet in natural plunge pools and visit Vashisht natural hot springs.",
+          "thumbnail": "https://images.pexels.com/photos/32132398/pexels-photo-32132398.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Beas White Water Rafting & Evening Volvo Departure",
-          "description": "Head to Kullu for a thrilling 14-km Grade-III white water rafting expedition on the churning icy waters of Beas River. Board your return Volvo bus."
+          "description": "Head to Kullu for a thrilling 14-km Grade-III white water rafting expedition on the churning icy waters of Beas River. Board your return Volvo bus.",
+          "thumbnail": "https://images.pexels.com/photos/29793799/pexels-photo-29793799.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1897,7 +2054,8 @@ const CRAZY_TRAVELS_DATA = {
         "Breakfast & Dinner",
         "5 Days Swift cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-romantic-alpine-5d4n",
@@ -1908,9 +2066,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 23000,
-      "priceFormatted": "from \u20b923,000",
+      "priceFormatted": "from ₹23,000",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
@@ -1920,35 +2078,40 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "An intimate luxury escape for couples amidst cedar pine forests: Cozy rooms with panoramic balconies, private riverside picnic, romantic candlelit dinners, and private chauffeured cab.",
       "overview": "Spend 5 days celebrating love surrounded by snowy Himalayan ridges. From candlelit dinners in Old Manali to romantic photoshoots by Sissu waterfalls and cozy evenings by cedar fireplaces.",
       "photos": [
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Volvo Arrival, Flower Bed Decoration & Sunset Stroll",
-          "description": "Private cab pickup at Manali, check-in to your luxury suite decorated with fresh flower petals and welcome cake. Enjoy a quiet pine trail sunset walk."
+          "description": "Private cab pickup at Manali, check-in to your luxury suite decorated with fresh flower petals and welcome cake. Enjoy a quiet pine trail sunset walk.",
+          "thumbnail": "https://images.pexels.com/photos/5110976/pexels-photo-5110976.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang Valley Snow Romance & Private Cable Car",
-          "description": "Head to Solang Valley for a romantic cable car flight above snow fields, warm hot chocolate, yak portraits in traditional Himachali attire, and snow play."
+          "description": "Head to Solang Valley for a romantic cable car flight above snow fields, warm hot chocolate, yak portraits in traditional Himachali attire, and snow play.",
+          "thumbnail": "https://images.pexels.com/photos/37763602/pexels-photo-37763602.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Atal Tunnel & Sissu Lahaul Snow Excursion",
-          "description": "Experience the sensational tunnel drive into the serene white landscape of Lahaul Valley. Walk hand-in-hand beside frozen Sissu Lake and waterfall."
+          "description": "Experience the sensational tunnel drive into the serene white landscape of Lahaul Valley. Walk hand-in-hand beside frozen Sissu Lake and waterfall.",
+          "thumbnail": "https://images.pexels.com/photos/18498506/pexels-photo-18498506.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Naggar Castle Heritage & Candlelight Dinner",
-          "description": "Tour the 15th-century wood-and-stone Naggar Castle and Nicholas Roerich Art Gallery. Return to Manali for an intimate 4-course candlelight dinner with cake."
+          "description": "Tour the 15th-century wood-and-stone Naggar Castle and Nicholas Roerich Art Gallery. Return to Manali for an intimate 4-course candlelight dinner with cake.",
+          "thumbnail": "https://images.pexels.com/photos/37466126/pexels-photo-37466126.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Hadimba Cedar Forest & Volvo Return",
-          "description": "Leisurely morning breakfast. Visit the serene Hadimba Temple hidden among giant deodar trees, pick up authentic woolens and souvenirs, and board Volvo bus."
+          "description": "Leisurely morning breakfast. Visit the serene Hadimba Temple hidden among giant deodar trees, pick up authentic woolens and souvenirs, and board Volvo bus.",
+          "thumbnail": "https://images.pexels.com/photos/38236787/pexels-photo-38236787.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -1958,7 +2121,8 @@ const CRAZY_TRAVELS_DATA = {
         "Bed Decoration & Cake",
         "Private Cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-bachelors-high-pass-4d3n",
@@ -1969,9 +2133,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "group",
       "styleName": "Bachelors & Group",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 15000,
-      "priceFormatted": "from \u20b915,000",
+      "priceFormatted": "from ₹15,000",
       "groupSize": "Private Bachelor Group (4-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -1981,30 +2145,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Unleash adrenaline with your squad: Camp under the stars in Solang Valley, ride bikes on high mountain roads, and enjoy wild music parties around mountain bonfires.",
       "overview": "Built for student batches and bachelor groups wanting high energy. Features 2 nights premium hotel plus 1 night riverside camp with loud music, bonfire, and unlimited food.",
       "photos": [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival, Hotel Check-in & Old Manali Cafe Strip",
-          "description": "Arrive by Volvo, swift cab pickup to hotel. Head out to Old Manali's legendary live music cafes, try wood-fired pizzas, and explore Manu Temple."
+          "description": "Arrive by Volvo, swift cab pickup to hotel. Head out to Old Manali's legendary live music cafes, try wood-fired pizzas, and explore Manu Temple.",
+          "thumbnail": "https://images.pexels.com/photos/17937691/pexels-photo-17937691.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "High Pass Atal Tunnel, Sissu & Lahaul Snow Drive",
-          "description": "Epic road trip through Atal Tunnel. Arrive at Sissu, play competitive snow games with friends, ride snow scooters, and explore Sissu glacier waterfall."
+          "description": "Epic road trip through Atal Tunnel. Arrive at Sissu, play competitive snow games with friends, ride snow scooters, and explore Sissu glacier waterfall.",
+          "thumbnail": "https://images.pexels.com/photos/1178688/pexels-photo-1178688.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Solang Valley Extreme Sports Arena",
-          "description": "Full day dedicated to squad adventures: Paragliding from high launch, giant zorb rolling, quad bike drifting, and ropeway summit cable car."
+          "description": "Full day dedicated to squad adventures: Paragliding from high launch, giant zorb rolling, quad bike drifting, and ropeway summit cable car.",
+          "thumbnail": "https://images.pexels.com/photos/16723707/pexels-photo-16723707.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Jogini Waterfalls Hike, Kullu Rafting & Departure",
-          "description": "Morning hike to scenic Jogini Waterfalls. Transfer to Kullu for intense 14-km white water river rafting on Beas River before boarding the evening Volvo."
+          "description": "Morning hike to scenic Jogini Waterfalls. Transfer to Kullu for intense 14-km white water river rafting on Beas River before boarding the evening Volvo.",
+          "thumbnail": "https://images.pexels.com/photos/12614389/pexels-photo-12614389.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2013,7 +2181,8 @@ const CRAZY_TRAVELS_DATA = {
         "Meals (Breakfast & Dinner)",
         "Swift Cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-solang-paragliding-4d3n",
@@ -2024,9 +2193,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "adventure",
       "styleName": "Adventure & Snow",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 13500,
-      "priceFormatted": "from \u20b913,500",
+      "priceFormatted": "from ₹13,500",
       "groupSize": "Private Group (2-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -2036,30 +2205,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Soar high in the sky over Solang Valley and trek through pine forests to the sacred Jogini Waterfalls on this quick 4-day action getaway.",
       "overview": "A quick Himalayan thrill package combining aerial paragliding flights, scenic waterfall trekking, thermal spring soaking, and swift cab transit with Telugu support.",
       "photos": [
-        "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Arrival, Basecamp Check-in & Van Vihar River Trail",
-          "description": "Morning arrival, swift hotel check-in. Rest up, then head out to explore the deodar canopy at Van Vihar and stroll along the lively Mall Road."
+          "description": "Morning arrival, swift hotel check-in. Rest up, then head out to explore the deodar canopy at Van Vihar and stroll along the lively Mall Road.",
+          "thumbnail": "https://images.pexels.com/photos/36721861/pexels-photo-36721861.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang High Tandem Paragliding & Summit Gondola",
-          "description": "Highlight day: Certified tandem paragliding taking off from high alpine slopes. Fly above snow valleys, ride the ropeway, and try zorbing."
+          "description": "Highlight day: Certified tandem paragliding taking off from high alpine slopes. Fly above snow valleys, ride the ropeway, and try zorbing.",
+          "thumbnail": "https://images.pexels.com/photos/32261522/pexels-photo-32261522.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Atal Tunnel & Sissu Snow Glaciers",
-          "description": "Scenic drive through the 9-km Atal Tunnel into Lahaul Valley. Explore frozen Sissu waterfall, throw snowballs, and enjoy steaming mountain tea."
+          "description": "Scenic drive through the 9-km Atal Tunnel into Lahaul Valley. Explore frozen Sissu waterfall, throw snowballs, and enjoy steaming mountain tea.",
+          "thumbnail": "https://images.pexels.com/photos/29943761/pexels-photo-29943761.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Hadimba Pagoda, Old Manali Cafes & Departure",
-          "description": "Visit Hadimba Temple and Vashisht hot springs, grab a final wood-fired brunch in Old Manali, and transfer to Volvo bus stand for return journey."
+          "description": "Visit Hadimba Temple and Vashisht hot springs, grab a final wood-fired brunch in Old Manali, and transfer to Volvo bus stand for return journey.",
+          "thumbnail": "https://images.pexels.com/photos/30723537/pexels-photo-30723537.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2068,7 +2241,8 @@ const CRAZY_TRAVELS_DATA = {
         "Breakfast & Dinner",
         "Swift cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-riverside-leisure-5d4n",
@@ -2079,9 +2253,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 17000,
-      "priceFormatted": "from \u20b917,000",
+      "priceFormatted": "from ₹17,000",
       "groupSize": "Private Group (2-12)",
       "pace": "Easy & Romantic",
       "season": "All Year",
@@ -2091,35 +2265,40 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Escape the noise: Stay at a beautiful riverside cottage in Old Manali, listening to rushing waters, reading books, meditating, and breathing fresh Himalayan air.",
       "overview": "Slow travel at its finest. Wake up to the melody of Beas River, sip freshly brewed Kahwa, take tranquil cedar forest walks, and revitalize mind and body with 24/7 Telugu concierge service.",
       "photos": [
-        "https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1520483601560-389dff434fdf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Riverside Resort Check-in & Beas Soundscape",
-          "description": "Arrive at Manali, check-in to your serene resort located directly along the banks of river Beas. Unwind listening to the rushing mountain waters."
+          "description": "Arrive at Manali, check-in to your serene resort located directly along the banks of river Beas. Unwind listening to the rushing mountain waters.",
+          "thumbnail": "https://images.pexels.com/photos/710906/pexels-photo-710906.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang Valley Meadows & Anjani Mahadev Walk",
-          "description": "Gentle exploration of Solang Valley at an unhurried pace. Ride the comfortable ropeway gondola and take an easy pine path walk to Anjani Mahadev."
+          "description": "Gentle exploration of Solang Valley at an unhurried pace. Ride the comfortable ropeway gondola and take an easy pine path walk to Anjani Mahadev.",
+          "thumbnail": "https://images.pexels.com/photos/36721865/pexels-photo-36721865.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Atal Tunnel Highway & Sissu Willow Groves",
-          "description": "Drive through Atal Tunnel into Lahaul Valley. Enjoy a peaceful riverside picnic amidst Sissu's golden willow groves with views of Sissu waterfall."
+          "description": "Drive through Atal Tunnel into Lahaul Valley. Enjoy a peaceful riverside picnic amidst Sissu's golden willow groves with views of Sissu waterfall.",
+          "thumbnail": "https://images.pexels.com/photos/34790986/pexels-photo-34790986.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Naggar Castle Royal Heritage & Roerich Estate",
-          "description": "Visit historic Naggar village, explore the 500-year-old wooden castle, admire Himalayan paintings at Roerich Art Gallery, and taste fresh apple crumble."
+          "description": "Visit historic Naggar village, explore the 500-year-old wooden castle, admire Himalayan paintings at Roerich Art Gallery, and taste fresh apple crumble.",
+          "thumbnail": "https://images.pexels.com/photos/29494222/pexels-photo-29494222.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Hadimba Sanctuary Cedars & Evening Volvo Departure",
-          "description": "Visit sacred Hadimba temple and ancient Vashisht springs. Shop for handmade shawls in Kullu before heading to the Volvo bus terminal."
+          "description": "Visit sacred Hadimba temple and ancient Vashisht springs. Shop for handmade shawls in Kullu before heading to the Volvo bus terminal.",
+          "thumbnail": "https://images.pexels.com/photos/38926404/pexels-photo-38926404.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2128,20 +2307,21 @@ const CRAZY_TRAVELS_DATA = {
         "Breakfast & Dinner",
         "Swift cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-old-cafe-culture-4d3n",
       "slug": "manali-old-cafe-culture-4d3n",
-      "name": "Old Manali Caf\u00e9 Crawl & Heritage Culture Trail",
+      "name": "Old Manali Café Crawl & Heritage Culture Trail",
       "destination": "manali",
       "destinationName": "Kullu-Manali",
       "travelStyle": "culture",
       "styleName": "Heritage & Living Culture",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 12000,
-      "priceFormatted": "from \u20b912,000",
+      "priceFormatted": "from ₹12,000",
       "groupSize": "Private Group (2-12)",
       "pace": "Moderate & Balanced",
       "season": "All Year",
@@ -2151,30 +2331,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Discover the artistic and bohemian side of Manali: Traditional Kath-Kuni wooden architecture, ancient temples, artisan bakeries, and vibrant live music cafes of Old Manali.",
       "overview": "Dive deep into Old Manali's cobblestone lanes lined with bakeries, handloom stores, and historic shrines. Savor fresh trout, artisan coffee, and bohemian mountain culture.",
       "photos": [
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Old Manali Cobbled Alleys, Bakeries & Manu Temple",
-          "description": "Check-in to a boutique heritage stay in Old Manali. Spend the day cafe hopping, savoring wood-fired Neapolitan pizzas, artisan croissants, and exploring Manu Temple."
+          "description": "Check-in to a boutique heritage stay in Old Manali. Spend the day cafe hopping, savoring wood-fired Neapolitan pizzas, artisan croissants, and exploring Manu Temple.",
+          "thumbnail": "https://images.pexels.com/photos/29943767/pexels-photo-29943767.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Solang Valley Snow Fun & High Altitude Gondola",
-          "description": "Head up to Solang Valley for snow play, ride the high-altitude ropeway gondola, and enjoy steaming Maggi and hot ginger-lemon-honey tea."
+          "description": "Head up to Solang Valley for snow play, ride the high-altitude ropeway gondola, and enjoy steaming Maggi and hot ginger-lemon-honey tea.",
+          "thumbnail": "https://images.pexels.com/photos/32454896/pexels-photo-32454896.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Jogini Waterfalls Forest Trek & Vashisht Rooftops",
-          "description": "Scenic nature hike through apple orchards to Jogini Waterfalls. Soak your feet in cool mountain spray, then relax at a rooftop cafe in Vashisht."
+          "description": "Scenic nature hike through apple orchards to Jogini Waterfalls. Soak your feet in cool mountain spray, then relax at a rooftop cafe in Vashisht.",
+          "thumbnail": "https://images.pexels.com/photos/39797068/pexels-photo-39797068.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Hadimba Cedar Woods, Souvenir Bazaars & Departure",
-          "description": "Visit the four-tiered wooden Hadimba Temple surrounded by deep cedar woods. Pick up handcrafted souvenirs on Mall Road before boarding your Volvo coach."
+          "description": "Visit the four-tiered wooden Hadimba Temple surrounded by deep cedar woods. Pick up handcrafted souvenirs on Mall Road before boarding your Volvo coach.",
+          "thumbnail": "https://images.pexels.com/photos/14916663/pexels-photo-14916663.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2183,7 +2367,8 @@ const CRAZY_TRAVELS_DATA = {
         "Breakfast & Dinner",
         "Sightseeing Cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-rohtang-snow-safari-6d5n",
@@ -2194,9 +2379,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "adventure",
       "styleName": "Adventure & Snow",
       "days": 6,
-      "duration": "6 days",
+      "duration": "6D/5N",
       "price": 18000,
-      "priceFormatted": "from \u20b918,000",
+      "priceFormatted": "from ₹18,000",
       "groupSize": "Private Group (2-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -2206,49 +2391,109 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "The ultimate snow expedition: Rohtang Pass at 13,050 feet, snow tubing, skiing, Atal Tunnel, Sissu frozen waterfall, and Beas white-water rafting over six exhilarating days.",
       "overview": "If snow is your dream, this 6-day comprehensive tour takes you to every snowy wonderland in the Kullu-Manali-Lahaul region with comfortable hotel stays and private taxi.",
       "photos": [
-        "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1600&q=85",
+        "https://images.pexels.com/photos/30695323/pexels-photo-30695323.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/39560039/pexels-photo-39560039.jpeg?auto=compress&cs=tinysrgb&w=800"
       ],
       "itinerary": [
         {
           "day": 1,
-          "title": "Arrival, Hotel Check-in & Altitude Acclimatization",
-          "description": "Pickup at Manali Volvo stand, check-in to deluxe hotel with mountain views. Rest and acclimatize, then enjoy an evening walk around Mall Road and Tibetan Monastery."
+          "title": "Manali Local Sight Seeing",
+          "points": [
+            "Arrival At Manali Bus Station, Meet The Cab Driver & Transfer To Hotel.",
+            "Check-In Time At The Hotel 12 Noon, Early check-In Depends On Availability.",
+            "After Check-In, Freshen Up And Then Go To Manali Local Sight Seeing.",
+            "After Exploring Get Back To Hotel for Dinner and Rest overnight."
+          ],
+          "places": ["Hidimba Temple", "Mall Road", "Monastery", "Old Manali", "Van Vihar"],
+          "stay": "Deluxe Mountain Hotel in Manali",
+          "meals": "Dinner Included",
+          "description": "Arrival At Manali Bus Station, Meet The Cab Driver & Transfer To Hotel. Check-In Time At The Hotel 12 Noon, Early check-In Depends On Availability. After Check-In, Freshen Up And Then Go To Manali Local Sight Seeing. After Exploring Get Back To Hotel for Dinner and Rest overnight. Places covered: Hidimba Temple, Mall Road, Monastery, Old Manali, Van Vihar. Overnight stay: Deluxe Mountain Hotel in Manali.",
+          "thumbnail": "https://images.pexels.com/photos/32371874/pexels-photo-32371874.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
-          "title": "Solang Valley Snow Adventure & Ropeway",
-          "description": "Full day at Solang Valley. Experience high-flying paragliding, snow sledging, ATV rides, and scenic gondola cable car to the alpine peak."
+          "title": "Snow Point - Atal Tunnel & Sissu",
+          "points": [
+            "Wake Up In The Morning, After Having Breakfast, It's Time To Explore Snow Point.",
+            "Today We Are Going To Explore Solang Valley, Atal Tunnel And Sissu or Koksar.",
+            "Here Tourists Can Enjoy Adventure Activities and Can Experience breath taking Snow-Capped Mountain Views.",
+            "After exploring Head Back To The Hotel, Enjoy Delicious Dinner and Rest Overnight."
+          ],
+          "places": ["Solang Valley", "Atal Tunnel", "Koksar-Sissu"],
+          "stay": "Deluxe Mountain Hotel in Manali",
+          "meals": "Breakfast & Dinner Included",
+          "description": "Wake Up In The Morning, After Having Breakfast, It's Time To Explore Snow Point. Today We Are Going To Explore Solang Valley, Atal Tunnel And Sissu or Koksar. Here Tourists Can Enjoy Adventure Activities and Can Experience breath taking Snow-Capped Mountain Views. After exploring Head Back To The Hotel, Enjoy Delicious Dinner and Rest Overnight. Places covered: Solang Valley, Atal Tunnel, Koksar-Sissu. Overnight stay: Deluxe Mountain Hotel in Manali.",
+          "thumbnail": "https://images.pexels.com/photos/30695323/pexels-photo-30695323.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
-          "title": "The Grand Rohtang Pass 13,058 ft Snow Safari",
-          "description": "Crown jewel day: Drive up the legendary Manali-Leh highway to Rohtang Pass at 13,058 ft. Play in deep eternal snow, admire Marhi meadows, and view Rahalla falls."
+          "title": "Kullu & Adventure Activities",
+          "points": [
+            "After having Breakfast Check Out from the Hotel.",
+            "Tourist can enjoy the adventure activities Paragliding & River Rafting. (None of the activities are not included in the package)",
+            "Post Activities, visit Vaishno Devi temple.",
+            "After exploring Head out To Kasol Hotel or Camps, Enjoy Delicious Dinner and Rest Overnight."
+          ],
+          "places": ["Nagar Castle", "Vaishno Devi Temple", "Paragliding", "River Rafting"],
+          "stay": "Kasol Hotel or Riverside Camp",
+          "meals": "Breakfast & Dinner Included",
+          "description": "After having Breakfast Check Out from the Hotel. Tourist can enjoy the adventure activities Paragliding & River Rafting. (None of the activities are not included in the package) Post Activities, visit Vaishno Devi temple. After exploring Head out To Kasol Hotel or Camps, Enjoy Delicious Dinner and Rest Overnight. Places covered: Nagar Castle, Vaishno Devi Temple, Paragliding, River Rafting. Overnight stay: Kasol Hotel or Riverside Camp.",
+          "thumbnail": "https://images.pexels.com/photos/39560039/pexels-photo-39560039.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
-          "title": "Atal Tunnel & Sissu Lahaul Valley Expedition",
-          "description": "Drive through the 9.02-km Atal Tunnel into Lahaul. Walk beside the frozen Sissu waterfall, explore Sissu lake, and marvel at the moonscape valley."
+          "title": "Kasol - Manikaran & Parvati Valley",
+          "points": [
+            "After Having Breakfast. Check-Out From The Hotel.",
+            "Explore Kasol, Manikaran & Sahib Gurudwara.",
+            "Kasol Is Also Known As Mini Israel Of India, Famous For River Side Camping & Cafes.",
+            "Manikaran Temple Dedicated To Lord Shiva And Parvati, Here Hot Springs Offers A Medicinal Benefits.",
+            "Get Back To Manali And Catch Your Bus At Manali Bus Station."
+          ],
+          "places": ["Kasol Cafes", "Manikaran Sahib Gurudwara", "Hot Sulphur Springs", "Parvati River"],
+          "stay": "Overnight Volvo Bus / Return",
+          "meals": "Breakfast Included",
+          "description": "After Having Breakfast. Check-Out From The Hotel. Explore Kasol, Manikaran & Sahib Gurudwara. Kasol Is Also Known As Mini Israel Of India, Famous For River Side Camping & Cafes. Manikaran Temple Dedicated To Lord Shiva And Parvati, Here Hot Springs Offers A Medicinal Benefits. Get Back To Manali And Catch Your Bus At Manali Bus Station. Places covered: Kasol Cafes, Manikaran Sahib Gurudwara, Hot Sulphur Springs, Parvati River. Overnight: Return Volvo Bus.",
+          "thumbnail": "https://images.pexels.com/photos/37383628/pexels-photo-37383628.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Hadimba Temple, Vashisht Springs & Naggar Castle",
-          "description": "Discover rich Himachali heritage: Hadimba pagoda temple, sacred natural hot springs in Vashisht, and the medieval stone castle of Naggar."
+          "points": [
+            "Discover rich Himachali heritage: Hadimba pagoda temple, sacred natural hot springs in Vashisht.",
+            "Explore centuries-old wood-and-stone architecture in Naggar village and Nicholas Roerich Gallery.",
+            "Relax with evening cafe stroll along Old Manali's cedar trails."
+          ],
+          "places": ["Hadimba Temple", "Vashisht Springs", "Naggar Castle"],
+          "stay": "Deluxe Mountain Hotel in Manali",
+          "meals": "Breakfast & Dinner Included",
+          "description": "Discover rich Himachali heritage: Hadimba pagoda temple, sacred natural hot springs in Vashisht, and the medieval stone castle of Naggar. Places covered: Hadimba Temple, Vashisht Springs, Naggar Castle. Overnight stay: Deluxe Mountain Hotel in Manali.",
+          "thumbnail": "https://images.pexels.com/photos/38086300/pexels-photo-38086300.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Kullu River Rafting, Handlooms & Evening Departure",
-          "description": "Check out and drive along Beas River to Kullu. Take on exciting white-water rafting, shop at handloom emporiums, and board the evening AC Volvo."
+          "points": [
+            "Check out and drive along Beas River to Kullu valley.",
+            "Take on exciting white-water rafting, shop at authentic handloom shawl emporiums.",
+            "Board the evening AC Volvo coach with lifelong mountain memories."
+          ],
+          "places": ["River Rafting Point", "Kullu Handloom Emporiums", "Volvo Bus Terminal"],
+          "stay": "Return Journey to Delhi",
+          "meals": "Breakfast Included",
+          "description": "Check out and drive along Beas River to Kullu. Take on exciting white-water rafting, shop at handloom emporiums, and board the evening AC Volvo. Places covered: River Rafting Point, Kullu Handloom Emporiums, Volvo Bus Terminal.",
+          "thumbnail": "https://images.pexels.com/photos/33579716/pexels-photo-33579716.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
-        "Volvo bus",
-        "5 Nights Hotel",
-        "Breakfast & Dinner",
-        "Dedicated Cab",
-        "24/7 Telugu CC"
-      ]
+        "Volvo bus tickets Delhi - Manali - Delhi",
+        "5 Nights Hotel / Camp Stay",
+        "Daily Breakfast & Dinner",
+        "Dedicated Private Cab (Swift)",
+        "24/7 Telugu Customer Care Support"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "kasol-manali-honeymoon-4d3n",
@@ -2259,9 +2504,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 18000,
-      "priceFormatted": "from \u20b918,000",
+      "priceFormatted": "from ₹18,000",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
@@ -2271,30 +2516,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Discover twin Himachal gems together: Trek along Kasol's Parvati Valley, visit Manikaran hot springs, drive to Manali for Solang Valley snow peaks, and enjoy a romantic candlelit dinner.",
       "overview": "The perfect blend of tranquil bohemian Parvati river scenery and snow-peaked Manali adventure for honeymooners seeking diversity and romantic memories.",
       "photos": [
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Volvo Arrival, Drive to Kasol & Riverside Luxury Camp Check-in",
-          "description": "Morning arrival, private cab drive along Parvati River to Kasol. Check-in to a luxury riverside dome camp with warm bedding. Walk hand-in-hand to Chalal village."
+          "description": "Morning arrival, private cab drive along Parvati River to Kasol. Check-in to a luxury riverside dome camp with warm bedding. Walk hand-in-hand to Chalal village.",
+          "thumbnail": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 2,
           "title": "Manikaran Sacred Hot Springs & Scenic Transfer to Manali",
-          "description": "Visit sacred Manikaran Sahib Gurudwara and natural thermal springs. Enjoy scenic drive to Manali, check-in to your honeymoon suite decorated with flowers."
+          "description": "Visit sacred Manikaran Sahib Gurudwara and natural thermal springs. Enjoy scenic drive to Manali, check-in to your honeymoon suite decorated with flowers.",
+          "thumbnail": "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
           "title": "Solang Valley Snow Romance & Cable Car Flight",
-          "description": "Full day in Solang Valley. Take a couples cable car flight to 10,000 ft, play in fresh snow, dress up in traditional Himachali attire for portraits, and share hot cocoa."
+          "description": "Full day in Solang Valley. Take a couples cable car flight to 10,000 ft, play in fresh snow, dress up in traditional Himachali attire for portraits, and share hot cocoa.",
+          "thumbnail": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 4,
           "title": "Hadimba Temple, Mall Road Souvenirs & Volvo Departure",
-          "description": "Visit Hadimba Devi temple nestled in deep cedar woods. Stroll Mall Road for handmade souvenirs, and transfer to Volvo stand for your comfortable journey home."
+          "description": "Visit Hadimba Devi temple nestled in deep cedar woods. Stroll Mall Road for handmade souvenirs, and transfer to Volvo stand for your comfortable journey home.",
+          "thumbnail": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=800&q=80"
         }
       ],
       "included": [
@@ -2304,7 +2553,8 @@ const CRAZY_TRAVELS_DATA = {
         "Candlelight Dinner & Bed Decor",
         "Private Swift Cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "kasol-manali-river-camp-4d3n",
@@ -2315,9 +2565,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 19500,
-      "priceFormatted": "from \u20b919,500",
+      "priceFormatted": "from ₹19,500",
       "groupSize": "Private Couple",
       "pace": "Easy & Romantic",
       "season": "All Year",
@@ -2327,30 +2577,34 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Romance under the stars: Stay in a luxury riverside camp in Kasol with bonfire dinner, trek to natural hot springs, then travel to Manali for Solang snow fun and paragliding.",
       "overview": "Glamping romance meets high-altitude adventure. Listen to Parvati River rapids from your private tent, share fireside conversations, and explore snowy Solang peaks.",
       "photos": [
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1563784462386-044fd95e9852?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Kasol Riverside Camp Check-in & Chalal Pine Trail",
-          "description": "Arrive in Parvati Valley, check-in to luxury riverside camp on the banks of Parvati River. Cross the suspension bridge for a trek through Chalal's pine forests."
+          "description": "Arrive in Parvati Valley, check-in to luxury riverside camp on the banks of Parvati River. Cross the suspension bridge for a trek through Chalal's pine forests.",
+          "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 2,
           "title": "Manikaran Hot Springs & Scenic Transfer to Manali",
-          "description": "Visit the natural hot sulphur springs and Gurudwara at Manikaran. Drive past apple orchards into Manali, check into your hotel, and relax by the Beas river."
+          "description": "Visit the natural hot sulphur springs and Gurudwara at Manikaran. Drive past apple orchards into Manali, check into your hotel, and relax by the Beas river.",
+          "thumbnail": "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
           "title": "Solang Valley Snow Fun & Atal Tunnel Highway",
-          "description": "Full day snow adventure: Solang Valley ropeway cable car, snow tubing, and drive through the magnificent 9.02-km Atal Tunnel to Sissu."
+          "description": "Full day snow adventure: Solang Valley ropeway cable car, snow tubing, and drive through the magnificent 9.02-km Atal Tunnel to Sissu.",
+          "thumbnail": "https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 4,
           "title": "Hadimba Wooden Temple, Mall Road & Departure",
-          "description": "Explore the historic Hadimba Temple and Vashisht springs. Pick up souvenirs and woolens from Mall Road before your evening Volvo departure."
+          "description": "Explore the historic Hadimba Temple and Vashisht springs. Pick up souvenirs and woolens from Mall Road before your evening Volvo departure.",
+          "thumbnail": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=80"
         }
       ],
       "included": [
@@ -2359,7 +2613,8 @@ const CRAZY_TRAVELS_DATA = {
         "Breakfast & Dinner",
         "Swift cab",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "manali-hampta-pass-trek-5d4n",
@@ -2370,9 +2625,9 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "adventure",
       "styleName": "Adventure & Snow",
       "days": 5,
-      "duration": "5 days",
+      "duration": "5D/4N",
       "price": 16500,
-      "priceFormatted": "from \u20b916,500",
+      "priceFormatted": "from ₹16,500",
       "groupSize": "Private Group (2-12)",
       "pace": "Active & Thrilling",
       "season": "All Year",
@@ -2382,35 +2637,40 @@ const CRAZY_TRAVELS_DATA = {
       "summary": "Five days of pure Himalayan trekking: Complete the dramatic crossover trek from lush Kullu meadows to barren Spiti desert over the 14,035 ft Hampta Pass and camp near Chandratal Lake.",
       "overview": "One of India's most dramatic Himalayan crossover treks. Witness green pine forests transform into stark alpine glaciers and turquoise high-altitude lakes with certified guides and full safety logistics.",
       "photos": [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=85",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1571687949921-1306bfb24b72?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80"
       ],
       "itinerary": [
         {
           "day": 1,
           "title": "Manali Basecamp Arrival, Trek Briefing & Jobra Drive",
-          "description": "Assemble at Prini basecamp in Manali. Gear check and safety briefing by certified mountaineering guides. Scenic 1-hour drive on hairpin curves to Jobra roadhead, and easy 45-minute trek to Jobra alpine campsite."
+          "description": "Assemble at Prini basecamp in Manali. Gear check and safety briefing by certified mountaineering guides. Scenic 1-hour drive on hairpin curves to Jobra roadhead, and easy 45-minute trek to Jobra alpine campsite.",
+          "thumbnail": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 2,
           "title": "Trek from Jobra to Chikka Alpine Meadow (10,400 ft)",
-          "description": "4 to 5 hours trek through mixed forests of maple and birch. Cross sparkling mountain streams over wooden logs, boulder paths, and reach the wide green pastures of Chikka campsite."
+          "description": "4 to 5 hours trek through mixed forests of maple and birch. Cross sparkling mountain streams over wooden logs, boulder paths, and reach the wide green pastures of Chikka campsite.",
+          "thumbnail": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 3,
           "title": "Chikka to Balu Ka Ghera (Sand of Stones - 11,900 ft)",
-          "description": "5 to 6 hours trek ascending alongside the roaring river. Walk across moraine fields and wildflower beds to reach Balu Ka Ghera, a flat sandy riverbed right below Hampta Pass."
+          "description": "5 to 6 hours trek ascending alongside the roaring river. Walk across moraine fields and wildflower beds to reach Balu Ka Ghera, a flat sandy riverbed right below Hampta Pass.",
+          "thumbnail": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 4,
           "title": "Summit Hampta Pass (14,065 ft) to Shea Goru (12,900 ft)",
-          "description": "The summit day: Early 5 AM push ascending steep snow bridges to the crest of Hampta Pass (14,065 ft). Marvel at the dramatic contrast between green Kullu and arid Lahaul, then descend on snow slides to Shea Goru."
+          "description": "The summit day: Early 5 AM push ascending steep snow bridges to the crest of Hampta Pass (14,065 ft). Marvel at the dramatic contrast between green Kullu and arid Lahaul, then descend on snow slides to Shea Goru.",
+          "thumbnail": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80"
         },
         {
           "day": 5,
           "title": "Trek to Chhatru, Drive via Atal Tunnel & Return to Manali",
-          "description": "Cross the icy Shea Goru stream and trek 4 hours down to the mountain settlement of Chhatru in Lahaul. Board 4x4 vehicles for a scenic drive back to Manali via the iconic Atal Tunnel."
+          "description": "Cross the icy Shea Goru stream and trek 4 hours down to the mountain settlement of Chhatru in Lahaul. Board 4x4 vehicles for a scenic drive back to Manali via the iconic Atal Tunnel.",
+          "thumbnail": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80"
         }
       ],
       "included": [
@@ -2420,7 +2680,8 @@ const CRAZY_TRAVELS_DATA = {
         "Certified Trek Guides",
         "4x4 transfers",
         "24/7 Telugu CC"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "kashmir-romantic-couple-4d3n",
@@ -2431,20 +2692,20 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "honeymoon",
       "styleName": "Honeymoon & Romance",
       "days": 4,
-      "duration": "4 days",
+      "duration": "4D/3N",
       "price": 23999,
-      "priceFormatted": "from \u20b923,999",
+      "priceFormatted": "from ₹23,999",
       "groupSize": "Private Couple",
       "pace": "Easy",
-      "season": "March \u2013 November, Snow Season",
+      "season": "March – November, Snow Season",
       "nextDeparture": "Daily Private Departures",
       "place": "Srinagar, Gulmarg & Pahalgam",
       "featured": true,
       "summary": "Experience Paradise on Earth with candlelit Shikara rides on Dal Lake, heritage luxury houseboat stays, snow activities at Gulmarg, and pine-clad meadows in Pahalgam.",
       "photos": [
-        "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1200&q=80"
       ],
       "overview": "Handcrafted for couples wanting an unforgettable romantic retreat in Kashmir. Private heated vehicle throughout, luxury heritage houseboat on Dal Lake, premium hotel stays, and guaranteed assistance for Gulmarg Gondola tickets.",
       "itinerary": [
@@ -2453,28 +2714,32 @@ const CRAZY_TRAVELS_DATA = {
           "title": "Arrival in Srinagar & Dal Lake Shikara Sunset",
           "desc": "Warm welcome at Srinagar Airport. Transfer to your luxury heritage Houseboat. In the evening, enjoy a 1-hour romantic private Shikara ride across the serene waters of Dal Lake past floating gardens and Char Chinar.",
           "meals": "Dinner included",
-          "stay": "Luxury Heritage Houseboat, Dal Lake"
+          "stay": "Luxury Heritage Houseboat, Dal Lake",
+          "thumbnail": "https://images.pexels.com/photos/36096796/pexels-photo-36096796.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Srinagar to Gulmarg: Meadow of Flowers & Gondola",
           "desc": "Day excursion to Gulmarg. Ride the world-famous Gulmarg Gondola cable car up to snow-clad Apharwat peak. Enjoy snow activities, skiing, and stunning views of the Pir Panjal range before returning to Srinagar.",
           "meals": "Breakfast & dinner included",
-          "stay": "4-Star Hotel, Srinagar"
+          "stay": "4-Star Hotel, Srinagar",
+          "thumbnail": "https://images.pexels.com/photos/7562498/pexels-photo-7562498.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Srinagar to Pahalgam: Valley of Shepherds",
           "desc": "Scenic drive through saffron fields of Pampore to Pahalgam. Visit Betaab Valley, Aru Valley, and Chandanwari. Stroll along the gushing Lidder River. Evening return to Srinagar for Kashmiri Wazwan dinner.",
           "meals": "Breakfast & dinner included",
-          "stay": "4-Star Hotel, Srinagar"
+          "stay": "4-Star Hotel, Srinagar",
+          "thumbnail": "https://images.pexels.com/photos/28805621/pexels-photo-28805621.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Mughal Gardens Tour & Airport Departure",
           "desc": "Morning visit to historic Mughal Gardens: Nishat Bagh and Shalimar Bagh. Shop for authentic saffron, dry fruits, and pashmina shawls. Timely transfer to Srinagar Airport for departure flight.",
           "meals": "Breakfast included",
-          "stay": "Departure"
+          "stay": "Departure",
+          "thumbnail": "https://images.pexels.com/photos/26752838/pexels-photo-26752838.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2484,7 +2749,8 @@ const CRAZY_TRAVELS_DATA = {
         "1-Hour Private Romantic Shikara Ride on Dal Lake",
         "Sightseeing in Gulmarg, Pahalgam, and Srinagar Mughal Gardens",
         "All toll, parking, driver allowances, and 24/7 dedicated travel desk support"
-      ]
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1600&q=85"
     },
     {
       "id": "ladakh-high-pass-odyssey-7d6n",
@@ -2495,20 +2761,20 @@ const CRAZY_TRAVELS_DATA = {
       "travelStyle": "adventure",
       "styleName": "Adventure & Snow",
       "days": 7,
-      "duration": "7 days",
+      "duration": "7D/6N",
       "price": 32000,
-      "priceFormatted": "from \u20b932,000",
+      "priceFormatted": "from ₹32,000",
       "groupSize": "10 travelers max",
       "pace": "High Altitude Adventure",
-      "season": "May \u2013 September",
+      "season": "May – September",
       "nextDeparture": "Weekly Departures",
       "place": "Leh, Khardung La, Nubra Valley & Pangong",
       "featured": false,
       "summary": "Cross the highest motorable road in the world at Khardung La, ride double-humped camels in Nubra, and sleep beside the changeless blue waters of Pangong Tso.",
       "photos": [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
+        "https://images.pexels.com/photos/688576/pexels-photo-688576.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://images.pexels.com/photos/9398830/pexels-photo-9398830.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/39850162/pexels-photo-39850162.jpeg?auto=compress&cs=tinysrgb&w=1200"
       ],
       "overview": "An expedition across the Roof of the World. Designed with careful acclimatization in Leh, backup oxygen canisters, and certified local Ladakhi mountain drivers.",
       "itinerary": [
@@ -2517,49 +2783,56 @@ const CRAZY_TRAVELS_DATA = {
           "title": "Leh Airport Arrival & Acclimatization",
           "desc": "Arrival at Leh Airport (11,500 ft). Complete rest day to acclimatize to high altitude. Evening walk to Shanti Stupa.",
           "meals": "Dinner included",
-          "stay": "4-Star Hotel, Leh"
+          "stay": "4-Star Hotel, Leh",
+          "thumbnail": "https://images.pexels.com/photos/39850104/pexels-photo-39850104.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 2,
           "title": "Sham Valley: Hall of Fame & Magnetic Hill",
           "desc": "Visit Hall of Fame War Memorial, Magnetic Hill, Gurudwara Pathar Sahib, and Indus-Zanskar Sangam confluence.",
           "meals": "Breakfast & dinner included",
-          "stay": "4-Star Hotel, Leh"
+          "stay": "4-Star Hotel, Leh",
+          "thumbnail": "https://images.pexels.com/photos/5015149/pexels-photo-5015149.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 3,
           "title": "Leh to Nubra Valley via Khardung La (17,582 ft)",
           "desc": "Cross the legendary Khardung La pass. Descend into Nubra Valley. Ride Bactrian double-humped camels in Hunder sand dunes.",
           "meals": "Breakfast & dinner included",
-          "stay": "Luxury Deluxe Camp, Nubra"
+          "stay": "Luxury Deluxe Camp, Nubra",
+          "thumbnail": "https://images.pexels.com/photos/23476457/pexels-photo-23476457.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 4,
           "title": "Nubra Valley to Pangong Lake via Shyok River",
           "desc": "Scenic off-road drive following the Shyok River directly to the world-famous Pangong Tso (14,270 ft). Stargazing at night.",
           "meals": "Breakfast & dinner included",
-          "stay": "Pangong Lake Luxury Camp"
+          "stay": "Pangong Lake Luxury Camp",
+          "thumbnail": "https://images.pexels.com/photos/18836749/pexels-photo-18836749.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 5,
           "title": "Pangong Sunrise & Return to Leh via Chang La",
           "desc": "Watch the lake change shades at dawn. Cross Chang La pass (17,590 ft) back to Leh. Visit Thiksey Monastery on route.",
           "meals": "Breakfast & dinner included",
-          "stay": "4-Star Hotel, Leh"
+          "stay": "4-Star Hotel, Leh",
+          "thumbnail": "https://images.pexels.com/photos/39850121/pexels-photo-39850121.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 6,
           "title": "Leh Palace, Shey & Local Market",
           "desc": "Explore Leh Palace, Shey Monastery, and shop for Tibetan silver and apricots.",
           "meals": "Breakfast & dinner included",
-          "stay": "4-Star Hotel, Leh"
+          "stay": "4-Star Hotel, Leh",
+          "thumbnail": "https://images.pexels.com/photos/39850106/pexels-photo-39850106.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
           "day": 7,
           "title": "Leh Airport Departure",
           "desc": "Early morning transfer to Leh Airport with aerial views of the Himalayas.",
           "meals": "Breakfast included",
-          "stay": "Departure"
+          "stay": "Departure",
+          "thumbnail": "https://images.pexels.com/photos/39850124/pexels-photo-39850124.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
       ],
       "included": [
@@ -2568,7 +2841,8 @@ const CRAZY_TRAVELS_DATA = {
         "Daily Breakfasts and Dinners",
         "Inner Line Permits and Wildlife Fee for Khardung La, Nubra, and Pangong",
         "Oxygen cylinder in vehicle and 24/7 local Ladakhi tour manager"
-      ]
+      ],
+      "coverImage": "https://images.pexels.com/photos/688576/pexels-photo-688576.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ],
   "articles": [
@@ -2710,7 +2984,7 @@ const CRAZY_TRAVELS_DATA = {
     },
     {
       "question": "Do you provide Telugu customer support?",
-      "answer": "Yes! Crazy Tours and Travels is renowned for our dedicated 24/7 Telugu & English Customer Care Desk (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 \u0c15\u0c38\u0c4d\u0c1f\u0c2e\u0c30\u0c4d \u0c15\u0c47\u0c30\u0c4d). Whether you are arriving at an airport, need language assistance with your driver, or want restaurant recommendations, our Hyderabad headquarters desk is on call 24 hours a day."
+      "answer": "Yes! Crazy Tours and Travels is renowned for our dedicated 24/7 Telugu & English Customer Care Desk (తెలుగు కస్టమర్ కేర్). Whether you are arriving at an airport, need language assistance with your driver, or want restaurant recommendations, our Hyderabad headquarters desk is on call 24 hours a day."
     },
     {
       "question": "Can I customize the itinerary or dates for a private group?",
@@ -2727,65 +3001,69 @@ const CRAZY_TRAVELS_DATA = {
   ]
 };
 
-const WAYFARE_DATA = CRAZY_TRAVELS_DATA;
-
-// ----------------------------------------------------------------------------
-// HELPER LOOKUP FUNCTIONS
-// ----------------------------------------------------------------------------
+// Universal accessor functions
 function getCrazyTravelsTrip(slugOrId) {
-  if (!slugOrId) return CRAZY_TRAVELS_DATA.trips[0];
-  const found = CRAZY_TRAVELS_DATA.trips.find(t => t.slug === slugOrId || t.id === slugOrId);
-  return found || CRAZY_TRAVELS_DATA.trips[0];
+  if (!slugOrId) return null;
+  return CRAZY_TRAVELS_DATA.trips.find(t => 
+    (t.slug && t.slug.toLowerCase() === slugOrId.toLowerCase()) || 
+    (t.id && t.id.toLowerCase() === slugOrId.toLowerCase())
+  ) || null;
 }
+
 const getWayfareTrip = getCrazyTravelsTrip;
 
-function getCrazyTravelsDestination(slugOrId) {
-  if (!slugOrId) return CRAZY_TRAVELS_DATA.destinations[0];
-  const found = CRAZY_TRAVELS_DATA.destinations.find(d => d.slug === slugOrId || d.id === slugOrId);
-  return found || CRAZY_TRAVELS_DATA.destinations[0];
+function getCrazyTravelsDestination(destSlug) {
+  if (!destSlug) return null;
+  return CRAZY_TRAVELS_DATA.destinations.find(d => 
+    (d.slug && d.slug.toLowerCase() === destSlug.toLowerCase()) || 
+    (d.id && d.id.toLowerCase() === destSlug.toLowerCase())
+  ) || null;
 }
+
 const getWayfareDestination = getCrazyTravelsDestination;
 
-function getCrazyTravelsArticle(slugOrId) {
-  if (!slugOrId) return CRAZY_TRAVELS_DATA.articles[0];
-  const found = CRAZY_TRAVELS_DATA.articles.find(a => a.slug === slugOrId || a.id === slugOrId);
-  return found || CRAZY_TRAVELS_DATA.articles[0];
+function getCrazyTravelsArticle(articleSlug) {
+  if (!articleSlug) return null;
+  return CRAZY_TRAVELS_DATA.articles.find(a => 
+    (a.slug && a.slug.toLowerCase() === articleSlug.toLowerCase()) || 
+    (a.id && a.id.toLowerCase() === articleSlug.toLowerCase())
+  ) || null;
 }
-const getWayfareArticle = getCrazyTravelsArticle;
 
 function getTripsByDestination(destSlug) {
+  if (!destSlug || destSlug === 'all') return CRAZY_TRAVELS_DATA.trips;
   return CRAZY_TRAVELS_DATA.trips.filter(t => t.destination.toLowerCase() === destSlug.toLowerCase());
 }
 
-function getTripsByStyle(styleSlug) {
+function getTripsByTravelStyle(styleSlug) {
+  if (!styleSlug || styleSlug === 'all') return CRAZY_TRAVELS_DATA.trips;
   return CRAZY_TRAVELS_DATA.trips.filter(t => t.travelStyle.toLowerCase() === styleSlug.toLowerCase());
 }
 
-// Global attachment
+// Global browser exports
 if (typeof window !== 'undefined') {
   window.CRAZY_TRAVELS_DATA = CRAZY_TRAVELS_DATA;
   window.WAYFARE_DATA = CRAZY_TRAVELS_DATA;
   window.getCrazyTravelsTrip = getCrazyTravelsTrip;
-  window.getWayfareTrip = getCrazyTravelsTrip;
+  window.getWayfareTrip = getWayfareTrip;
   window.getCrazyTravelsDestination = getCrazyTravelsDestination;
-  window.getWayfareDestination = getCrazyTravelsDestination;
+  window.getWayfareDestination = getWayfareDestination;
   window.getCrazyTravelsArticle = getCrazyTravelsArticle;
-  window.getWayfareArticle = getCrazyTravelsArticle;
   window.getTripsByDestination = getTripsByDestination;
-  window.getTripsByStyle = getTripsByStyle;
+  window.getTripsByTravelStyle = getTripsByTravelStyle;
 }
 
+// CommonJS export for Node environments
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     CRAZY_TRAVELS_DATA,
-    WAYFARE_DATA,
+    WAYFARE_DATA: CRAZY_TRAVELS_DATA,
     getCrazyTravelsTrip,
     getWayfareTrip,
     getCrazyTravelsDestination,
     getWayfareDestination,
     getCrazyTravelsArticle,
-    getWayfareArticle,
     getTripsByDestination,
-    getTripsByStyle
+    getTripsByTravelStyle
   };
 }
